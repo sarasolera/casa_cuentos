@@ -1,0 +1,54 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    overflow: hidden;
+    background-size:100%;
+    margin:0px !important;
+}
+/*Página de login*/
+#fondo{
+    width: 100%;
+    height: 100%;
+}
+
+#titulo{
+    font: oblique bold 120%;
+    font-size:35px;
+    color:white;
+    position:relative;
+    bottom: 600px;
+    text-align: center;
+}
+
+#titulo_form{
+    margin-top:1px;
+    font-size:20px;
+}
+
+#new_room{
+    background-color:rgb(116, 93, 50);
+    border-radius:10px ;
+    padding:10px;
+    width:20%;
+    position:relative;
+    left: 38%;
+    bottom: 500px;
+    text-align: center;
+    
+}
+
+#new_room input[type=submit]{
+    margin-top:10px;
+    border: 2px solid rgb(204, 164, 56);
+    border-radius: 4px;
+}
+
+#new_room p{
+    margin:3px;
+    color:white;
+}
+#new_room input{
+    margin:5px;
+}
