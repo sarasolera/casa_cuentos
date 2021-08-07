@@ -1,0 +1,17 @@
+{
+  "name": "casa_cuentos",
+  "version": "1.0.0",
+  "description": "Juego con el objetivo de crear una historia, será multijugador",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sara",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "juery": "^1.0.0",
+    "socket.io": "^4.1.3"
+  }
+}
