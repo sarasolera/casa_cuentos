@@ -41,3 +41,32 @@ function roomUrl(url){
     //biblioteca jquery
     $("#content").load(url);   
 }
+
+
+//Enviar mensajes por el chat
+function sendMessage(){
+    var mensaje={
+        autor:player.name,
+        texto:document.getElementById("mensaje_chat").value,
+    }
+
+    document.getElementById("mensaje_chat").value = "";
+    //Enviamos el mensaje al servidor para que lo agregue a todos los mensajes y lo puedan ver el resto de clientes
+    socket.emit("new_message",mensaje);
+
+    return false;
+    
+}
+
+//Recibimos el array completo de mensajes que vamos a mostrar en el div
+socket.on("all_messages",allMessage);
+function allMessage(messages){
+    console.log("Todos los mensajes del chat");
+    //Por cada uno generamos una entrada en el chat
+    var cadena = "";
+    messages.map(function(element , index){
+        cadena+='<p> <span>'+element.autor+'</span>:'+element.texto+'</p>'
+    });
+
+    jQuery("#mensajes").html(cadena);
+}
