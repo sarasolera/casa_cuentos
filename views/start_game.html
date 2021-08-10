@@ -9,6 +9,23 @@
             </div>
             <div id="bloque_jugadores">
                 <h2>JUGADORES</h2>
+                <!-- Aquí vamos a introducir el bloque de mensajes-->
+                
+                <div id="chat">
+                    <h3> CHAT </h3>
+                    <div id="mensajes">
+                        <p> CHAT: Bienvenidos al chat de la casa de los juegos, cuando envíes
+                            tu primer mensaje apareceran los de resto de jugadores.
+                        </p>
+                    </div>
+            
+                    <!--- Input para mandar mensajes -->
+                    <form onsubmit="return sendMessage(this)">
+                        <input type="text" id="mensaje_chat" placeholder="Escribe algo..." />
+                        <input type="submit" value="Enviar mensaje!" />
+                    </form>
+                    
+                </div>
                 
             </div>
     </div>
