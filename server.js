@@ -14,6 +14,9 @@ var r;
 //Creamos la sala
 r = new Room();
 
+
+//Array de mensajes
+var messages = [];
 //socket escuchando conexiones
 io.on("connection", function(socket){
     //Peticion de un cliente de unirse al juego
@@ -24,6 +27,16 @@ io.on("connection", function(socket){
       r.addPlayer(name_player);
       //Enviamos la url
       socket.emit("room",r.url);
+    }
+
+
+    //Captando mensajes que se envían por el chat
+    socket.on("new_message",new_message);
+    function new_message(message){
+        //Recibimos un mensaje de un jugador debemos enviarlo para que lo vea todo el grupo de jugadores
+        messages.push(message);
+        //Lo enviamos a todos
+        io.sockets.emit("all_messages",messages);
     }
 });
 
