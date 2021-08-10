@@ -38,6 +38,14 @@ io.on("connection", function(socket){
         //Lo enviamos a todos
         io.sockets.emit("all_messages",messages);
     }
+
+    socket.on("get_url_door",get_url_door);
+
+    function get_url_door(index){
+        var url = r.get_url_door(index);
+        console.log("Que fase han pedido los jugadores ",url);
+        io.sockets.emit("showContentDoor",url);
+    }
 });
 
 //Ponemos al servidor a escuchar por el puerto 80
