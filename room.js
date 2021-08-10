@@ -6,6 +6,10 @@ class Room{
         this._url = "./start_game.html";
         //array de jugadores
         this._players = [];
+
+        this._layouts = [
+            "./first_door.html"
+        ];
     }
 
     /**
@@ -28,6 +32,10 @@ class Room{
      */
      addPlayer(player){
         this._players.push(player)
+    }
+
+    get_url_door(index){
+        return this._layouts[index];
     }
 }
 
