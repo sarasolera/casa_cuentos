@@ -123,3 +123,83 @@ body{
     font-size:13px;
     font-family: fantasy;
 }
+
+/**Estilo de la puerta **/
+#mapa{
+    width: 100%;
+    height: 98%;
+}
+.puerta1{
+    position:absolute;
+    bottom:200px;
+    width: 10%;
+    left:400px;
+    height: 20%;
+}
+
+/* Añadiendo estilo de la fase 1 */
+#principal{
+    background-image: url('/assets/images/principal.jpg');
+    background-size:100% 100%;
+    height: 100%;
+}
+
+#bloque_fase{
+    background-image: url('/assets/images/fase_uno.jpg');
+    background-size:100% 100%;
+    height: 100%;
+    /*height: 100%;*/
+    display:grid; 
+    grid-template-columns: 50% 50%;
+    text-align:center;
+}
+
+.titulo_cap{
+    top:10%;
+    left:12%;
+    position:absolute;
+}
+#texto_cap{
+    position:absolute;
+    top:25%;
+    left:12%;
+    width: 80%;
+}
+
+/*Diseño del bocadillo*/
+.bocadillo-redondo {
+    position: relative;
+    height: 275px;
+    width: 375px;
+    background: rgba(214, 231, 117, 0.945);
+    border-radius: 50%;
+    box-shadow: 1px 12px 33px rgba(56, 73, 17, 0.692);
+}
+.bocadillo-redondo:before {
+    border: 25px solid rgba(171, 192, 50, 0.945);;
+    content: '';
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: -44px;
+    right: 75px;
+    transform: rotate(-8deg);
+}
+
+#ayudante{
+    position: relative;
+    top: 110%;
+    width: 100%;
+}
+
+/*Bloque con las cartas*/
+
+#b_paisaje{
+    position:relative;
+    top:30%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 158, 13);
+    border-radius: 50%;
+}
