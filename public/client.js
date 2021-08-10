@@ -70,3 +70,16 @@ function allMessage(messages){
 
     jQuery("#mensajes").html(cadena);
 }
+
+//Cargar pantalla fase indicada en los argumentos
+function loadDoor(index){
+    console.log("Cliente solicita cargar fase" + index)
+    socket.emit("get_url_door" , index);
+}
+
+socket.on("showContentDoor",showContentDoor);
+
+function showContentDoor(url){
+    console.log("Cargando plantilla ".url);
+    $("#bloque_central").load(url);  
+}
