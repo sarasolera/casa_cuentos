@@ -46,6 +46,13 @@ io.on("connection", function(socket){
         console.log("Que fase han pedido los jugadores ",url);
         io.sockets.emit("showContentDoor",url);
     }
+
+    //Esperamos la peticion para obtener cartas paisaje
+    socket.on("get_landscapecard",function(){
+        console.log("Jugadores solicitan las cartas paisaje");
+        array_card = r.landscapeCards;
+        io.sockets.emit("showLandscapeCard",array_card);
+      });
 });
 
 //Ponemos al servidor a escuchar por el puerto 80
