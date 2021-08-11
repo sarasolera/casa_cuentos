@@ -92,3 +92,26 @@ function getLandscapeCard(){
     //Solicittamos al servidor 3 cartas paisaje
     socket.emit("get_landscapecard");
 }
+
+//Recibimos las cartas
+socket.on("showLandscapeCard",showLandscapeCard);
+function showLandscapeCard(arrayCards)
+{
+    console.log("Vamos a mostrar las cartas paisaje...");
+    $("#b_paisaje").addClass("hidden");
+    $('#cartas').removeClass('hidden');
+    var cadena = "";
+    for(var i =0 ; i < arrayCards.length ; i++){
+        if(i % 2 == 0){
+            var id = "first_card";
+        }
+        else{
+            var id = "second_card";
+        }
+        cadena += "<div><img id="+id+" src=assets/images/landscape/"+arrayCards[i]+"></div>";
+    }
+   
+    console.log("CADENA" +cadena);
+
+    $('#cartas').append(cadena);
+}
