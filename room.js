@@ -10,6 +10,12 @@ class Room{
         this._layouts = [
             "./first_door.html"
         ];
+
+        this._landscapeCards = [
+            "landscape_card_0",
+            "landscape_card_1",
+            "landscape_card_2"
+        ]
     }
 
     /**
@@ -36,6 +42,10 @@ class Room{
 
     get_url_door(index){
         return this._layouts[index];
+    }
+
+    get landscapeCards(){
+        return this._landscapeCards;
     }
 }
 
