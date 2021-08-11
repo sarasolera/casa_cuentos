@@ -73,13 +73,22 @@ function allMessage(messages){
 
 //Cargar pantalla fase indicada en los argumentos
 function loadDoor(index){
-    console.log("Cliente solicita cargar fase" + index)
+    console.log("Cliente solicita cargar fase " + index)
     socket.emit("get_url_door" , index);
 }
 
 socket.on("showContentDoor",showContentDoor);
 
 function showContentDoor(url){
-    console.log("Cargando plantilla ".url);
+    console.log("Cargando plantilla " + url);
     $("#bloque_central").load(url);  
+}
+
+
+//Cargar cartas paisaje
+
+function getLandscapeCard(){
+    console.log("Consultando cartas paisaje...")
+    //Solicittamos al servidor 3 cartas paisaje
+    socket.emit("get_landscapecard");
 }
