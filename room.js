@@ -12,9 +12,9 @@ class Room{
         ];
 
         this._landscapeCards = [
-            "landscape_card_0",
-            "landscape_card_1",
-            "landscape_card_2"
+            "landscape_card_0.png",
+            "landscape_card_1.png",
+            "landscape_card_2.png"
         ]
     }
 
