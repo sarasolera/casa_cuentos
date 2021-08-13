@@ -115,3 +115,13 @@ function showLandscapeCard(arrayCards)
 
     $('#cartas').append(cadena);
 }
+
+//Start game
+function startGame(){
+    socket.emit("startGame");
+}
+
+socket.on("showBoard",function(){
+    $("#bloque_comenzar").addClass("hidden");
+    $('#bloque_central').removeClass('hidden');
+})
