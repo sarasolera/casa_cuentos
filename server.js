@@ -1,8 +1,14 @@
 var express = require("express");
 var app = express();
+//SERVIDOR HTTP a partir de la librería de express para las conexiones
 var server = require("http").Server(app);
+//Para generar la comunicación trabajo con socket io
 var io = require("socket.io")(server);
 
+const NUM_MAX_PLAYER=4;
+var num_players = 1;
+var isAllPlayer = false;
+//Carpetas donde estan nuestros ficheros
 app.use(express.static("public"));
 app.use(express.static("views"));
 
@@ -24,9 +30,18 @@ io.on("connection", function(socket){
 
     function joinRoom(name_player){
       console.log("Se ha unido un jugador nuevo llamado: ",name_player);
-      r.addPlayer(name_player);
-      //Enviamos la url
-      socket.emit("room",r.url);
+      console.log("NUM JUGADORES ACTUALES ",num_players);
+     
+      if(num_players < NUM_MAX_PLAYER && !isAllPlayer){
+        num_players += 1;
+        r.addPlayer(name_player);
+        //Enviamos la url
+        socket.emit("room",r.url);
+      }
+      else{
+        console.log("Nadie más se puede unir");
+      }
+      
     }
 
 
@@ -53,6 +68,13 @@ io.on("connection", function(socket){
         array_card = r.landscapeCards;
         io.sockets.emit("showLandscapeCard",array_card);
       });
+
+
+    //Ya no pueden jugar más jugadores
+    socket.on("startGame",function(){
+        isAllPlayer = true;
+        io.sockets.emit("showBoard");
+    })
 });
 
 //Ponemos al servidor a escuchar por el puerto 80
