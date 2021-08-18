@@ -2,8 +2,9 @@
   "name": "casa_cuentos",
   "version": "1.0.0",
   "description": "Juego con el objetivo de crear una historia, será multijugador",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sara",
@@ -12,6 +13,7 @@
     "express": "^4.17.1",
     "jquery": "^3.6.0",
     "juery": "^1.0.0",
+    "lib-jitsi-meet": "^1.0.6",
     "socket.io": "^4.1.3"
   }
 }
