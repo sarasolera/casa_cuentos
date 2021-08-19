@@ -1,40 +1,43 @@
 <div id="principal">
-    <h1 id="titulo_prin">LA CASA DE LOS CUENTOS</h1>
-    <div id="bloque_principal">
-            <div id="bloque_recorrido">
-                <h2>RECORRIDO</h2>
-            </div>
-            <div id="bloque_comenzar">
-                <div id="form_start_game">
-                    <p id="titulo_form">¿Estamos todos listos?</p>
-                    <button type="button" onclick="startGame()">Comenzar a jugar!</button> 
-                </div>
-                
-                
-            </div>
-            <div id="bloque_central" class="hidden">
-                <img id="mapa" src="assets/images/mapa.jpg"/>                  
-                <img alt="Puerta número 1" onClick="loadDoor(0)" class="puerta1" src="assets/images/acceso_fase_uno.png"/>
-            </div>
-            <div id="bloque_jugadores">
-                <h2>JUGADORES</h2>
-                <!-- Aquí vamos a introducir el bloque de mensajes-->
-                
-                <div id="chat">
-                    <h3> CHAT </h3>
-                    <div id="mensajes">
-                        <p> CHAT: Bienvenidos al chat de la casa de los juegos, cuando envíes
-                            tu primer mensaje apareceran los de resto de jugadores.
-                        </p>
-                    </div>
-            
-                    <!--- Input para mandar mensajes -->
-                    <form onsubmit="return sendMessage(this)">
-                        <input type="text" id="mensaje_chat" placeholder="Escribe algo..." />
-                        <input type="submit" value="Enviar mensaje!" />
-                    </form>    
-                </div>
-                
-            </div>
+  <h1 id="titulo_prin">LA CASA DE LOS CUENTOS</h1>
+  <div id="bloque_principal">
+    <div id="bloque_recorrido">
+      <h2>RECORRIDO</h2>
     </div>
+    <div id="bloque_comenzar">
+      <div id="form_start_game">
+        <p id="titulo_form">¿Estamos todos listos?</p>
+        <button type="button" onclick="startGame()">Comenzar a jugar!</button>
+      </div>
+    </div>
+    <div id="bloque_central" class="hidden">
+      <img id="mapa" src="assets/images/mapa.jpg" />
+      <img
+        alt="Puerta número 1"
+        onClick="loadDoor(0)"
+        class="puerta1"
+        src="assets/images/acceso_fase_uno.png"
+      />
+    </div>
+    <div id="bloque_jugadores">
+      <h2>JUGADORES</h2>
+      <!-- Aquí vamos a introducir el bloque de mensajes-->
+
+      <div id="chat">
+        <h3>CHAT</h3>
+        <div id="mensajes">
+          <p>
+            CHAT: Bienvenidos al chat de la casa de los juegos, cuando envíes tu
+            primer mensaje apareceran los de resto de jugadores.
+          </p>
+        </div>
+
+        <!--- Input para mandar mensajes -->
+        <form onsubmit="return sendMessage(this)">
+          <input type="text" id="mensaje_chat" placeholder="Escribe algo..." />
+          <input type="submit" value="Enviar mensaje!" />
+        </form>
+      </div>
+    </div>
+  </div>
 </div>

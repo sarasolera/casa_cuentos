@@ -1,9 +1,10 @@
-const socket = io();
+var socket = io.connect("http://localhost:8080", { forceNew: true });
 
 /**
  * Creamos la clase jugador que va a ser cada cliente,
  * así podremos controlar que jugador esta jugando en cada momento
  */
+
 class Player {
   constructor(name) {
     this.name = name;
@@ -65,7 +66,7 @@ function allMessage(messages) {
       "<p> <span>" + element.autor + "</span>:" + element.texto + "</p>";
   });
 
-  jQuery("#mensajes").html(cadena);
+  $("#mensajes").html(cadena);
 }
 
 //Cargar pantalla fase indicada en los argumentos

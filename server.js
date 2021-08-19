@@ -8,7 +8,6 @@ var io = require("socket.io")(server);
 const NUM_MAX_PLAYER = 4;
 var num_players = 1;
 var isAllPlayer = false;
-var array_card;
 //Carpetas donde estan nuestros ficheros
 app.use(express.static("public"));
 app.use(express.static("views"));
@@ -21,6 +20,7 @@ var r;
 //Creamos la sala
 r = new Room();
 
+var array_card;
 //Array de mensajes
 var messages = [];
 //socket escuchando conexiones
@@ -75,5 +75,5 @@ io.on("connection", function (socket) {
 
 //Ponemos al servidor a escuchar por el puerto 80
 server.listen(8080, function () {
-  console.log("Servidor corriendo en puerto :8080");
+  console.log("Servidor corriendo en http://localhost:8080");
 });

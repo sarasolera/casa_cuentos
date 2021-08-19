@@ -1,29 +1,42 @@
-<!doctype html> 
-<html> 
-<head> 
+<!DOCTYPE html>
+<html>
+  <head>
     <!-- Añadimos estilo -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/style.css"
+      media="screen"
+    />
     <meta charset="UTF-8" />
     <!--Añadimos el fichero de clientjs que contiene las funciones con las peticiones de los clientes
     como por ejemplo la funcion joinRoom-->
     <script src="/socket.io/socket.io.js"></script>
     <script src="client.js"></script>
     <!--jquery-->
+    <script src="https://meet.jit.si/external_api.js"></script>
+    <script>
+      window.exports = {};
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>La casa de los cuentos </title>  
-</head>
-<body id="content">
+    <title>La casa de los cuentos</title>
+  </head>
+  <body id="content">
     <div style="height: 100%;">
-        <img id="fondo" alt="Portada de bienvenida"  src="assets/images/fondo_pantalla.png" width:100%/>
-        <p id="titulo">LA CASA DE LOS CUENTOS</p>
-        <div id="new_room">
-            <p id="titulo_form">Únete a la sala</p>
-            <p> Nombre: </p>
-            <input type="text" id="name_player"/>
-            <p> Comencemos a jugar </p>
-            <button type="button" onclick="joinRoom()">Jugar!</button> 
-        </div> 
-       
-    </div> 
-</body>
+      <img
+        id="fondo"
+        alt="Portada de bienvenida"
+        src="assets/images/fondo_pantalla.png"
+        width:100%
+      />
+      <p id="titulo">LA CASA DE LOS CUENTOS</p>
+      <div id="new_room">
+        <p id="titulo_form">Únete a la sala</p>
+        <p>Nombre:</p>
+        <input type="text" id="name_player" />
+        <p>Comencemos a jugar</p>
+        <button type="button" onclick="joinRoom()">Jugar!</button>
+      </div>
+    </div>
+  </body>
 </html>
