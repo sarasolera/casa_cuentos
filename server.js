@@ -75,5 +75,5 @@ io.on("connection", function (socket) {
 
 //Ponemos al servidor a escuchar por el puerto 80
 server.listen(8080, function () {
-  console.log("Servidor corriendo en http://localhost:8080");
+  console.log("Servidor corriendo en 8080");
 });

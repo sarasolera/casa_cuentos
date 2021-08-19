@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:8080", { forceNew: true });
+var socket = io.connect();
 
 /**
  * Creamos la clase jugador que va a ser cada cliente,
