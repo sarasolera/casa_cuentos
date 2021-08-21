@@ -124,4 +124,98 @@ function startGame(){
 socket.on("showBoard",function(){
     $("#bloque_comenzar").addClass("hidden");
     $('#bloque_central').removeClass('hidden');
+    $('#camaras').removeClass('hidden');
 })
+
+
+//CAMARAS 
+
+function initCamera(){
+    console.log("Peticion de cargar camaras");
+    socket.emit("loadDivCamera");
+}
+
+socket.on("loadDivCamera",loadDivCamera);
+function loadDivCamera(players){
+    cadena = "";
+    console.log("CUANTOS JUGADORES HAY "+players.length);
+    for(var i =0 ; i < players.length ; i++){
+        if(players[i] == player.name){
+            cadena += '<div id=player_'+players[i]+'><button id=emitir type=submit onclick=initVideo()>Emitir</button>'+
+            '<video src="" id=video'+players[i]+' style="height: 160px;" autoplay="true"></video>'+
+            '<canvas class=hidden id=preview'+players[i]+' >  </canvas>'
+            
+        }
+        else{
+            cadena += '<div id=player_'+players[i]+'>'+
+            '<img id=img'+players[i]+' src="" alt=""  >'
+        }
+
+        cadena+=
+        '</div>'
+
+    }
+    $('#camaras').append(cadena);
+   
+}
+
+
+socket.on("error_name",function(){
+    $("#error").removeClass("hidden");
+});
+
+function initVideo(){
+     //ACCESO A LA CAMARA
+     navigator.getUserMedia =  (navigator.getUserMedia || navigator.mozGetUserMedia);
+     //Si me pide permiso
+     if( navigator.getUserMedia){
+        $('#emitir').addClass("hidden");
+         navigator.getUserMedia({audio:true , video:true},loadCamara,errorCamara);
+     }
+     else{
+         console.log("Error en el if");
+     }
+ 
+}
+
+function errorCamara(){
+    console.log("Error con la camara");
+}
+
+function loadCamara(stream){
+    $('#boton_emitir').addClass("hidden");
+    console.log("Llego a load camara");
+    var canvas = document.querySelector("#preview"+player.name);
+    var context = canvas.getContext("2d");
+    canvas.width=220;
+    canvas.height = 131;
+    context.width=canvas.width;
+    context.height = canvas.height;
+    var video = document.querySelector("#video"+player.name);
+    video.srcObject = stream;
+    var intervalo = setInterval(() => {
+        verVideo(context,video,canvas);
+    },100);
+
+    
+}
+
+function verVideo(context,video,canvas){
+    //Dibujamos el video sobre el lienzo, asi lo dibuja solo en el lienzo
+    context.drawImage(video,0,0,context.width,context.height);
+    socket.emit('stream',canvas.toDataURL('image/webp'),player.name);
+}
+
+socket.on("stream",stream);
+
+function stream(image,p_name){
+    if(p_name != player.name){
+        console.log("Emitiendo imagen a ",p_name);
+        console.log("Transmitiendo imagen")
+        var img = document.querySelector("#img"+p_name);
+        img.src = image;
+    }
+    
+}
+
+
