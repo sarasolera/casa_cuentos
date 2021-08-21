@@ -47,6 +47,10 @@ class Room{
     get landscapeCards(){
         return this._landscapeCards;
     }
+
+    get players(){
+        return this._players;
+    }
 }
 
 

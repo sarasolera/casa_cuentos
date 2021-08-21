@@ -33,10 +33,16 @@ io.on("connection", function(socket){
       console.log("NUM JUGADORES ACTUALES ",num_players);
      
       if(num_players < NUM_MAX_PLAYER && !isAllPlayer){
-        num_players += 1;
-        r.addPlayer(name_player);
-        //Enviamos la url
-        socket.emit("room",r.url);
+        if(r.players.includes(name_player)){
+          socket.emit("error_name");
+        }
+        else{
+          r.addPlayer(name_player);
+          num_players += 1;
+          //Enviamos la url 
+          socket.emit("room",r.url);
+        }
+        
       }
       else{
         console.log("Nadie más se puede unir");
@@ -74,7 +80,18 @@ io.on("connection", function(socket){
     socket.on("startGame",function(){
         isAllPlayer = true;
         io.sockets.emit("showBoard");
-    })
+    });
+
+    socket.on("loadDivCamera",function(){
+      console.log("Funcion en el servidor jugadores " + r.players);
+      io.sockets.emit('loadDivCamera' , r.players);
+    });
+    
+    //Camara 
+    socket.on('stream' , function(image,player_name){
+      //Lanzamos la camara a todos los socket conectados
+      io.sockets.emit("stream",image,player_name);
+  });
 });
 
 //Ponemos al servidor a escuchar por el puerto 80
