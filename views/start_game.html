@@ -19,8 +19,8 @@
             <div id="bloque_jugadores">
                 <h2>JUGADORES</h2>
                 <!-- Aquí vamos a introducir el bloque de mensajes-->
-                
-                <div id="chat">
+                <!-- COMENTAMOS CHAT PARA INTRODUCIR CAMAARAS-->
+               <!--<div id="chat">
                     <h3> CHAT </h3>
                     <div id="mensajes">
                         <p> CHAT: Bienvenidos al chat de la casa de los juegos, cuando envíes
@@ -28,13 +28,17 @@
                         </p>
                     </div>
             
-                    <!--- Input para mandar mensajes -->
+                    Input para mandar mensajes 
                     <form onsubmit="return sendMessage(this)">
                         <input type="text" id="mensaje_chat" placeholder="Escribe algo..." />
                         <input type="submit" value="Enviar mensaje!" />
                     </form>    
                 </div>
-                
+                --> 
+
+                <div id="camaras" class="hidden">
+                    <button id="boton_emitir" type="button" onclick="initCamera()">CARGAR CÁMARAS</button>
+                </div>
             </div>
     </div>
 </div>
