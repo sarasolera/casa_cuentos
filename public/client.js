@@ -124,6 +124,7 @@ function startGame() {
 socket.on("showBoard", function () {
   $("#bloque_comenzar").addClass("hidden");
   $("#bloque_central").removeClass("hidden");
+  $("#bloque_central").load("./board.html");
   $("#camaras").removeClass("hidden");
 });
 
@@ -228,4 +229,7 @@ function chooseLandscape(carta) {
 
 socket.on("showCard", showCard);
 
-function showCard(card) {}
+function showCard(card) {
+  //Volvemos al tablero
+  $("#bloque_central").load("./board.html");
+}
