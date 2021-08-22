@@ -1,58 +1,63 @@
 //Clase sala de juego
 
-class Room{
-    constructor(){
-        //url página principal
-        this._url = "./start_game.html";
-        //array de jugadores
-        this._players = [];
+class Room {
+  constructor() {
+    //url página principal
+    this._url = "./start_game.html";
+    //array de jugadores
+    this._players = [];
 
-        this._layouts = [
-            "./first_door.html"
-        ];
+    this._layouts = ["./first_door.html"];
 
-        this._landscapeCards = [
-            "landscape_card_0.png",
-            "landscape_card_1.png",
-            "landscape_card_2.png"
-        ]
-    }
+    this._landscapeCards = [
+      "landscape_card_0.png",
+      "landscape_card_1.png",
+      "landscape_card_2.png"
+    ];
 
-    /**
-     * Función get de la url principal
-     */
-    get url() {
-        return this._url;
-    }
-    /**
-     * Función ser de la url
-     */
-    set url(value) {
-        this._url = value;
-    }
+    this._objectCardSelected = null;
+  }
 
-    /**
-     * Funccion para añadir jugadores a la sala de juego
-     * recibe como parámetro el nombre del jugador
-     * @param {string} player 
-     */
-     addPlayer(player){
-        this._players.push(player)
-    }
+  /**
+   * Función get de la url principal
+   */
+  get url() {
+    return this._url;
+  }
+  /**
+   * Función ser de la url
+   */
+  set url(value) {
+    this._url = value;
+  }
 
-    get_url_door(index){
-        return this._layouts[index];
-    }
+  /**
+   * Funccion para añadir jugadores a la sala de juego
+   * recibe como parámetro el nombre del jugador
+   * @param {string} player
+   */
+  addPlayer(player) {
+    this._players.push(player);
+  }
 
-    get landscapeCards(){
-        return this._landscapeCards;
-    }
+  get_url_door(index) {
+    return this._layouts[index];
+  }
 
-    get players(){
-        return this._players;
+  get landscapeCards() {
+    return this._landscapeCards;
+  }
+
+  get players() {
+    return this._players;
+  }
+
+  chooseLandscape(card) {
+    if (this._landscapeCards.includes(card)) {
+      this._objectCardSelected = card;
     }
+  }
 }
-
 
 //Añadimos export para que pueda ser utilizada la clase
 module.exports = Room;

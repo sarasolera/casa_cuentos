@@ -24,31 +24,27 @@ var array_card;
 //Array de mensajes
 var messages = [];
 //socket escuchando conexiones
-io.on("connection", function(socket){
-    //Peticion de un cliente de unirse al juego
-    socket.on("joinRoom", joinRoom);
+io.on("connection", function (socket) {
+  //Peticion de un cliente de unirse al juego
+  socket.on("joinRoom", joinRoom);
 
-    function joinRoom(name_player){
-      console.log("Se ha unido un jugador nuevo llamado: ",name_player);
-      console.log("NUM JUGADORES ACTUALES ",num_players);
-     
-      if(num_players < NUM_MAX_PLAYER && !isAllPlayer){
-        if(r.players.includes(name_player)){
-          socket.emit("error_name");
-        }
-        else{
-          r.addPlayer(name_player);
-          num_players += 1;
-          //Enviamos la url 
-          socket.emit("room",r.url);
-        }
-        
+  function joinRoom(name_player) {
+    console.log("Se ha unido un jugador nuevo llamado: ", name_player);
+    console.log("NUM JUGADORES ACTUALES ", num_players);
+
+    if (num_players < NUM_MAX_PLAYER && !isAllPlayer) {
+      if (r.players.includes(name_player)) {
+        socket.emit("error_name");
+      } else {
+        r.addPlayer(name_player);
+        num_players += 1;
+        //Enviamos la url
+        socket.emit("room", r.url);
       }
-      else{
-        console.log("Nadie más se puede unir");
-      }
-      
+    } else {
+      console.log("Nadie más se puede unir");
     }
+  }
 
   function joinRoom(name_player) {
     console.log("Se ha unido un jugador nuevo llamado: ", name_player);
@@ -88,21 +84,26 @@ io.on("connection", function(socket){
     io.sockets.emit("showLandscapeCard", array_card);
   });
 
-    //Ya no pueden jugar más jugadores
-    socket.on("startGame",function(){
-        isAllPlayer = true;
-        io.sockets.emit("showBoard");
-    });
+  //Ya no pueden jugar más jugadores
+  socket.on("startGame", function () {
+    isAllPlayer = true;
+    io.sockets.emit("showBoard");
+  });
 
-    socket.on("loadDivCamera",function(){
-      console.log("Funcion en el servidor jugadores " + r.players);
-      io.sockets.emit('loadDivCamera' , r.players);
-    });
-    
-    //Camara 
-    socket.on('stream' , function(image,player_name){
-      //Lanzamos la camara a todos los socket conectados
-      io.sockets.emit("stream",image,player_name);
+  socket.on("loadDivCamera", function () {
+    console.log("Funcion en el servidor jugadores " + r.players);
+    io.sockets.emit("loadDivCamera", r.players);
+  });
+
+  //Camara
+  socket.on("stream", function (image, player_name) {
+    //Lanzamos la camara a todos los socket conectados
+    io.sockets.emit("stream", image, player_name);
+  });
+
+  socket.on("chooseLandscape", function (card) {
+    r.chooseLandscape(card);
+    io.sockets.emit("showCard()", card);
   });
 });
 

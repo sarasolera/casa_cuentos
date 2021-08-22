@@ -116,10 +116,6 @@ function showLandscapeCard(arrayCards) {
   $("#cartas").append(cadena);
 }
 
-function chooseLandscape(carta) {
-  console.log("Carta elegida ", carta);
-}
-
 //Start game
 function startGame() {
   socket.emit("startGame");
@@ -219,9 +215,17 @@ socket.on("stream", stream);
 
 function stream(image, p_name) {
   if (p_name != player.name) {
-    console.log("Emitiendo imagen a ", p_name);
-    console.log("Transmitiendo imagen");
     var img = document.querySelector("#img" + p_name);
     img.src = image;
   }
 }
+
+function chooseLandscape(carta) {
+  console.log("Carta elegida ", carta);
+  //Avisamos al servidor de la carta elegida
+  socket.emit("chooseLandscape", carta);
+}
+
+socket.on("showCard", showCard);
+
+function showCard(card) {}
