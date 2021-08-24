@@ -1,271 +1,267 @@
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
-body{
-    height: 100%;
-    background-size:100%;
-    margin:0px !important;
+body {
+  height: 100%;
+  background-size: 100%;
+  margin: 0px !important;
 }
 /*Página de login*/
-#fondo{
-    width: 100%;
-    height: 100%;
+#fondo {
+  width: 100%;
+  height: 100%;
 }
 
-#titulo{
-    font: oblique bold 120%;
-    font-size:35px;
-    color:white;
-    position:relative;
-    bottom: 600px;
-    text-align: center;
+#titulo {
+  font: oblique bold 120%;
+  font-size: 35px;
+  color: white;
+  position: relative;
+  bottom: 600px;
+  text-align: center;
 }
 
-#titulo_form{
-    margin-top:1px;
-    font-size:20px;
+#titulo_form {
+  margin-top: 1px;
+  font-size: 20px;
 }
 
-#new_room{
-    background-color:rgb(116, 93, 50);
-    border-radius:10px ;
-    padding:10px;
-    width:20%;
-    position:relative;
-    left: 38%;
-    bottom: 500px;
-    text-align: center;
-    
+#new_room {
+  background-color: rgb(116, 93, 50);
+  border-radius: 10px;
+  padding: 10px;
+  width: 20%;
+  position: relative;
+  left: 38%;
+  bottom: 500px;
+  text-align: center;
 }
 
-#new_room input[type=submit]{
-    margin-top:10px;
-    border: 2px solid rgb(204, 164, 56);
-    border-radius: 4px;
+#new_room input[type="submit"] {
+  margin-top: 10px;
+  border: 2px solid rgb(204, 164, 56);
+  border-radius: 4px;
 }
 
-#new_room p{
-    margin:3px;
-    color:white;
+#new_room p {
+  margin: 3px;
+  color: white;
 }
-#new_room input{
-    margin:5px;
+#new_room input {
+  margin: 5px;
 }
 
 /*Pagina principal del juego*/
-#principal{
-    background-image: url('/assets/images/principal.jpg');
-    background-size:100% 100%;
-    height: 100%;
+#principal {
+  background-image: url("/assets/images/principal.jpg");
+  background-size: 100% 100%;
+  height: 100%;
 }
 
-#bloque_principal{
-    height: 90%;
-    display:grid; 
-    grid-template-columns: 20% 60% 20%;
+#bloque_principal {
+  height: 90%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
 }
 
-#titulo_prin{
-    background-color: rgba(6, 38, 68, 0.719);
-    text-align: center;
-    color:white;
-    font-size:50px;
-    margin:0px;
+#titulo_prin {
+  background-color: rgba(6, 38, 68, 0.719);
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin: 0px;
 }
 
-#mapa{
-    width: 100%;
-    height: 98%;
+#mapa {
+  width: 100%;
+  height: 98%;
 }
-.puerta1{
-    position:absolute;
-    bottom:200px;
-    width: 10%;
-    left:400px;
-    height: 20%;
+.puerta1 {
+  position: absolute;
+  bottom: 200px;
+  width: 10%;
+  left: 400px;
+  height: 20%;
 }
-#bloque_recorrido{
-    text-align: center;
-    margin-right: 10px;
-    height: 98%;
-    background-color: rgba(218, 168, 93, 0.712);
+#bloque_recorrido {
+  text-align: center;
+  margin-right: 10px;
+  height: 98%;
+  background-color: rgba(218, 168, 93, 0.712);
 }
 
-#bloque_jugadores{
-    text-align: center;
-    margin-left: 10px;
-    height: 98%;
-    background-color: rgba(218, 168, 93, 0.712);
+#bloque_jugadores {
+  text-align: center;
+  margin-left: 10px;
+  height: 98%;
+  background-color: rgba(218, 168, 93, 0.712);
 }
 
 /* ESTILO DEL CHAT */
-#chat{
-    background-color: rgb(241, 181, 52);
-    border: 4px solid black;
-    height: 82%;
-    margin:5px;
-    padding:2px;
-    
+#chat {
+  background-color: rgb(241, 181, 52);
+  border: 4px solid black;
+  height: 82%;
+  margin: 5px;
+  padding: 2px;
 }
-#mensajes{
-    border: 2px solid black;
-    background-color:white;
-    overflow-y: scroll;
-    height: 222px;
-    margin:10px;   
-    text-align: center;
+#mensajes {
+  border: 2px solid black;
+  background-color: white;
+  overflow-y: scroll;
+  height: 222px;
+  margin: 10px;
+  text-align: center;
 }
-#mensajes p{
-    border:2px solid rgb(248, 208, 121);
-    border-radius: 15px 50px 30px;
-    margin:2px;
-    background-color: rgb(248, 208, 121);
-    font-size:13px;
-    font-family: fantasy;
+#mensajes p {
+  border: 2px solid rgb(248, 208, 121);
+  border-radius: 15px 50px 30px;
+  margin: 2px;
+  background-color: rgb(248, 208, 121);
+  font-size: 13px;
+  font-family: fantasy;
 }
 
 /**Estilo de la puerta **/
-#mapa{
-    width: 100%;
-    height: 98%;
+#mapa {
+  width: 100%;
+  height: 98%;
 }
-.puerta1{
-    position:absolute;
-    bottom:200px;
-    width: 10%;
-    left:400px;
-    height: 20%;
+.puerta1 {
+  position: absolute;
+  bottom: 200px;
+  width: 10%;
+  left: 400px;
+  height: 20%;
 }
 
 /* Añadiendo estilo de la fase 1 */
-#principal{
-    background-image: url('/assets/images/principal.jpg');
-    background-size:100% 100%;
-    height: 100%;
+#principal {
+  background-image: url("/assets/images/principal.jpg");
+  background-size: 100% 100%;
+  height: 100%;
 }
 
-#bloque_fase{
-    background-image: url('/assets/images/fase_uno.jpg');
-    background-size:100% 100%;
-    height: 100%;
-    display:grid; 
-    grid-template-columns: 50% 50%;
-    text-align:center;
+#bloque_fase {
+  background-image: url("/assets/images/fase_uno.jpg");
+  background-size: 100% 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
 }
 
-.titulo_cap{
-    top:10%;
-    left:12%;
-    position:absolute;
+.titulo_cap {
+  top: 10%;
+  left: 12%;
+  position: absolute;
 }
-#texto_cap{
-    position:absolute;
-    top:25%;
-    left:12%;
-    width: 80%;
+#texto_cap {
+  position: absolute;
+  top: 25%;
+  left: 12%;
+  width: 80%;
 }
 
 /*Diseño del bocadillo*/
 .bocadillo-redondo {
-    position: relative;
-    height: 275px;
-    width: 375px;
-    background: rgba(214, 231, 117, 0.945);
-    border-radius: 50%;
-    box-shadow: 1px 12px 33px rgba(56, 73, 17, 0.692);
+  position: relative;
+  height: 275px;
+  width: 375px;
+  background: rgba(214, 231, 117, 0.945);
+  border-radius: 50%;
+  box-shadow: 1px 12px 33px rgba(56, 73, 17, 0.692);
 }
 .bocadillo-redondo:before {
-    border: 25px solid rgba(171, 192, 50, 0.945);;
-    content: '';
-    border-left-color: transparent;
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-    position: absolute;
-    bottom: -44px;
-    right: 75px;
-    transform: rotate(-8deg);
+  border: 25px solid rgba(171, 192, 50, 0.945);
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: -44px;
+  right: 75px;
+  transform: rotate(-8deg);
 }
 
-#ayudante{
-    position: relative;
-    top: 110%;
-    width: 100%;
-}
-
-/*Bloque con las cartas*/
-
-#b_paisaje{
-    position:relative;
-    top:30%;
-    width: 100px;
-    height: 100px;
-    background-color: rgb(255, 158, 13);
-    border-radius: 50%;
+#ayudante {
+  position: relative;
+  top: 110%;
+  width: 100%;
 }
 
 /*Bloque con las cartas*/
 
-
-#cartas{
-    height: 570px;
-    display:grid; 
-    grid-template-rows: 20% 25% 25%;
-    background-color: rgba(0, 0, 0, 0.644);
+#b_paisaje {
+  position: relative;
+  top: 30%;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 158, 13);
+  border-radius: 50%;
 }
 
+/*Bloque con las cartas*/
 
-.hidden{
-    display:none !important;
+#cartas {
+  height: 570px;
+  display: grid;
+  grid-template-rows: 20% 25% 25%;
+  background-color: rgba(0, 0, 0, 0.644);
 }
 
-#first_card{
-    height:225px;
-    float:left;
-    margin-left:10px;
-    margin-top:10px;
+.hidden {
+  display: none !important;
 }
 
-#second_card{
-    height:225px;
-    float:right;
-    margin-left:10px;
-    margin-top:10px;
+#first_card {
+  height: 225px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-
+#second_card {
+  height: 225px;
+  float: right;
+  margin-left: 10px;
+  margin-top: 10px;
+}
 
 /*BLOQUE COMENZAR*/
-#bloque_comenzar{
-    background-color:rgba(218, 168, 93, 0.712);
-    height:98%;
+#bloque_comenzar {
+  background-color: rgba(218, 168, 93, 0.712);
+  height: 98%;
 }
 
-#form_start_game{
-    position:relative;
-    text-align:center;
-    left:35%;
-    top:35%;
-    width:25%;
-    height: 25%;
-    background-color:rgb(241, 181, 52);
-    border: 4px solid black;
-    padding:2px;
+#form_start_game {
+  position: relative;
+  text-align: center;
+  left: 35%;
+  top: 35%;
+  width: 25%;
+  height: 25%;
+  background-color: rgb(241, 181, 52);
+  border: 4px solid black;
+  padding: 2px;
 }
 
 /* mensaje de error en el nombre */
-#error{
-    background-color: rgb(252, 48, 48);
-    border:3px;
-    border-radius: 10px;
-    
+#error {
+  background-color: rgb(252, 48, 48);
+  border: 3px;
+  border-radius: 10px;
 }
-#error p{
-    color:rgb(255, 255, 255);
-}
-
-#camaras div{
-    height: 165px;
-    margin:10px;
-    border:3px solid black;
+#error p {
+  color: rgb(255, 255, 255);
 }
 
+#camaras div {
+  height: 165px;
+  margin: 10px;
+  border: 3px solid black;
+}
+
+#carta_recorrido {
+  width: 85px;
+}

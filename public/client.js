@@ -232,4 +232,11 @@ socket.on("showCard", showCard);
 function showCard(card) {
   //Volvemos al tablero
   $("#bloque_central").load("./board.html");
+
+  cadena =
+    "<p>Carta paisaje seleccionada:</p><img id=carta_recorrido src=assets/images/landscape/" +
+    card +
+    " >";
+
+  $("#bloque_recorrido").append(cadena);
 }

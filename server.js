@@ -102,8 +102,9 @@ io.on("connection", function (socket) {
   });
 
   socket.on("chooseLandscape", function (card) {
+    console.log("Carta elegida por el jugador", card);
     r.chooseLandscape(card);
-    io.sockets.emit("showCard()", card);
+    io.sockets.emit("showCard", card);
   });
 });
 
