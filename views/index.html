@@ -33,12 +33,13 @@
       />
       <p id="titulo">LA CASA DE LOS CUENTOS</p>
       <div id="new_room">
-        <form name="form_inicio" method="post" onsubmit="joinRoom()">
-          <p id="titulo_form">Únete a la sala</p>
-          <p>Nombre:</p>
-          <input type="text" id="name_player" />
-          <input type="submit" value="Comencemos a jugar" />
-        </form>
+        <p id="titulo_form">Únete a la sala</p>
+        <p>Nombre:</p>
+        <input type="text" id="name_player" />
+        <button class="iniciar_juego" type="submit" onclick="joinRoom()">
+          Unirse
+        </button>
+
         <div id="error" class="hidden">
           <p>YA EXITE UN JUGADOR CON ESE NOMBRE</p>
         </div>

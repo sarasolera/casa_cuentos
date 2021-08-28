@@ -18,6 +18,7 @@ var player = new Player();
 
 //Funcion joinRoom
 function joinRoom() {
+  console.log("Llego a join");
   //Captamos el nombre del jugador
   let namePlayer = document.getElementById("name_player").value;
 
