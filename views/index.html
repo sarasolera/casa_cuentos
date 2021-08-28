@@ -15,26 +15,34 @@
     <script src="client.js"></script>
     <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--FONT FAMILY ANTON-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton"
+      rel="stylesheet"
+    />
     <title>La casa de los cuentos</title>
   </head>
   <body id="content">
     <div style="height: 100%;">
-        <img id="fondo" alt="Portada de bienvenida"  src="assets/images/fondo_pantalla.png" width:100%/>
-        <p id="titulo">LA CASA DE LOS CUENTOS</p>
-        <div id="new_room">
-            <p id="titulo_form">Únete a la sala</p>
-            <p> Nombre: </p>
-            <input type="text" id="name_player"/>
-            <p> Comencemos a jugar </p>
-            <button type="button" onclick="joinRoom()">Jugar!</button> 
-            <div id="error" class="hidden">
-                <p>YA EXITE UN JUGADOR CON ESE NOMBRE</p>
-            </div>
-        </div> 
-        
-       
-    </div> 
-
-    
-</body>
+      <img
+        id="fondo"
+        alt="Portada de bienvenida"
+        src="assets/images/fondo_pantalla.jpg"
+        width:100%
+      />
+      <p id="titulo">LA CASA DE LOS CUENTOS</p>
+      <div id="new_room">
+        <form name="form_inicio" method="post" onsubmit="joinRoom()">
+          <p id="titulo_form">Únete a la sala</p>
+          <p>Nombre:</p>
+          <input type="text" id="name_player" />
+          <input type="submit" value="Comencemos a jugar" />
+        </form>
+        <div id="error" class="hidden">
+          <p>YA EXITE UN JUGADOR CON ESE NOMBRE</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
