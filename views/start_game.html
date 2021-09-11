@@ -46,11 +46,24 @@
                         <input type="submit" value="Enviar mensaje!" />
                     </form>    
                 </div>
-                --> 
-
                 <div id="camaras" class="hidden">
                     <button class="iniciar_juego" id="boton_emitir" type="button" onclick="initCamera()">CARGAR CÁMARAS</button>
                 </div>
+                --> 
+                <div id="camaras">
+          
+                </div>
+              <script>
+                  const domain = 'meet.jit.si';
+                  const options = {
+                      roomName: 'JitsiMeetAPIExample',
+                      width: 220,
+                      height: 500,
+                      parentNode: document.querySelector('#camaras')
+                  };
+                  const api = new JitsiMeetExternalAPI(domain, options);
+              </script>
+                
             </div>
     </div>
   </div>
