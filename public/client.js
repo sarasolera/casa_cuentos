@@ -1,5 +1,4 @@
 var socket = io.connect();
-
 /**
  * Creamos la clase jugador que va a ser cada cliente,
  * así podremos controlar que jugador esta jugando en cada momento
@@ -80,6 +79,8 @@ socket.on("showContentDoor", showContentDoor);
 
 function showContentDoor(url) {
   console.log("Cargando plantilla " + url);
+  $('#bloque_tablero').addClass('hidden');
+  $("#bloque_central").removeClass('hidden');
   $("#bloque_central").load(url);
 }
 
@@ -124,103 +125,10 @@ function startGame() {
 
 socket.on("showBoard", function () {
   $("#bloque_comenzar").addClass("hidden");
-  $("#bloque_central").removeClass("hidden");
-  $("#bloque_central").load("./board.html");
+  $("#bloque_tablero").removeClass("hidden");
+  $("#bloque_tablero").load("./board.html");
   $("#camaras").removeClass("hidden");
 });
-
-//CAMARAS
-
-function initCamera() {
-  console.log("Peticion de cargar camaras");
-  socket.emit("loadDivCamera");
-}
-
-socket.on("loadDivCamera", loadDivCamera);
-function loadDivCamera(players) {
-  cadena = "";
-  console.log("CUANTOS JUGADORES HAY " + players.length);
-  for (var i = 0; i < players.length; i++) {
-    if (players[i] == player.name) {
-      cadena +=
-        "<div id=player_" +
-        players[i] +
-        "><button id=emitir type=submit onclick=initVideo()>Emitir</button>" +
-        '<video src="" id=video' +
-        players[i] +
-        ' style="height: 160px;" autoplay="true"></video>' +
-        "<canvas class=hidden id=preview" +
-        players[i] +
-        " >  </canvas>";
-    } else {
-      cadena +=
-        "<div id=player_" +
-        players[i] +
-        ">" +
-        "<img id=img" +
-        players[i] +
-        ' src="" alt=""  >';
-    }
-
-    cadena += "</div>";
-  }
-  $("#camaras").append(cadena);
-}
-
-socket.on("error_name", function () {
-  $("#error").removeClass("hidden");
-});
-
-function initVideo() {
-  //ACCESO A LA CAMARA
-  navigator.getUserMedia = navigator.getUserMedia || navigator.mozGetUserMedia;
-  //Si me pide permiso
-  if (navigator.getUserMedia) {
-    $("#emitir").addClass("hidden");
-    navigator.getUserMedia(
-      { audio: true, video: true },
-      loadCamara,
-      errorCamara
-    );
-  } else {
-    console.log("Error en el if");
-  }
-}
-
-function errorCamara() {
-  console.log("Error con la camara");
-}
-
-function loadCamara(stream) {
-  $("#boton_emitir").addClass("hidden");
-  console.log("Llego a load camara");
-  var canvas = document.querySelector("#preview" + player.name);
-  var context = canvas.getContext("2d");
-  canvas.width = 220;
-  canvas.height = 131;
-  context.width = canvas.width;
-  context.height = canvas.height;
-  var video = document.querySelector("#video" + player.name);
-  video.srcObject = stream;
-  var intervalo = setInterval(() => {
-    verVideo(context, video, canvas);
-  }, 100);
-}
-
-function verVideo(context, video, canvas) {
-  //Dibujamos el video sobre el lienzo, asi lo dibuja solo en el lienzo
-  context.drawImage(video, 0, 0, context.width, context.height);
-  socket.emit("stream", canvas.toDataURL("image/webp"), player.name);
-}
-
-socket.on("stream", stream);
-
-function stream(image, p_name) {
-  if (p_name != player.name) {
-    var img = document.querySelector("#img" + p_name);
-    img.src = image;
-  }
-}
 
 function chooseLandscape(carta) {
   console.log("Carta elegida ", carta);
@@ -232,12 +140,34 @@ socket.on("showCard", showCard);
 
 function showCard(card) {
   //Volvemos al tablero
-  $("#bloque_central").load("./board.html");
+  $('#bloque_central').addClass('hidden');
+  $("#bloque_tablero").removeClass('hidden');
+  $("#bloque_tablero").load("./board.html");
 
   cadena =
     "<p>Carta paisaje seleccionada:</p><img id=carta_recorrido src=assets/images/landscape/" +
     card +
     " >";
-
   $("#bloque_recorrido").append(cadena);
+  console.log("Cerramos puerta ");
+  socket.emit("close_door",0);
+
 }
+
+socket.on("close_door",closeDoor);
+
+
+function closeDoor(index){ 
+  console.log("Puerta superada");
+  //Cambiamos la puerta en la que hemos entrado
+  $("#puerta_uno").attr('src','/assets/images/estrella.png');  
+  $("#puerta_uno").removeClass("abierta");
+  $("#puerta_uno").addClass("cerrada");
+  $("#texto_puerta_uno").addClass("hidden");
+  
+//Cambiamos la puerta en la que vamos a entrar
+  $("#puerta_dos").attr('src','/assets/images/libro_abierto.png');  
+  $("#puerta_dos").removeClass("cerrada");
+  $("#puerta_dos").addClass("abierta");
+  $("#texto_puerta_dos").removeClass("hidden");
+};

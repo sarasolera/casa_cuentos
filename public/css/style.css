@@ -1,8 +1,9 @@
 html {
-  height: 100%;
+  height: 100vh;
 }
 body {
-  height: 100%;
+  height: 637px;
+  width:1290px;
   background-size: 100%;
   margin: 0px !important;
 }
@@ -65,7 +66,7 @@ body {
 #principal {
   background-image: url("/assets/images/principal.jpg");
   background-size: 100% 100%;
-  height: 100%;
+  
 }
 
 #bloque_principal {
@@ -84,7 +85,7 @@ body {
 
 #mapa {
   width: 100%;
-  height: 75%;
+  height: 70%;
 }
 .puerta1 {
   position: absolute;
@@ -132,18 +133,6 @@ body {
   font-family: fantasy;
 }
 
-/**Estilo de la puerta **/
-#mapa {
-  width: 100%;
-  height: 98%;
-}
-.puerta1 {
-  position: absolute;
-  bottom: 200px;
-  width: 10%;
-  left: 400px;
-  height: 20%;
-}
 
 /* Añadiendo estilo de la fase 1 */
 #principal {
@@ -242,7 +231,55 @@ body {
 #bloque_comenzar {
   background-image: url("/assets/images/fondo_start_game.jpg");
   background-size: cover;
+  height: 98%;
 }
+
+#bloque_tablero{
+  height: 98%;
+  background-image: url("/assets/images/estanteria_r.png");
+  background-repeat: no-repeat;
+  background-size: 100% 105%;
+
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  align-items: center;
+}
+
+#bloque_central{
+  height: 99%;
+
+}
+/**Estilo de la puerta **/
+.puerta{
+  width: 40%;
+}
+
+.abierta{
+  width:155px;
+  position:relative;
+  height: 127px;
+  top: 35px;
+  right:5px;
+}
+.cerrada{
+  width:110px;
+  position:relative;
+  height: 127px;
+  left:10px;
+}
+.puerta_fase{
+  margin-top:55px;
+  margin-left:35px;
+  position:relative;
+  left:10px;
+}
+.puerta_fase p{
+  position:relative;
+  bottom:110px;
+  font-size: 20px;
+}
+
 
 #form_start_game {
   position: relative;
