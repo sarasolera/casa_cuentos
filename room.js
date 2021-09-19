@@ -7,13 +7,16 @@ class Room {
     //array de jugadores
     this._players = [];
 
-    this._layouts = ["./first_door.html"];
+    this._layouts = ["./first_door.html" , "./second_door.html"];
 
+    //Fase 1
     this._landscapeCards = [
       "landscape_card_0.png",
       "landscape_card_1.png",
       "landscape_card_2.png"
     ];
+
+    this._lastDoor = -1;
 
     this._objectCardSelected = null;
   }
