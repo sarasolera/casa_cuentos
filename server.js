@@ -5,7 +5,7 @@ var server = require("http").Server(app);
 //Para generar la comunicación trabajo con socket io
 var io = require("socket.io")(server);
 
-const NUM_MAX_PLAYER = 4;
+const NUM_MAX_PLAYER = 16;
 var num_players = 1;
 var isAllPlayer = false;
 //Carpetas donde estan nuestros ficheros
@@ -90,22 +90,17 @@ io.on("connection", function (socket) {
     io.sockets.emit("showBoard");
   });
 
-  socket.on("loadDivCamera", function () {
-    console.log("Funcion en el servidor jugadores " + r.players);
-    io.sockets.emit("loadDivCamera", r.players);
-  });
-
-  //Camara
-  socket.on("stream", function (image, player_name) {
-    //Lanzamos la camara a todos los socket conectados
-    io.sockets.emit("stream", image, player_name);
-  });
-
   socket.on("chooseLandscape", function (card) {
     console.log("Carta elegida por el jugador", card);
     r.chooseLandscape(card);
     io.sockets.emit("showCard", card);
   });
+
+  socket.on("close_door",function(index){
+    console.log("Cerramos la puerta numero " + index);
+    io.sockets.emit("close_door",index);
+  });
+
 });
 
 //Ponemos al servidor a escuchar por el puerto 80
