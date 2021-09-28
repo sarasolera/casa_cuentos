@@ -90,6 +90,8 @@ class Room {
     var selectedPlots= [];
     var i = 0;
     var components= [];
+    this.title_plots = [];
+    this.descriptions_plots = [];
     while(i<3){
         var num_ran = Math.floor(Math.random() * myPlots.length);
         if(!array_num.includes(num_ran)){
