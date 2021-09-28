@@ -1,4 +1,7 @@
 //Clase sala de juego
+var fs = require('fs');
+var Reader = require('filereader');
+const { Console } = require('console');
 
 class Room {
   constructor() {
@@ -19,6 +22,10 @@ class Room {
     this._lastDoor = -1;
 
     this._objectCardSelected = null;
+
+    this.title_plots = []; 
+
+    this.descriptions_plots = [];
   }
 
   /**
@@ -60,6 +67,46 @@ class Room {
       this._objectCardSelected = card;
     }
   }
+
+  
+  getGender(){
+    //Leemos los ficheros
+    var gender = readFile('genre.txt')
+    const myGenders = gender.split("\n");
+
+    //myGenders.forEach(element=>console.log("Elemento => " + element));
+
+    //Generamos un numero aleatorio parasaber cual será el genero
+    var num_ran = Math.floor(Math.random() * myGenders.length);
+    return myGenders[num_ran];
+
+  }
+
+  getPlots(){
+    //Leemos los ficheros
+    var plots = readFile('master-plots.txt')
+    const myPlots = plots.split("\n");
+    var array_num = [];
+    var selectedPlots= [];
+    var i = 0;
+    var components= [];
+    while(i<3){
+        var num_ran = Math.floor(Math.random() * myPlots.length);
+        if(!array_num.includes(num_ran)){
+          array_num.push(num_ran);
+          components = myPlots[num_ran].split('=>');
+          this.title_plots.push(components[0]);
+          this.descriptions_plots.push(components[1]);
+          i+=1;
+        }
+    }
+    return this.title_plots;
+  }
+
+}
+
+function readFile(name_file){
+  return fs.readFileSync(name_file , 'utf8');
 }
 
 //Añadimos export para que pueda ser utilizada la clase
