@@ -1,4 +1,5 @@
 var express = require("express");
+const { isBoolean } = require("util");
 var app = express();
 //SERVIDOR HTTP a partir de la librería de express para las conexiones
 var server = require("http").Server(app);
@@ -19,6 +20,9 @@ const Room = require("./room");
 var r;
 //Creamos la sala
 r = new Room();
+
+var array_index_door = ["uno" , "dos" , "tres" , "cuatro"];
+
 
 var array_card;
 //Array de mensajes
@@ -96,10 +100,30 @@ io.on("connection", function (socket) {
     io.sockets.emit("showCard", card);
   });
 
-  socket.on("close_door",function(index){
-    console.log("Cerramos la puerta numero " + index);
-    io.sockets.emit("close_door",index);
+  socket.on("close_door",function(index,next){
+    io.sockets.emit("close_door",array_index_door[index],array_index_door[next] );
   });
+
+  socket.on("getGender",function(){
+    var genre = r.getGender();
+    io.sockets.emit("showGender",genre);
+  })
+
+  socket.on("getPlots",function(){
+    console.log("Entro en getplots");
+    var plots = r.getPlots();
+    console.log(plots);
+    io.sockets.emit("showPlots",plots);
+  });
+
+  socket.on("getDescription",function(index){
+    io.sockets.emit("showDescription" , r.descriptions_plots[index]);
+  })
+
+  socket.on("showSelectedGender" , function(){
+    io.sockets.emit("showSelectedGender");
+
+  })
 
 });
 
