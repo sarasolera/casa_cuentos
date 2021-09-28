@@ -6,6 +6,11 @@ body {
   width:1290px;
   background-size: 100%;
   margin: 0px !important;
+  font-family:Gluten;
+  font-weight:bold;
+  background-image: url("assets/images/fondo_pantalla.jpg");
+  background-size: 100% 100%;
+  
 }
 /*Página de login*/
 #fondo {
@@ -17,11 +22,11 @@ body {
   background-color: rgba(243, 173, 69, 0.897);
   border: 3px solid rgb(97, 64, 21);
   border-radius: 10px;
-  padding: 10px;
+  padding-top: 40px;
   left: 25%;
   width: 50%;
-  font-family: Anton;
-  font-size: 35px;
+  height:75px;
+  font-size: 40px;
   color: black;
   position: relative;
   bottom: 600px;
@@ -30,7 +35,7 @@ body {
 
 #titulo_form {
   margin-top: 1px;
-  font-size: 20px;
+
 }
 
 #new_room {
@@ -41,7 +46,7 @@ body {
   width: 20%;
   position: relative;
   left: 38%;
-  bottom: 500px;
+  bottom: 550px;
   text-align: center;
 }
 
@@ -51,36 +56,32 @@ body {
   border-radius: 4px;
   border: 2px solid rgb(0, 0, 0);
   color: white;
+  width:85px;
 }
 
 #new_room p {
   margin: 3px;
-  font-family: Anton;
   color: black;
+  font-size: 25px;
 }
 #new_room input {
   margin: 10px;
 }
 
-/*Pagina principal del juego*/
-#principal {
-  background-image: url("/assets/images/principal.jpg");
-  background-size: 100% 100%;
-  
-}
-
 #bloque_principal {
   height: 90%;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 18% 62% 20%;
 }
 
 #titulo_prin {
-  background-color: rgba(6, 38, 68, 0.719);
+  /*background-color: rgba(6, 38, 68, 0.719);*/
+  background-color:rgba(255, 197, 122, 0.897);
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 50px;
   margin: 0px;
+  padding:5px;
 }
 
 #mapa {
@@ -96,14 +97,14 @@ body {
 }
 #bloque_recorrido {
   text-align: center;
-  margin-right: 10px;
+  margin-right: 5px;
   height: 98%;
-  background-color: rgba(218, 168, 93, 0.712);
+  background-color: rgb(255, 186, 83);
 }
 
 #bloque_jugadores {
   text-align: center;
-  margin-left: 10px;
+  margin-left: 5px;
   height: 98%;
   background-color: rgba(218, 168, 93, 0.712);
 }
@@ -130,19 +131,17 @@ body {
   margin: 2px;
   background-color: rgb(248, 208, 121);
   font-size: 13px;
-  font-family: fantasy;
 }
 
 
 /* Añadiendo estilo de la fase 1 */
 #principal {
-  background-image: url("/assets/images/principal.jpg");
+ /* background-image: url("/assets/images/principal.jpg");*/
   background-size: 100% 100%;
   height: 100%;
 }
 
 #bloque_fase {
-  background-image: url("/assets/images/fase_uno.jpg");
   background-size: 100% 100%;
   height: 100%;
   display: grid;
@@ -158,15 +157,17 @@ body {
 #texto_cap {
   position: absolute;
   top: 25%;
-  left: 12%;
+  left: 9%;
   width: 80%;
+  font-size:14px;
 }
 
 /*Diseño del bocadillo*/
 .bocadillo-redondo {
   position: relative;
-  height: 275px;
-  width: 375px;
+  left:25px;
+  height: 265px;
+  width: 365px;
   background: rgba(214, 231, 117, 0.945);
   border-radius: 50%;
   box-shadow: 1px 12px 33px rgba(56, 73, 17, 0.692);
@@ -189,6 +190,15 @@ body {
   width: 100%;
 }
 
+/*Bocadillo cuadrado*/
+.bocadillo-cuadrado {
+  position: relative;
+  margin:2px;
+  height: 275px;
+  width: 375px;
+  background: rgba(214, 231, 117, 0.945);
+  box-shadow: 1px 12px 33px rgba(56, 73, 17, 0.692);
+}
 /*Bloque con las cartas*/
 
 #b_paisaje {
@@ -200,10 +210,22 @@ body {
   border-radius: 50%;
 }
 
+/*Botón género y tramas*/
+#b_genero{
+  position: relative;
+  top: 30%;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 158, 13);
+  border-radius: 50%;
+}
+
 /*Bloque con las cartas*/
 
 #cartas {
-  height: 570px;
+  height: 70%;
+  margin:10px;
+  padding:10px;
   display: grid;
   grid-template-rows: 20% 25% 25%;
   background-color: rgba(0, 0, 0, 0.644);
@@ -229,9 +251,11 @@ body {
 
 /*BLOQUE COMENZAR*/
 #bloque_comenzar {
-  background-image: url("/assets/images/fondo_start_game.jpg");
+  /*background-image: url("/assets/images/fondo_start_game.jpg");*/
+  background-image: url("/assets/images/fondo_pantalla.jpg");
   background-size: cover;
   height: 98%;
+  margin-right: 10px;
 }
 
 #bloque_tablero{
@@ -284,7 +308,6 @@ body {
 #form_start_game {
   position: relative;
   text-align: center;
-  font-family: Anton;
   left: 20%;
   top: 15%;
   width: 55%;
@@ -316,4 +339,72 @@ body {
 
 #carta_recorrido {
   width: 85px;
+}
+
+
+/*Para mostrar los generos */
+#bloque_genero{
+  margin-top:50px;
+  width: 225px;
+  height: 75px;
+  -moz-border-radius: 0 50% / 0 100%;
+  -webkit-border-radius: 0 50% / 0 100%;
+  border-radius: 0 50% / 0 100%;
+  background: #eeb07e;
+  border: 3px solid #555;
+  margin-left:60px;
+  padding-top:30px;
+}
+#bloque_genero p {
+  margin:0px;
+}
+
+#nombre_genero{
+  font-size:20px;
+}
+.tramas {
+  width: 0px;
+  height: 90px;
+  border-left: 55px solid #eba66d;
+  border-right: 70px solid #eba66d;
+  border-bottom: 35px solid transparent;
+}
+
+#bloque_tramas{
+  display:flex;
+  margin-top:25px;
+}
+
+.tramas{
+  margin:10px;
+}
+.tramas p{
+  position: relative;
+  right: 45px;
+  height: 10px;
+}
+.tramas button{
+  background-color:rgb(143, 173, 96);
+  position:relative;
+  right: 30px;
+  border-radius: 10px;
+}
+
+#descripcion{
+  padding:10px;
+  margin-left: 5px;
+  background-color: #eba66d;
+}
+
+#continuar{
+  width: 90px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.estrella{
+  width:135px;
+  position: relative;
+  left:-7px;
+
 }
