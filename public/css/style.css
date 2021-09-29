@@ -363,6 +363,7 @@ body {
   font-size:20px;
 }
 .tramas {
+  margin-top:10px;
   width: 0px;
   height: 90px;
   border-left: 55px solid #eba66d;

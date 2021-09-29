@@ -26,6 +26,7 @@ class Room {
     this.title_plots = []; 
 
     this.descriptions_plots = [];
+    this.plots_showed = false;
   }
 
   /**
@@ -83,26 +84,33 @@ class Room {
   }
 
   getPlots(){
-    //Leemos los ficheros
-    var plots = readFile('master-plots.txt')
-    const myPlots = plots.split("\n");
-    var array_num = [];
-    var selectedPlots= [];
-    var i = 0;
-    var components= [];
-    this.title_plots = [];
-    this.descriptions_plots = [];
-    while(i<3){
-        var num_ran = Math.floor(Math.random() * myPlots.length);
-        if(!array_num.includes(num_ran)){
-          array_num.push(num_ran);
-          components = myPlots[num_ran].split('=>');
-          this.title_plots.push(components[0]);
-          this.descriptions_plots.push(components[1]);
-          i+=1;
-        }
+    if(!this.plots_showed){
+      //Leemos los ficheros
+      var plots = readFile('master-plots.txt')
+      const myPlots = plots.split("\n");
+      var array_num = [];
+      var selectedPlots= [];
+      var i = 0;
+      var components= [];
+      this.title_plots = [];
+      this.descriptions_plots = [];
+      while(i<3){
+          var num_ran = Math.floor(Math.random() * myPlots.length);
+          if(!array_num.includes(num_ran)){
+            array_num.push(num_ran);
+            components = myPlots[num_ran].split('=>');
+            this.title_plots.push(components[0]);
+            this.descriptions_plots.push(components[1]);
+            i+=1;
+          }
+      }
+      this.plots_showed = true;
+      return this.title_plots;
     }
-    return this.title_plots;
+    else{
+
+    }
+    
   }
 
 }
