@@ -1,28 +1,19 @@
-<div id="bloque_central">
-    <div id="bloque_fase" style="background-image: url('/assets/images/fase_uno.jpeg');">   
-        
-        <div id="trama_genero">
-            <button id="b_genero" onclick="getGender()"> Genero y tramas </button>
-            <div id="bloque_genero" class="hidden">  
-                
-
-            
-            </div>
-            
-        </div>   
-        <div class="bocadillo-redondo">
-            <h3 class="titulo_cap"> Capítulo 2.
-                Trama vs Género </h3>
-                    <p id="texto_cap"> Cuando estamos viendo una pelicula, suele ser fácil identificar el género al que pertenece, si nos ha hecho gracia, 
-                        nos ha producido tristeza o incluso miedo. Es algo fundamental para contar una historia con fundamento, saber a que género pertenece.
-                        También es importante diferenciarlo de una trama, que normalmente es algo que sucede. En este capitulo vais a conocer el género de la historia 
-                        y algunas substramas que debereís intercalar. SI lo conseguis el moderador dará su visto bueno a tramas y género.
-                        Vamos a ver si habeis tenido suerte....
-                    </p>
-                <img id="ayudante" src="assets/images/ayudante.png" width="50%" >
-        </div>
-
+<div id="bloque_fase" style="background-image: url('assets/images/libro_op.png');">
+    <div id="genero">
+        <button class="boton_genero" id="b_genero" onclick="getGender()"> Obtener genero</button>
+        <div id="bloque_genero" class="hidden"></div>
+        <button class="boton_genero hidden" id="b_trama" onclick="getPlots()"> Obtener tramas </button>
+        <div id="bloque_trama" class="hidden"></div>
     </div>
+    <div id="bloque_intro_2">
+        <div class="bocadillo-redondo">
+            <h4 id="titulo_cap_dos" class="titulo_cap"> Fase 2.
+                Género & Tramas </h4>
+            <p class="texto_cap" id="texto_cap_dos"> Como en cualquier historia, para que tenga sentido necesita tener un genero y varias tramas a las que dedicarse.
+                Ahora vamos a obtener el género principal y 3 tramas.
+            </p>
+        </div>
+        <img id="ayudante" src="assets/images/ayudante.png" width="50%">    
+    </div>
+   
 </div>
-
-

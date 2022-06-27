@@ -1,0 +1,102 @@
+<div id="bloque_fase" style="background-image: url('assets/images/libro_op.png');">
+
+    <!--Página uno -->
+    <div class="etapa" id="personaje">
+        <!--Personajes-->
+        <h2>PERSONAJE</h2>
+
+    </div>
+
+    <div class="etapa" id="paisaje">
+        <!--Paisaje -->
+        <h2>PAISAJE</h2>
+    </div>
+
+
+    <div class="etapa hidden" id="trama">
+        <!--trama -->
+        <h2>TRAMA</h2>
+        <div id="trama-mision">
+
+        </div>
+
+        <div id="crono-mision" class="crono hidden">
+            <div id="reloj" class="reloj">01:00</div>
+            <div class="buttons flex-element">
+                <div class="parar" id="button-stop" onclick="restartCrono()"></div>
+                <div class="play paused" id="button_start" onclick="startCrono()"></div>
+            </div>
+        </div>
+        <div id="seconds-sphere" class="seconds-sphere"></div>
+    </div>
+
+    <div class="etapa hidden" id="objeto">
+        <!--Paisaje -->
+        <h2>OBJETO SORPRESA</h2>
+    </div>
+
+    <!--<button id="finEtapa" class="hidden boton_continuar" type="button" onclick=vote(3,4)> Cerrar Etapa...</button>-->
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" id="btn_modal" class="btn btn-primary hidden" data-bs-toggle="modal"
+    data-bs-target="#staticBackdrop">
+    Cargar etapa 1
+</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">ETAPA 1. LA HISTORIA COMIENZA...</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ES EL MOMENTO DE PRESENTAR A NUESTRO PROTAGONISTA, RECORDAD QUE TENEIS QUE SITUARLO EN LA
+                CARTA PAÍSAJE SELECCIONADA EN LA PRIMERA ETAPA RECURSO.
+                ¡AHORA SI! ELEGID UN PERSONAJE Y DESCRIBIDLO, ES OBLIGATORIO USAR SU CARACTERISTICA
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="boton_cerrar" class="btn btn-secondary hidden"
+                    data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="getDataStage(1)">Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type=button id='btn_mision' class='btn btn-primary hidden' data-bs-toggle='modal'
+    data-bs-target="#staticBackdropMision"></button>
+
+<div class="modal fade" id="staticBackdropMision" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="momentoMision">MOMENTO MISION</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ES EL MOMENTO DE PRESENTAR A NUESTRO PROTAGONISTA, RECORDAD QUE TENEIS QUE SITUARLO EN LA
+                CARTA PAÍSAJE SELECCIONADA EN LA PRIMERA ETAPA RECURSO.
+                ¡AHORA SI! ELEGID UN PERSONAJE Y DESCRIBIDLO, ES OBLIGATORIO USAR SU CARACTERISTICA
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="boton_cerrarMision" class="btn btn-secondary hidden"
+                    data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick='getDataMisionStage(1)'>Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+  console.log("Entro en trigger");
+  console.log(jQuery("#btn_modal"))
+  $("#btn_modal").click();
+</script>
+

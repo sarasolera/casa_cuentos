@@ -1,0 +1,766 @@
+2022-01-23T19:41:20.915181207 0.022755s notice: Recursively removing directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data/tmp
+2022-01-23T19:41:20.918753214 0.026329s notice: Initializing directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-01-23T19:41:20.918813149 0.026387s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data' did not already exist or is empty.)
+2022-01-23T19:41:20.918837937 0.026412s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-01-23T19:41:20.920079818 0.027654s notice: Running on Linux 5.11.0-43-generic x86_64
+2022-01-23T19:41:20.920106040 0.027680s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-01-23T19:41:20.958312264 0.065887s info: Automatically using cache size of 1476 MB
+2022-01-23T19:41:20.964768514 0.072343s error: TCP socket creation failed for port 29015: Address already in use.
+2022-01-23T19:41:44.749833326 0.021039s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-01-23T19:41:44.751125405 0.022329s notice: Running on Linux 5.11.0-43-generic x86_64
+2022-01-23T19:41:44.751150254 0.022354s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-01-23T19:41:44.759827809 0.031032s info: Automatically using cache size of 1475 MB
+2022-01-23T19:41:44.760480453 0.031684s error: TCP socket creation failed for port 29015: Address already in use.
+2022-03-07T20:03:11.571041474 0.044162s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-07T20:03:11.574377486 0.047493s notice: Running on Linux 5.13.0-30-generic x86_64
+2022-03-07T20:03:11.574492450 0.047607s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-07T20:03:11.586102076 0.059217s info: Automatically using cache size of 1152 MB
+2022-03-07T20:03:11.587831150 0.060946s error: TCP socket creation failed for port 29015: Address already in use.
+2022-03-07T20:03:57.515935493 0.028853s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-07T20:03:57.517677219 0.030593s notice: Running on Linux 5.13.0-30-generic x86_64
+2022-03-07T20:03:57.517785724 0.030701s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-07T20:03:57.528312049 0.041227s info: Automatically using cache size of 1124 MB
+2022-03-07T20:03:57.529005522 0.041920s error: TCP socket creation failed for port 29015: Address already in use.
+2022-03-07T20:05:17.747947221 0.041731s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-07T20:05:17.750054609 0.043835s notice: Running on Linux 5.13.0-30-generic x86_64
+2022-03-07T20:05:17.750111371 0.043892s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-07T20:05:17.761920877 0.055701s info: Automatically using cache size of 1154 MB
+2022-03-07T20:05:17.762846608 0.056627s error: TCP socket creation failed for port 29015: Address already in use.
+2022-03-07T20:05:51.484086666 0.035033s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-07T20:05:51.488050305 0.038988s notice: Running on Linux 5.13.0-30-generic x86_64
+2022-03-07T20:05:51.488125566 0.039062s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-07T20:05:51.504381376 0.055319s info: Automatically using cache size of 1118 MB
+2022-03-07T20:05:51.505651815 0.056588s error: TCP socket creation failed for port 29015: Address already in use.
+2022-03-07T20:06:42.460707135 0.029431s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-07T20:06:42.462451839 0.031174s notice: Running on Linux 5.13.0-30-generic x86_64
+2022-03-07T20:06:42.462496230 0.031218s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-07T20:06:42.473320045 0.042043s info: Automatically using cache size of 1082 MB
+2022-03-07T20:06:42.480251745 0.048973s notice: Listening for intracluster connections on port 29015
+2022-03-07T20:06:42.482867488 0.051589s notice: Listening for client driver connections on port 28015
+2022-03-07T20:06:42.482935462 0.051657s notice: Listening for administrative HTTP connections on port 8080
+2022-03-07T20:06:42.482943226 0.051664s notice: Listening on cluster addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:06:42.482950648 0.051672s notice: Listening on driver addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:06:42.482958949 0.051680s notice: Listening on http addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:06:42.482967048 0.051688s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-03-07T20:10:22.147939161 219.716661s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: Starting a new Raft election for term 1.
+2022-03-07T20:10:22.148545798 219.717267s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: Added replica on this server.
+2022-03-07T20:10:22.151418772 219.720141s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: This server is Raft leader for term 1. Latest log index is 0.
+2022-03-07T20:33:03.188804083 1580.757526s warn: Received invalid clustering header from [::ffff:127.0.0.1]:37980, closing connection -- something might be connecting to the wrong port.
+2022-03-07T20:33:29.483922309 1607.052645s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2022-03-07T20:33:29.484224012 1607.052946s notice: Shutting down client connections...
+2022-03-07T20:33:29.484805658 1607.053528s notice: All client connections closed.
+2022-03-07T20:33:29.484826753 1607.053548s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2022-03-07T20:33:29.499293504 1607.068016s notice: Storage engine shut down.
+2022-03-07T20:33:53.405580230 0.013453s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-07T20:33:53.407321838 0.015193s notice: Running on Linux 5.13.0-30-generic x86_64
+2022-03-07T20:33:53.407355275 0.015226s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-07T20:33:53.416503558 0.024374s info: Automatically using cache size of 1110 MB
+2022-03-07T20:33:53.420411483 0.028283s notice: Listening for intracluster connections on port 29015
+2022-03-07T20:33:53.430583536 0.038454s notice: Listening for client driver connections on port 28015
+2022-03-07T20:33:53.430744746 0.038615s notice: Listening for administrative HTTP connections on port 8080
+2022-03-07T20:33:53.430748064 0.038619s notice: Listening on cluster addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:33:53.430774994 0.038646s notice: Listening on driver addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:33:53.430780423 0.038651s notice: Listening on http addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:33:53.430790232 0.038661s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-03-07T20:33:55.097457394 1.705329s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: Starting a new Raft election for term 2.
+2022-03-07T20:33:55.106786256 1.714658s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: This server is Raft leader for term 2. Latest log index is 2.
+2022-03-07T20:34:45.486960897 52.094832s warn: Received invalid clustering header from [::ffff:127.0.0.1]:37984, closing connection -- something might be connecting to the wrong port.
+2022-03-07T20:38:33.234086686 279.841958s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2022-03-07T20:38:33.234258126 279.842129s notice: Shutting down client connections...
+2022-03-07T20:38:33.234514859 279.842386s notice: All client connections closed.
+2022-03-07T20:38:33.234525503 279.842396s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2022-03-07T20:38:33.238962168 279.846833s notice: Storage engine shut down.
+2022-03-07T20:38:36.080586896 0.018840s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-07T20:38:36.081912319 0.020163s notice: Running on Linux 5.13.0-30-generic x86_64
+2022-03-07T20:38:36.081944884 0.020195s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-07T20:38:36.090587834 0.028838s info: Automatically using cache size of 1152 MB
+2022-03-07T20:38:36.094669675 0.032920s notice: Listening for intracluster connections on port 29015
+2022-03-07T20:38:36.107202190 0.045453s notice: Listening for client driver connections on port 28015
+2022-03-07T20:38:36.107351081 0.045602s notice: Listening for administrative HTTP connections on port 8080
+2022-03-07T20:38:36.107356226 0.045607s notice: Listening on cluster addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:38:36.107369173 0.045620s notice: Listening on driver addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:38:36.107371731 0.045622s notice: Listening on http addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:38:36.107373691 0.045624s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-03-07T20:38:37.475825771 1.414077s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: Starting a new Raft election for term 3.
+2022-03-07T20:38:37.484540830 1.422792s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: This server is Raft leader for term 3. Latest log index is 5.
+2022-03-07T20:53:30.662184695 894.600437s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2022-03-07T20:53:30.662566703 894.600818s notice: Shutting down client connections...
+2022-03-07T20:53:30.662894844 894.601146s notice: All client connections closed.
+2022-03-07T20:53:30.662917869 894.601168s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2022-03-07T20:53:30.670081796 894.608333s notice: Storage engine shut down.
+2022-03-07T20:53:58.868395576 0.017427s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-07T20:53:58.869787648 0.018817s notice: Running on Linux 5.13.0-30-generic x86_64
+2022-03-07T20:53:58.869821013 0.018850s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-07T20:53:58.879452418 0.028482s info: Automatically using cache size of 1075 MB
+2022-03-07T20:53:58.883252573 0.032282s notice: Listening for intracluster connections on port 29015
+2022-03-07T20:53:58.893529607 0.042559s notice: Listening for client driver connections on port 28015
+2022-03-07T20:53:58.893590254 0.042620s notice: Listening for administrative HTTP connections on port 8080
+2022-03-07T20:53:58.893596664 0.042626s notice: Listening on cluster addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:53:58.893604234 0.042634s notice: Listening on driver addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:53:58.893613052 0.042642s notice: Listening on http addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:53:58.893622366 0.042652s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-03-07T20:54:00.462559573 1.611590s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: Starting a new Raft election for term 4.
+2022-03-07T20:54:00.471818303 1.620848s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: This server is Raft leader for term 4. Latest log index is 8.
+2022-03-07T20:56:43.705065348 164.854095s info: Table ceecb610-4b84-4593-8692-8721c0210be7: Starting a new Raft election for term 1.
+2022-03-07T20:56:43.705415945 164.854446s info: Table ceecb610-4b84-4593-8692-8721c0210be7: Added replica on this server.
+2022-03-07T20:56:43.709868186 164.858898s info: Table ceecb610-4b84-4593-8692-8721c0210be7: This server is Raft leader for term 1. Latest log index is 0.
+2022-03-07T20:56:53.706602185 174.855632s info: Table cb0711d1-a7d0-49e6-8be9-5572f8f1e5b7: Starting a new Raft election for term 1.
+2022-03-07T20:56:53.706739505 174.855769s info: Table cb0711d1-a7d0-49e6-8be9-5572f8f1e5b7: Added replica on this server.
+2022-03-07T20:56:53.710186822 174.859216s info: Table cb0711d1-a7d0-49e6-8be9-5572f8f1e5b7: This server is Raft leader for term 1. Latest log index is 0.
+2022-03-07T20:58:31.842051113 272.991082s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2022-03-07T20:58:31.842409678 272.991440s notice: Shutting down client connections...
+2022-03-07T20:58:31.843131814 272.992162s notice: All client connections closed.
+2022-03-07T20:58:31.843155151 272.992185s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2022-03-07T20:58:31.866729047 273.015760s notice: Storage engine shut down.
+2022-03-07T20:58:33.813805649 0.023450s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-07T20:58:33.817023621 0.026663s notice: Running on Linux 5.13.0-30-generic x86_64
+2022-03-07T20:58:33.817108692 0.026747s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-07T20:58:33.829556110 0.039195s info: Automatically using cache size of 1041 MB
+2022-03-07T20:58:33.833857325 0.043496s notice: Listening for intracluster connections on port 29015
+2022-03-07T20:58:33.860131567 0.069770s notice: Listening for client driver connections on port 28015
+2022-03-07T20:58:33.860222413 0.069861s notice: Listening for administrative HTTP connections on port 8080
+2022-03-07T20:58:33.860235261 0.069874s notice: Listening on cluster addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:58:33.860239054 0.069877s notice: Listening on driver addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:58:33.860242086 0.069880s notice: Listening on http addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T20:58:33.860246287 0.069885s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-03-07T20:58:35.165468554 1.375107s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: Starting a new Raft election for term 5.
+2022-03-07T20:58:35.168718965 1.378358s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: This server is Raft leader for term 5. Latest log index is 11.
+2022-03-07T20:58:35.409958773 1.619598s info: Table ceecb610-4b84-4593-8692-8721c0210be7: Starting a new Raft election for term 2.
+2022-03-07T20:58:35.433592409 1.643234s info: Table ceecb610-4b84-4593-8692-8721c0210be7: This server is Raft leader for term 2. Latest log index is 2.
+2022-03-07T20:58:35.582946702 1.792586s info: Table cb0711d1-a7d0-49e6-8be9-5572f8f1e5b7: Starting a new Raft election for term 2.
+2022-03-07T20:58:35.592287658 1.801927s info: Table cb0711d1-a7d0-49e6-8be9-5572f8f1e5b7: This server is Raft leader for term 2. Latest log index is 2.
+2022-03-07T21:00:26.203610512 112.413251s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2022-03-07T21:00:26.203907197 112.413546s notice: Shutting down client connections...
+2022-03-07T21:00:26.204266482 112.413906s notice: All client connections closed.
+2022-03-07T21:00:26.204283997 112.413922s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2022-03-07T21:00:26.241810887 112.451451s notice: Storage engine shut down.
+2022-03-07T21:00:28.446803962 0.045499s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-07T21:00:28.449549895 0.048240s notice: Running on Linux 5.13.0-30-generic x86_64
+2022-03-07T21:00:28.449621234 0.048311s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-07T21:00:28.466196525 0.064886s info: Automatically using cache size of 1015 MB
+2022-03-07T21:00:28.479541217 0.078231s notice: Listening for intracluster connections on port 29015
+2022-03-07T21:00:28.541500270 0.140191s notice: Listening for client driver connections on port 28015
+2022-03-07T21:00:28.541607612 0.140298s notice: Listening for administrative HTTP connections on port 8080
+2022-03-07T21:00:28.541613646 0.140303s notice: Listening on cluster addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T21:00:28.541746730 0.140437s notice: Listening on driver addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T21:00:28.541761171 0.140451s notice: Listening on http addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-07T21:00:28.541767433 0.140457s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-03-07T21:00:29.590855759 1.189546s info: Table cb0711d1-a7d0-49e6-8be9-5572f8f1e5b7: Starting a new Raft election for term 3.
+2022-03-07T21:00:29.598524847 1.197215s info: Table cb0711d1-a7d0-49e6-8be9-5572f8f1e5b7: This server is Raft leader for term 3. Latest log index is 5.
+2022-03-07T21:00:29.782002676 1.380693s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: Starting a new Raft election for term 6.
+2022-03-07T21:00:29.786585090 1.385276s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: This server is Raft leader for term 6. Latest log index is 14.
+2022-03-07T21:00:30.227742884 1.826433s info: Table ceecb610-4b84-4593-8692-8721c0210be7: Starting a new Raft election for term 3.
+2022-03-07T21:00:30.230539323 1.829229s info: Table ceecb610-4b84-4593-8692-8721c0210be7: This server is Raft leader for term 3. Latest log index is 5.
+2022-03-08T21:02:15.939954873 7964.912252s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2022-03-08T21:02:15.940497339 7964.912794s notice: Shutting down client connections...
+2022-03-08T21:02:15.947338518 7964.919636s notice: All client connections closed.
+2022-03-08T21:02:15.947393428 7964.919690s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2022-03-08T21:02:15.976260825 7964.948558s notice: Storage engine shut down.
+2022-03-08T21:02:28.007067018 0.016621s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-08T21:02:28.008692905 0.018244s notice: Running on Linux 5.13.0-30-generic x86_64
+2022-03-08T21:02:28.008732626 0.018283s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-08T21:02:28.019292131 0.028843s info: Automatically using cache size of 975 MB
+2022-03-08T21:02:28.025831790 0.035383s notice: Listening for intracluster connections on port 29015
+2022-03-08T21:02:28.058010502 0.067562s notice: Listening for client driver connections on port 28015
+2022-03-08T21:02:28.058141414 0.067692s notice: Listening for administrative HTTP connections on port 8080
+2022-03-08T21:02:28.058145934 0.067697s notice: Listening on cluster addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-08T21:02:28.058152370 0.067703s notice: Listening on driver addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-08T21:02:28.058168324 0.067719s notice: Listening on http addresses: 127.0.0.1, 172.17.0.1, 172.18.0.1, 172.19.0.1, 172.20.0.1, 172.21.0.1, 172.22.0.1, 172.23.0.1, 172.24.0.1, 172.25.0.1, 172.27.0.1, 192.168.1.41, ::1, fe80::6bf9:bee8:ca53:be0f%3
+2022-03-08T21:02:28.058170904 0.067722s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-03-08T21:02:29.804043219 1.813595s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: Starting a new Raft election for term 7.
+2022-03-08T21:02:29.810327229 1.819878s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: This server is Raft leader for term 7. Latest log index is 17.
+2022-03-08T21:02:29.933284207 1.942836s info: Table cb0711d1-a7d0-49e6-8be9-5572f8f1e5b7: Starting a new Raft election for term 4.
+2022-03-08T21:02:29.939135374 1.948687s info: Table cb0711d1-a7d0-49e6-8be9-5572f8f1e5b7: This server is Raft leader for term 4. Latest log index is 8.
+2022-03-08T21:02:29.951381576 1.960933s info: Table ceecb610-4b84-4593-8692-8721c0210be7: Starting a new Raft election for term 4.
+2022-03-08T21:02:29.955951828 1.965503s info: Table ceecb610-4b84-4593-8692-8721c0210be7: This server is Raft leader for term 4. Latest log index is 8.
+2022-03-08T21:13:32.571072360 664.580624s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: Configuration is changing.
+2022-03-08T21:13:38.232295846 670.241847s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: Configuration is changing.
+2022-03-08T21:21:51.933685486 1164.442701s notice: Removing file /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data/454ea3ee-63c2-4c0e-bd28-45545f477792
+2022-03-08T21:21:51.933708569 1164.442723s info: Table 454ea3ee-63c2-4c0e-bd28-45545f477792: Deleted the table.
+2022-03-08T21:21:51.949588590 1164.458604s notice: Removing file /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data/cb0711d1-a7d0-49e6-8be9-5572f8f1e5b7
+2022-03-08T21:21:51.949618467 1164.458633s info: Table cb0711d1-a7d0-49e6-8be9-5572f8f1e5b7: Deleted the table.
+2022-03-08T21:21:51.968742062 1164.477758s notice: Removing file /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data/ceecb610-4b84-4593-8692-8721c0210be7
+2022-03-08T21:21:51.968779049 1164.477794s info: Table ceecb610-4b84-4593-8692-8721c0210be7: Deleted the table.
+2022-03-08T21:22:11.892145829 1184.401161s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Added replica on this server.
+2022-03-08T21:22:11.892180914 1184.401195s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 1.
+2022-03-08T21:22:11.895666534 1184.404681s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 1. Latest log index is 0.
+2022-03-08T21:22:30.892950536 1203.401965s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Added replica on this server.
+2022-03-08T21:22:30.893013482 1203.402028s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 1.
+2022-03-08T21:22:30.897137228 1203.406152s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 1. Latest log index is 0.
+2022-03-08T21:22:36.142688077 1208.651703s info: Table 82aec8e5-b903-4fe6-af58-7081485ca2d9: Starting a new Raft election for term 1.
+2022-03-08T21:22:36.143007121 1208.652022s info: Table 82aec8e5-b903-4fe6-af58-7081485ca2d9: Added replica on this server.
+2022-03-08T21:22:36.148126194 1208.657141s info: Table 82aec8e5-b903-4fe6-af58-7081485ca2d9: This server is Raft leader for term 1. Latest log index is 0.
+2022-03-08T21:23:05.466567842 1237.975583s notice: Removing file /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data/82aec8e5-b903-4fe6-af58-7081485ca2d9
+2022-03-08T21:23:05.466595533 1237.975610s info: Table 82aec8e5-b903-4fe6-af58-7081485ca2d9: Deleted the table.
+2022-03-08T21:23:19.000726049 1251.509741s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 1.
+2022-03-08T21:23:19.001026979 1251.510041s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Added replica on this server.
+2022-03-08T21:23:19.003444605 1251.512459s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 1. Latest log index is 0.
+2022-03-22T21:43:46.657001875 0.019994s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-22T21:43:46.659965301 0.022955s notice: Running on Linux 5.13.0-35-generic x86_64
+2022-03-22T21:43:46.660009607 0.022998s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-22T21:43:46.674536010 0.037525s info: Automatically using cache size of 1084 MB
+2022-03-22T21:43:46.676709533 0.039698s error: TCP socket creation failed for port 29015: Address already in use.
+2022-03-22T21:44:04.313554732 0.025958s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-22T21:44:04.315582539 0.027983s notice: Running on Linux 5.13.0-35-generic x86_64
+2022-03-22T21:44:04.315626085 0.028025s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-22T21:44:04.345570465 0.057973s info: Automatically using cache size of 1087 MB
+2022-03-22T21:44:04.360879213 0.073280s error: TCP socket creation failed for port 29015: Address already in use.
+2022-03-22T21:48:15.001026832 0.017766s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-22T21:48:15.002762372 0.019500s notice: Running on Linux 5.13.0-35-generic x86_64
+2022-03-22T21:48:15.002806384 0.019543s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-22T21:48:15.020118678 0.036855s info: Automatically using cache size of 1069 MB
+2022-03-22T21:48:15.026414208 0.043151s error: TCP socket creation failed for port 29015: Address already in use.
+2022-03-22T21:49:43.424667485 0.021995s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-03-22T21:49:43.429845689 0.027170s notice: Running on Linux 5.13.0-35-generic x86_64
+2022-03-22T21:49:43.429908070 0.027231s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-03-22T21:49:43.444149101 0.041473s info: Automatically using cache size of 1081 MB
+2022-03-22T21:49:43.453167695 0.050491s notice: Listening for intracluster connections on port 29015
+2022-03-22T21:49:43.510694972 0.108019s notice: Listening for client driver connections on port 28015
+2022-03-22T21:49:43.510818792 0.108142s notice: Listening for administrative HTTP connections on port 8080
+2022-03-22T21:49:43.510819650 0.108143s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-03-22T21:49:43.510824228 0.108147s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-03-22T21:49:43.510827167 0.108150s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-03-22T21:49:43.510829979 0.108153s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-03-22T21:49:43.510833164 0.108156s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-03-22T21:49:44.560346156 1.157670s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 2.
+2022-03-22T21:49:44.563399400 1.160723s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 2. Latest log index is 2.
+2022-03-22T21:49:44.821778941 1.419103s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 2.
+2022-03-22T21:49:44.826228963 1.423553s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 2. Latest log index is 2.
+2022-03-22T21:49:45.037530242 1.634854s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 2.
+2022-03-22T21:49:45.066522904 1.663847s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 2. Latest log index is 2.
+2022-04-03T16:33:22.790645242 0.014557s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-04-03T16:33:22.792206321 0.016116s notice: Running on Linux 5.13.0-39-generic x86_64
+2022-04-03T16:33:22.792243795 0.016153s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-04-03T16:33:22.816181748 0.040091s info: Automatically using cache size of 741 MB
+2022-04-03T16:33:22.817147990 0.041057s notice: Listening for intracluster connections on port 29015
+2022-04-03T16:33:22.862464352 0.086374s notice: Listening for client driver connections on port 28015
+2022-04-03T16:33:22.862544878 0.086454s notice: Listening for administrative HTTP connections on port 8080
+2022-04-03T16:33:22.862550015 0.086459s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-04-03T16:33:22.862554999 0.086464s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-04-03T16:33:22.862577673 0.086487s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-04-03T16:33:22.862582640 0.086492s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-04-03T16:33:22.862586490 0.086496s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-04-03T16:33:24.079470367 1.303380s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 3.
+2022-04-03T16:33:24.088216652 1.312127s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 3. Latest log index is 5.
+2022-04-03T16:33:24.124049319 1.347959s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 3.
+2022-04-03T16:33:24.128835436 1.352745s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 3. Latest log index is 5.
+2022-04-03T16:33:24.335895333 1.559805s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 3.
+2022-04-03T16:33:24.363776636 1.587686s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 3. Latest log index is 5.
+2022-04-03T16:34:27.424650530 64.648560s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Configuration is changing.
+2022-04-03T16:34:32.805555006 70.029464s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Configuration is changing.
+2022-04-04T17:23:23.019785127 89400.243695s warn: RethinkDB has been accessing a lot of swap memory in the past ten minutes. This may impact performace.
+2022-04-09T11:06:19.038962591 0.013285s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-04-09T11:06:19.041047954 0.015368s notice: Running on Linux 5.13.0-39-generic x86_64
+2022-04-09T11:06:19.041083939 0.015404s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-04-09T11:06:19.051276903 0.025597s info: Automatically using cache size of 690 MB
+2022-04-09T11:06:19.052318297 0.026638s error: TCP socket creation failed for port 29015: Address already in use.
+2022-04-09T11:08:23.396084570 0.019188s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-04-09T11:08:23.397406351 0.020504s notice: Running on Linux 5.13.0-39-generic x86_64
+2022-04-09T11:08:23.397440545 0.020538s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-04-09T11:08:23.408936400 0.032034s info: Automatically using cache size of 692 MB
+2022-04-09T11:08:23.409417445 0.032515s notice: Listening for intracluster connections on port 29015
+2022-04-09T11:08:23.441505745 0.064604s notice: Listening for client driver connections on port 28015
+2022-04-09T11:08:23.441631303 0.064729s notice: Listening for administrative HTTP connections on port 8080
+2022-04-09T11:08:23.441635056 0.064733s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-04-09T11:08:23.441638125 0.064736s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-04-09T11:08:23.441640811 0.064738s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-04-09T11:08:23.441646190 0.064744s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-04-09T11:08:23.441650655 0.064748s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-04-09T11:08:24.483789707 1.106888s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 4.
+2022-04-09T11:08:24.492825674 1.115924s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 4. Latest log index is 8.
+2022-04-09T11:08:24.745976309 1.369074s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 4.
+2022-04-09T11:08:24.750060570 1.373159s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 4. Latest log index is 8.
+2022-04-09T11:08:25.088546402 1.711645s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 4.
+2022-04-09T11:08:25.096306528 1.719405s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 4. Latest log index is 10.
+2022-04-14T13:19:30.490642874 0.013529s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-04-14T13:19:30.493859224 0.016744s notice: Running on Linux 5.13.0-39-generic x86_64
+2022-04-14T13:19:30.493923675 0.016808s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-04-14T13:19:30.508703312 0.031588s info: Automatically using cache size of 2009 MB
+2022-04-14T13:19:30.510742588 0.033628s error: TCP socket creation failed for port 29015: Address already in use.
+2022-04-14T13:20:53.952711323 0.047180s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-04-14T13:20:53.955851129 0.050319s notice: Running on Linux 5.13.0-39-generic x86_64
+2022-04-14T13:20:53.956113482 0.050580s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-04-14T13:20:53.992464004 0.086931s info: Automatically using cache size of 1244 MB
+2022-04-14T13:20:53.996288210 0.090755s notice: Listening for intracluster connections on port 29015
+2022-04-14T13:20:54.065667197 0.160134s notice: Listening for client driver connections on port 28015
+2022-04-14T13:20:54.065749180 0.160216s notice: Listening for administrative HTTP connections on port 8080
+2022-04-14T13:20:54.065753458 0.160220s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-04-14T13:20:54.065756029 0.160222s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-04-14T13:20:54.065758244 0.160225s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-04-14T13:20:54.065760739 0.160227s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-04-14T13:20:54.065762978 0.160229s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-04-14T13:20:55.115231990 1.209699s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 5.
+2022-04-14T13:20:55.128679324 1.223146s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 5.
+2022-04-14T13:20:55.132398753 1.226866s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 5. Latest log index is 13.
+2022-04-14T13:20:55.136676850 1.231144s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 5. Latest log index is 11.
+2022-04-14T13:20:55.938733080 2.033200s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 5.
+2022-04-14T13:20:55.948043624 2.042510s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 5. Latest log index is 11.
+2022-04-14T16:55:53.560080151 12899.654548s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2022-04-14T16:55:53.560352157 12899.654819s notice: Shutting down client connections...
+2022-04-14T16:55:53.561461230 12899.655929s notice: All client connections closed.
+2022-04-14T16:55:53.561478538 12899.655945s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2022-04-14T16:55:53.580439103 12899.674906s notice: Storage engine shut down.
+2022-04-14T16:55:59.389460316 0.028932s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-04-14T16:55:59.392243694 0.031714s notice: Running on Linux 5.13.0-39-generic x86_64
+2022-04-14T16:55:59.392294075 0.031763s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-04-14T16:55:59.405816979 0.045286s info: Automatically using cache size of 1105 MB
+2022-04-14T16:55:59.406577728 0.046047s notice: Listening for intracluster connections on port 29015
+2022-04-14T16:55:59.478482120 0.117952s notice: Listening for client driver connections on port 28015
+2022-04-14T16:55:59.478616762 0.118086s notice: Listening for administrative HTTP connections on port 8080
+2022-04-14T16:55:59.478642287 0.118111s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-04-14T16:55:59.478646304 0.118115s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-04-14T16:55:59.478649932 0.118119s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-04-14T16:55:59.478653967 0.118123s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-04-14T16:55:59.478658342 0.118127s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-04-14T16:56:00.769088968 1.408559s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 6.
+2022-04-14T16:56:00.776516728 1.415986s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 6. Latest log index is 16.
+2022-04-14T16:56:00.921859891 1.561329s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 6.
+2022-04-14T16:56:00.924845819 1.564315s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 6. Latest log index is 14.
+2022-04-14T16:56:01.061721982 1.701191s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 6.
+2022-04-14T16:56:01.064563185 1.704033s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 6. Latest log index is 14.
+2022-04-14T17:46:19.156190817 3019.795661s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2022-04-14T17:46:19.156559882 3019.796030s notice: Shutting down client connections...
+2022-04-14T17:46:19.157566913 3019.797037s notice: All client connections closed.
+2022-04-14T17:46:19.157600864 3019.797070s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2022-04-14T17:46:19.181429699 3019.820901s notice: Storage engine shut down.
+2022-04-14T17:46:23.051700875 0.018327s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-04-14T17:46:23.053207595 0.019831s notice: Running on Linux 5.13.0-39-generic x86_64
+2022-04-14T17:46:23.053249574 0.019873s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-04-14T17:46:23.063344350 0.029968s info: Automatically using cache size of 884 MB
+2022-04-14T17:46:23.063855808 0.030479s notice: Listening for intracluster connections on port 29015
+2022-04-14T17:46:23.108148271 0.074772s notice: Listening for client driver connections on port 28015
+2022-04-14T17:46:23.108211296 0.074835s notice: Listening for administrative HTTP connections on port 8080
+2022-04-14T17:46:23.108214576 0.074838s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-04-14T17:46:23.108217562 0.074841s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-04-14T17:46:23.108220471 0.074844s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-04-14T17:46:23.108223255 0.074847s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-04-14T17:46:23.108226150 0.074850s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-04-14T17:46:24.400539673 1.367164s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 7.
+2022-04-14T17:46:24.409154571 1.375779s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 7. Latest log index is 19.
+2022-04-14T17:46:24.515476589 1.482101s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 7.
+2022-04-14T17:46:24.521828251 1.488453s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 7. Latest log index is 17.
+2022-04-14T17:46:24.894059503 1.860684s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 7.
+2022-04-14T17:46:24.898597188 1.865222s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 7. Latest log index is 17.
+2022-05-01T11:55:42.391714713 0.021756s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-01T11:55:42.399443119 0.029474s notice: Running on Linux 5.13.0-40-generic x86_64
+2022-05-01T11:55:42.399683522 0.029713s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-01T11:55:42.423650242 0.053680s info: Automatically using cache size of 591 MB
+2022-05-01T11:55:42.424846847 0.054876s error: TCP socket creation failed for port 29015: Address already in use.
+2022-05-01T12:01:41.163656965 0.013989s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-01T12:01:41.165099773 0.015430s notice: Running on Linux 5.13.0-40-generic x86_64
+2022-05-01T12:01:41.165134724 0.015464s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-01T12:01:41.175324161 0.025654s info: Automatically using cache size of 649 MB
+2022-05-01T12:01:41.175972494 0.026302s notice: Listening for intracluster connections on port 29015
+2022-05-01T12:01:41.251331800 0.101661s notice: Listening for client driver connections on port 28015
+2022-05-01T12:01:41.251427476 0.101757s notice: Listening for administrative HTTP connections on port 8080
+2022-05-01T12:01:41.251431402 0.101761s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-05-01T12:01:41.251435068 0.101764s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-05-01T12:01:41.251438651 0.101768s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-05-01T12:01:41.251441770 0.101771s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-05-01T12:01:41.251456224 0.101786s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-05-01T12:01:42.267121777 1.117453s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 8.
+2022-05-01T12:01:42.276454637 1.126785s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 8. Latest log index is 22.
+2022-05-01T12:01:42.825307105 1.675637s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 8.
+2022-05-01T12:01:42.829236007 1.679566s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 8. Latest log index is 20.
+2022-05-01T12:01:42.852045190 1.702375s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 8.
+2022-05-01T12:01:42.854649852 1.704979s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 8. Latest log index is 20.
+2022-05-02T10:37:52.235067463 40625.327606s warn: RethinkDB has been accessing a lot of swap memory in the past ten minutes. This may impact performace.
+2022-05-14T15:38:53.568701426 0.021500s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-14T15:38:53.571450438 0.024248s notice: Running on Linux 5.13.0-40-generic x86_64
+2022-05-14T15:38:53.571550536 0.024347s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-14T15:38:53.586749446 0.039546s info: Automatically using cache size of 1301 MB
+2022-05-14T15:38:53.587375498 0.040172s error: TCP socket creation failed for port 29015: Address already in use.
+2022-05-14T15:40:35.471990374 0.025283s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-14T15:40:35.475547060 0.028832s notice: Running on Linux 5.13.0-40-generic x86_64
+2022-05-14T15:40:35.475630710 0.028915s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-14T15:40:35.490659897 0.043944s info: Automatically using cache size of 1309 MB
+2022-05-14T15:40:35.491440180 0.044724s notice: Listening for intracluster connections on port 29015
+2022-05-14T15:40:35.589488811 0.142773s notice: Listening for client driver connections on port 28015
+2022-05-14T15:40:35.589530135 0.142814s notice: Listening for administrative HTTP connections on port 8080
+2022-05-14T15:40:35.589533032 0.142817s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-05-14T15:40:35.589555062 0.142839s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-05-14T15:40:35.589560447 0.142844s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-05-14T15:40:35.589563075 0.142847s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-05-14T15:40:35.589565379 0.142849s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-05-14T15:40:36.666884041 1.220169s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 9.
+2022-05-14T15:40:36.675040451 1.228326s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 9. Latest log index is 23.
+2022-05-14T15:40:36.952399568 1.505685s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 9.
+2022-05-14T15:40:36.956891181 1.510176s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 9. Latest log index is 23.
+2022-05-14T15:40:37.282787482 1.836072s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 9.
+2022-05-14T15:40:37.287730764 1.841016s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 9. Latest log index is 25.
+2022-05-14T16:24:12.280204272 0.017648s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-14T16:24:12.281800740 0.019242s notice: Running on Linux 5.13.0-40-generic x86_64
+2022-05-14T16:24:12.281848198 0.019289s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-14T16:24:12.293781595 0.031222s info: Automatically using cache size of 850 MB
+2022-05-14T16:24:12.294957944 0.032399s notice: Listening for intracluster connections on port 29015
+2022-05-14T16:24:12.374538593 0.111979s notice: Listening for client driver connections on port 28015
+2022-05-14T16:24:12.374609903 0.112051s notice: Listening for administrative HTTP connections on port 8080
+2022-05-14T16:24:12.374632455 0.112073s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-05-14T16:24:12.374635893 0.112076s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-05-14T16:24:12.374639267 0.112080s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-05-14T16:24:12.374642439 0.112083s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-05-14T16:24:12.374645373 0.112086s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-05-14T16:24:13.538550431 1.275991s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 10.
+2022-05-14T16:24:13.544891234 1.282332s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 10. Latest log index is 28.
+2022-05-14T16:24:13.848523767 1.585966s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 10.
+2022-05-14T16:24:13.854013203 1.591455s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 10. Latest log index is 26.
+2022-05-14T16:24:13.872715297 1.610157s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 10.
+2022-05-14T16:24:13.876996658 1.614438s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 10. Latest log index is 26.
+2022-05-14T16:27:04.203331480 0.017787s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-14T16:27:04.204691193 0.019144s notice: Running on Linux 5.13.0-40-generic x86_64
+2022-05-14T16:27:04.204727109 0.019180s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-14T16:27:04.214620721 0.029074s info: Automatically using cache size of 816 MB
+2022-05-14T16:27:04.215108126 0.029561s notice: Listening for intracluster connections on port 29015
+2022-05-14T16:27:04.274406790 0.088860s notice: Listening for client driver connections on port 28015
+2022-05-14T16:27:04.274455697 0.088909s notice: Listening for administrative HTTP connections on port 8080
+2022-05-14T16:27:04.274456661 0.088910s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-05-14T16:27:04.274459790 0.088913s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-05-14T16:27:04.274460167 0.088913s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-05-14T16:27:04.274463136 0.088916s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-05-14T16:27:04.274466491 0.088919s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-05-14T16:27:05.566967747 1.381421s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 11.
+2022-05-14T16:27:05.571621299 1.386074s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 11. Latest log index is 29.
+2022-05-14T16:27:05.955317291 1.769772s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 11.
+2022-05-14T16:27:05.961088909 1.775543s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 11. Latest log index is 29.
+2022-05-14T16:27:06.242834510 2.057288s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 11.
+2022-05-14T16:27:06.247680833 2.062134s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 11. Latest log index is 31.
+2022-05-15T17:10:39.755202528 0.021931s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-15T17:10:39.756648442 0.023375s notice: Running on Linux 5.13.0-41-generic x86_64
+2022-05-15T17:10:39.756678172 0.023404s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-15T17:10:39.767115179 0.033841s info: Automatically using cache size of 1562 MB
+2022-05-15T17:10:39.769216591 0.035943s error: TCP socket creation failed for port 29015: Address already in use.
+2022-05-15T17:12:19.847837401 0.021302s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-15T17:12:19.850804070 0.024262s notice: Running on Linux 5.13.0-41-generic x86_64
+2022-05-15T17:12:19.850882292 0.024340s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-15T17:12:19.863440047 0.036898s info: Automatically using cache size of 1561 MB
+2022-05-15T17:12:19.864116289 0.037574s error: TCP socket creation failed for port 29015: Address already in use.
+2022-05-15T17:12:47.950240948 0.018058s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-15T17:12:47.951600388 0.019416s notice: Running on Linux 5.13.0-41-generic x86_64
+2022-05-15T17:12:47.951636300 0.019451s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-15T17:12:47.961052870 0.028868s info: Automatically using cache size of 1569 MB
+2022-05-15T17:12:47.961564767 0.029379s notice: Listening for intracluster connections on port 29015
+2022-05-15T17:12:48.059073684 0.126889s notice: Listening for client driver connections on port 28015
+2022-05-15T17:12:48.059150499 0.126965s notice: Listening for administrative HTTP connections on port 8080
+2022-05-15T17:12:48.059155716 0.126970s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-05-15T17:12:48.059158648 0.126973s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-05-15T17:12:48.059186249 0.127001s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-05-15T17:12:48.059189228 0.127004s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-05-15T17:12:48.059192573 0.127007s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-05-15T17:12:49.157352670 1.225168s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 12.
+2022-05-15T17:12:49.164993071 1.232809s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 12. Latest log index is 34.
+2022-05-15T17:12:49.652311554 1.720127s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 12.
+2022-05-15T17:12:49.657012473 1.724828s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 12. Latest log index is 32.
+2022-05-15T17:12:50.006998286 2.074814s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 12.
+2022-05-15T17:12:50.011005627 2.078821s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 12. Latest log index is 32.
+2022-05-22T10:45:03.453339917 0.014872s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-22T10:45:03.455017193 0.016548s notice: Running on Linux 5.13.0-41-generic x86_64
+2022-05-22T10:45:03.455052604 0.016583s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-22T10:45:03.464841856 0.026372s info: Automatically using cache size of 1976 MB
+2022-05-22T10:45:03.465951128 0.027481s error: TCP socket creation failed for port 29015: Address already in use.
+2022-05-22T10:45:49.568756905 0.016442s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-22T10:45:49.570138568 0.017823s notice: Running on Linux 5.13.0-41-generic x86_64
+2022-05-22T10:45:49.570190308 0.017874s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-22T10:45:49.579413481 0.027097s info: Automatically using cache size of 2068 MB
+2022-05-22T10:45:49.579884113 0.027567s notice: Listening for intracluster connections on port 29015
+2022-05-22T10:45:49.637825620 0.085509s notice: Listening for client driver connections on port 28015
+2022-05-22T10:45:49.637896850 0.085580s notice: Listening for administrative HTTP connections on port 8080
+2022-05-22T10:45:49.637899658 0.085583s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-05-22T10:45:49.637902115 0.085585s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-05-22T10:45:49.637904420 0.085587s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-05-22T10:45:49.637906970 0.085590s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-05-22T10:45:49.637909356 0.085592s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-05-22T10:45:50.891422014 1.339106s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 13.
+2022-05-22T10:45:50.896486137 1.344170s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 13. Latest log index is 35.
+2022-05-22T10:45:51.135331815 1.583016s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 13.
+2022-05-22T10:45:51.137976721 1.585660s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 13. Latest log index is 35.
+2022-05-22T10:45:51.384172086 1.831856s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 13.
+2022-05-22T10:45:51.386711564 1.834395s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 13. Latest log index is 37.
+2022-05-22T11:35:08.158430275 2958.606114s info: Table dc1e5f21-5fb8-4c35-a7cc-14bdaed19a6c: Starting a new Raft election for term 1.
+2022-05-22T11:35:08.158536624 2958.606220s info: Table dc1e5f21-5fb8-4c35-a7cc-14bdaed19a6c: Added replica on this server.
+2022-05-22T11:35:08.160718289 2958.608402s info: Table dc1e5f21-5fb8-4c35-a7cc-14bdaed19a6c: This server is Raft leader for term 1. Latest log index is 0.
+2022-05-22T11:35:46.983539502 2997.431223s notice: Removing file /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data/dc1e5f21-5fb8-4c35-a7cc-14bdaed19a6c
+2022-05-22T11:35:46.983559471 2997.431243s info: Table dc1e5f21-5fb8-4c35-a7cc-14bdaed19a6c: Deleted the table.
+2022-05-22T11:36:40.288736850 3050.736420s info: Table 37073fdf-a07f-433e-bd6d-fb5f54eccf1c: Starting a new Raft election for term 1.
+2022-05-22T11:36:40.289119494 3050.736803s info: Table 37073fdf-a07f-433e-bd6d-fb5f54eccf1c: Added replica on this server.
+2022-05-22T11:36:40.292526541 3050.740210s info: Table 37073fdf-a07f-433e-bd6d-fb5f54eccf1c: This server is Raft leader for term 1. Latest log index is 0.
+2022-05-22T18:03:39.461976049 13528.693907s notice: Removing file /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data/37073fdf-a07f-433e-bd6d-fb5f54eccf1c
+2022-05-22T18:03:39.461985997 13528.693916s info: Table 37073fdf-a07f-433e-bd6d-fb5f54eccf1c: Deleted the table.
+2022-05-22T18:03:51.280777362 13540.512708s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: Starting a new Raft election for term 1.
+2022-05-22T18:03:51.280876156 13540.512807s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: Added replica on this server.
+2022-05-22T18:03:51.283395867 13540.515326s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: This server is Raft leader for term 1. Latest log index is 0.
+2022-05-22T18:05:59.857913371 13669.089844s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: Starting a new Raft election for term 1.
+2022-05-22T18:05:59.858089495 13669.090020s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: Added replica on this server.
+2022-05-22T18:05:59.860355462 13669.092286s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: This server is Raft leader for term 1. Latest log index is 0.
+2022-05-22T18:09:11.743363636 13860.975295s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: Added replica on this server.
+2022-05-22T18:09:11.743541488 13860.975472s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: Starting a new Raft election for term 1.
+2022-05-22T18:09:11.748543019 13860.980474s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: This server is Raft leader for term 1. Latest log index is 0.
+2022-05-22T20:09:57.138584690 21106.370516s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: Starting a new Raft election for term 1.
+2022-05-22T20:09:57.139455625 21106.371387s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: Added replica on this server.
+2022-05-22T20:09:57.144615900 21106.376548s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: This server is Raft leader for term 1. Latest log index is 0.
+2022-05-22T20:10:03.927601749 21113.159533s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: Starting a new Raft election for term 1.
+2022-05-22T20:10:03.930386719 21113.162318s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: Added replica on this server.
+2022-05-22T20:10:03.935722697 21113.167654s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: This server is Raft leader for term 1. Latest log index is 0.
+2022-05-23T18:55:15.141927319 28193.461060s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2022-05-23T18:55:15.142992835 28193.462125s notice: Shutting down client connections...
+2022-05-23T18:55:15.144471183 28193.463604s notice: All client connections closed.
+2022-05-23T18:55:15.144518561 28193.463650s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2022-05-23T18:55:15.271919690 28193.591052s notice: Storage engine shut down.
+2022-05-23T18:55:21.260248676 0.022694s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-23T18:55:21.261994763 0.024438s notice: Running on Linux 5.13.0-41-generic x86_64
+2022-05-23T18:55:21.262036732 0.024479s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-23T18:55:21.272814432 0.035257s info: Automatically using cache size of 535 MB
+2022-05-23T18:55:21.273366078 0.035808s notice: Listening for intracluster connections on port 29015
+2022-05-23T18:55:21.411240703 0.173683s notice: Listening for client driver connections on port 28015
+2022-05-23T18:55:21.411300433 0.173743s notice: Listening for administrative HTTP connections on port 8080
+2022-05-23T18:55:21.411304629 0.173747s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-05-23T18:55:21.411308036 0.173750s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-05-23T18:55:21.411341742 0.173784s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-05-23T18:55:21.411346070 0.173788s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-05-23T18:55:21.411349613 0.173792s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-05-23T18:55:22.423570350 1.186014s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: Starting a new Raft election for term 2.
+2022-05-23T18:55:22.430321048 1.192765s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: This server is Raft leader for term 2. Latest log index is 2.
+2022-05-23T18:55:22.534736331 1.297180s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: Starting a new Raft election for term 2.
+2022-05-23T18:55:22.539422600 1.301866s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: This server is Raft leader for term 2. Latest log index is 2.
+2022-05-23T18:55:22.941977881 1.704422s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 14.
+2022-05-23T18:55:22.945525443 1.707968s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 14. Latest log index is 38.
+2022-05-23T18:55:23.048205023 1.810648s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: Starting a new Raft election for term 2.
+2022-05-23T18:55:23.052650445 1.815093s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: This server is Raft leader for term 2. Latest log index is 2.
+2022-05-23T18:55:23.080929708 1.843373s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 14.
+2022-05-23T18:55:23.084441288 1.846885s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 14. Latest log index is 40.
+2022-05-23T18:55:23.144543113 1.906987s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: Starting a new Raft election for term 2.
+2022-05-23T18:55:23.148251421 1.910695s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: This server is Raft leader for term 2. Latest log index is 2.
+2022-05-23T18:55:23.215215252 1.977658s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: Starting a new Raft election for term 2.
+2022-05-23T18:55:23.217919101 1.980362s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: This server is Raft leader for term 2. Latest log index is 2.
+2022-05-23T18:55:23.342686439 2.105130s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 14.
+2022-05-23T18:55:23.345790133 2.108233s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 14. Latest log index is 38.
+2022-05-27T10:16:51.079528132 0.022255s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-27T10:16:51.087064131 0.029781s notice: Running on Linux 5.13.0-41-generic x86_64
+2022-05-27T10:16:51.087246701 0.029961s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-27T10:16:51.113745966 0.056460s info: Automatically using cache size of 1861 MB
+2022-05-27T10:16:51.115853475 0.058568s error: TCP socket creation failed for port 29015: Address already in use.
+2022-05-27T10:17:45.777998917 0.018312s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-05-27T10:17:45.779548666 0.019859s notice: Running on Linux 5.13.0-41-generic x86_64
+2022-05-27T10:17:45.779581706 0.019892s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-05-27T10:17:45.794046490 0.034357s info: Automatically using cache size of 1880 MB
+2022-05-27T10:17:45.795460167 0.035771s notice: Listening for intracluster connections on port 29015
+2022-05-27T10:17:45.927761810 0.168072s notice: Listening for client driver connections on port 28015
+2022-05-27T10:17:45.927831214 0.168141s notice: Listening for administrative HTTP connections on port 8080
+2022-05-27T10:17:45.927834738 0.168145s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-05-27T10:17:45.927838294 0.168148s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-05-27T10:17:45.927877907 0.168188s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-05-27T10:17:45.927881298 0.168191s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-05-27T10:17:45.927884440 0.168194s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-05-27T10:17:47.150860804 1.391171s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 15.
+2022-05-27T10:17:47.156059156 1.396369s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 15. Latest log index is 41.
+2022-05-27T10:17:47.191717917 1.432028s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: Starting a new Raft election for term 3.
+2022-05-27T10:17:47.193730229 1.434041s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: This server is Raft leader for term 3. Latest log index is 5.
+2022-05-27T10:17:47.332546314 1.572856s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 15.
+2022-05-27T10:17:47.335697580 1.576008s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 15. Latest log index is 43.
+2022-05-27T10:17:47.391400076 1.631710s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: Starting a new Raft election for term 3.
+2022-05-27T10:17:47.401168361 1.641479s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: This server is Raft leader for term 3. Latest log index is 5.
+2022-05-27T10:17:47.427355470 1.667666s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: Starting a new Raft election for term 3.
+2022-05-27T10:17:47.432124641 1.672435s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: This server is Raft leader for term 3. Latest log index is 5.
+2022-05-27T10:17:47.455010292 1.695321s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 15.
+2022-05-27T10:17:47.457031082 1.697342s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 15. Latest log index is 41.
+2022-05-27T10:17:47.641349926 1.881661s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: Starting a new Raft election for term 3.
+2022-05-27T10:17:47.663513834 1.903824s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: This server is Raft leader for term 3. Latest log index is 5.
+2022-05-27T10:17:47.714428865 1.954739s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: Starting a new Raft election for term 3.
+2022-05-27T10:17:47.721783004 1.962094s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: This server is Raft leader for term 3. Latest log index is 5.
+2022-06-09T22:53:46.181274665 0.018250s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-06-09T22:53:46.182754206 0.019726s notice: Running on Linux 5.13.0-41-generic x86_64
+2022-06-09T22:53:46.182789955 0.019761s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-06-09T22:53:46.200831403 0.037803s info: Automatically using cache size of 800 MB
+2022-06-09T22:53:46.201470330 0.038442s notice: Listening for intracluster connections on port 29015
+2022-06-09T22:53:46.422974211 0.259946s notice: Listening for client driver connections on port 28015
+2022-06-09T22:53:46.423049873 0.260021s notice: Listening for administrative HTTP connections on port 8080
+2022-06-09T22:53:46.423054921 0.260026s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-06-09T22:53:46.423059080 0.260030s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-06-09T22:53:46.423094402 0.260066s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-06-09T22:53:46.423097911 0.260069s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-06-09T22:53:46.423101443 0.260073s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-06-09T22:53:47.655206476 1.492178s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: Starting a new Raft election for term 4.
+2022-06-09T22:53:47.661534030 1.498506s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: This server is Raft leader for term 4. Latest log index is 8.
+2022-06-09T22:53:47.691577345 1.528549s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: Starting a new Raft election for term 4.
+2022-06-09T22:53:47.694556708 1.531528s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: This server is Raft leader for term 4. Latest log index is 8.
+2022-06-09T22:53:47.721583219 1.558555s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 16.
+2022-06-09T22:53:47.724540586 1.561512s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 16. Latest log index is 46.
+2022-06-09T22:53:47.756189203 1.593161s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: Starting a new Raft election for term 4.
+2022-06-09T22:53:47.759446468 1.596418s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: This server is Raft leader for term 4. Latest log index is 8.
+2022-06-09T22:53:47.789224299 1.626196s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: Starting a new Raft election for term 4.
+2022-06-09T22:53:47.793612689 1.630585s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: This server is Raft leader for term 4. Latest log index is 8.
+2022-06-09T22:53:47.963037521 1.800009s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: Starting a new Raft election for term 4.
+2022-06-09T22:53:47.993875098 1.830847s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: This server is Raft leader for term 4. Latest log index is 8.
+2022-06-09T22:53:48.046211569 1.883183s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 16.
+2022-06-09T22:53:48.072105873 1.909078s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 16. Latest log index is 44.
+2022-06-09T22:53:48.117902228 1.954874s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 16.
+2022-06-09T22:53:48.127882311 1.964854s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 16. Latest log index is 44.
+2022-06-10T18:58:34.342849640 8078.598204s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: Starting a new Raft election for term 1.
+2022-06-10T18:58:34.344091487 8078.599446s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: Added replica on this server.
+2022-06-10T18:58:34.351819827 8078.607174s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: This server is Raft leader for term 1. Latest log index is 0.
+2022-06-18T12:57:06.571736438 0.032832s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-06-18T12:57:06.575355548 0.036443s notice: Running on Linux 5.13.0-48-generic x86_64
+2022-06-18T12:57:06.575444470 0.036532s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-06-18T12:57:06.591104520 0.052192s info: Automatically using cache size of 701 MB
+2022-06-18T12:57:06.593060723 0.054148s error: TCP socket creation failed for port 29015: Address already in use.
+2022-06-18T12:58:23.649417912 0.019164s notice: Running rethinkdb 2.4.1~0focal (CLANG 10.0.0 )...
+2022-06-18T12:58:23.651117058 0.020861s notice: Running on Linux 5.13.0-48-generic x86_64
+2022-06-18T12:58:23.651158915 0.020902s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-06-18T12:58:23.662838447 0.032582s info: Automatically using cache size of 707 MB
+2022-06-18T12:58:23.663460917 0.033204s notice: Listening for intracluster connections on port 29015
+2022-06-18T12:58:23.796534836 0.166278s notice: Listening for client driver connections on port 28015
+2022-06-18T12:58:23.796607326 0.166351s notice: Listening for administrative HTTP connections on port 8080
+2022-06-18T12:58:23.796612082 0.166355s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-06-18T12:58:23.796614358 0.166358s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-06-18T12:58:23.796634342 0.166378s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-06-18T12:58:23.796637174 0.166380s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-06-18T12:58:23.796641969 0.166385s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-06-18T12:58:25.054061593 1.423806s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: Starting a new Raft election for term 5.
+2022-06-18T12:58:25.064191633 1.433936s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: This server is Raft leader for term 5. Latest log index is 11.
+2022-06-18T12:58:25.077394980 1.447139s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: Starting a new Raft election for term 2.
+2022-06-18T12:58:25.082727575 1.452472s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: This server is Raft leader for term 2. Latest log index is 3.
+2022-06-18T12:58:25.091353553 1.461098s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 17.
+2022-06-18T12:58:25.095932018 1.465676s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: Starting a new Raft election for term 5.
+2022-06-18T12:58:25.097531086 1.467275s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 17. Latest log index is 49.
+2022-06-18T12:58:25.102645718 1.472390s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: This server is Raft leader for term 5. Latest log index is 11.
+2022-06-18T12:58:25.160035105 1.529779s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: Starting a new Raft election for term 5.
+2022-06-18T12:58:25.165592322 1.535337s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: This server is Raft leader for term 5. Latest log index is 11.
+2022-06-18T12:58:25.369619116 1.739364s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 17.
+2022-06-18T12:58:25.414281442 1.784026s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: Starting a new Raft election for term 5.
+2022-06-18T12:58:25.436901603 1.806647s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 17. Latest log index is 47.
+2022-06-18T12:58:25.442693417 1.812438s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: This server is Raft leader for term 5. Latest log index is 11.
+2022-06-18T12:58:25.543995587 1.913740s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: Starting a new Raft election for term 5.
+2022-06-18T12:58:25.567578654 1.937323s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: This server is Raft leader for term 5. Latest log index is 11.
+2022-06-18T12:58:25.688039233 2.057784s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 17.
+2022-06-18T12:58:25.705931285 2.075675s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 17. Latest log index is 47.
+2022-06-19T20:32:32.063066937 31080.233069s warn: RethinkDB has been accessing a lot of swap memory in the past ten minutes. This may impact performace.
+2022-06-20T18:56:53.454019731 0.012950s notice: Running rethinkdb 2.4.2~0focal (GCC 9.4.0)...
+2022-06-20T18:56:53.455548245 0.014479s notice: Running on Linux 5.13.0-48-generic x86_64
+2022-06-20T18:56:53.455579616 0.014510s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-06-20T18:56:53.466542517 0.025473s info: Automatically using cache size of 1428 MB
+2022-06-20T18:56:53.468348049 0.027278s error: TCP socket creation failed for port 29015: Address already in use.
+2022-06-20T19:00:04.247412685 0.013915s notice: Running rethinkdb 2.4.2~0focal (GCC 9.4.0)...
+2022-06-20T19:00:04.248796078 0.015299s notice: Running on Linux 5.13.0-48-generic x86_64
+2022-06-20T19:00:04.248827721 0.015330s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-06-20T19:00:04.258509059 0.025012s info: Automatically using cache size of 1479 MB
+2022-06-20T19:00:04.259003368 0.025506s notice: Listening for intracluster connections on port 29015
+2022-06-20T19:00:04.364479985 0.130983s notice: Listening for client driver connections on port 28015
+2022-06-20T19:00:04.364523101 0.131026s notice: Listening for administrative HTTP connections on port 8080
+2022-06-20T19:00:04.364527943 0.131031s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-06-20T19:00:04.364531166 0.131034s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-06-20T19:00:04.364533988 0.131037s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-06-20T19:00:04.364536826 0.131039s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-06-20T19:00:04.364539794 0.131042s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-06-20T19:00:05.381602067 1.148105s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 18.
+2022-06-20T19:00:05.389932818 1.156436s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 18. Latest log index is 52.
+2022-06-20T19:00:05.680695645 1.447199s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: Starting a new Raft election for term 6.
+2022-06-20T19:00:05.684563409 1.451066s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: This server is Raft leader for term 6. Latest log index is 14.
+2022-06-20T19:00:05.734074970 1.500578s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 18.
+2022-06-20T19:00:05.737909966 1.504413s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 18. Latest log index is 50.
+2022-06-20T19:00:05.946357431 1.712861s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 18.
+2022-06-20T19:00:05.950848542 1.717352s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 18. Latest log index is 50.
+2022-06-20T19:00:05.986142733 1.752646s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: Starting a new Raft election for term 6.
+2022-06-20T19:00:05.992785450 1.759289s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: This server is Raft leader for term 6. Latest log index is 14.
+2022-06-20T19:00:05.994992202 1.761495s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: Starting a new Raft election for term 6.
+2022-06-20T19:00:06.003492375 1.769996s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: This server is Raft leader for term 6. Latest log index is 14.
+2022-06-20T19:00:06.096972134 1.863476s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: Starting a new Raft election for term 6.
+2022-06-20T19:00:06.101343545 1.867847s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: Starting a new Raft election for term 6.
+2022-06-20T19:00:06.106257026 1.872760s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: This server is Raft leader for term 6. Latest log index is 14.
+2022-06-20T19:00:06.110041200 1.876544s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: This server is Raft leader for term 6. Latest log index is 14.
+2022-06-20T19:00:06.168310956 1.934814s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: Starting a new Raft election for term 3.
+2022-06-20T19:00:06.202480193 1.968983s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: This server is Raft leader for term 3. Latest log index is 6.
+2022-06-21T18:51:04.589793230 0.016138s notice: Running rethinkdb 2.4.2~0focal (GCC 9.4.0)...
+2022-06-21T18:51:04.591530899 0.017876s notice: Running on Linux 5.13.0-51-generic x86_64
+2022-06-21T18:51:04.591561038 0.017906s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-06-21T18:51:04.601039609 0.027384s info: Automatically using cache size of 852 MB
+2022-06-21T18:51:04.601478668 0.027823s notice: Listening for intracluster connections on port 29015
+2022-06-21T18:51:04.720310338 0.146655s notice: Listening for client driver connections on port 28015
+2022-06-21T18:51:04.720374657 0.146720s notice: Listening for administrative HTTP connections on port 8080
+2022-06-21T18:51:04.720378034 0.146722s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-06-21T18:51:04.720380488 0.146725s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-06-21T18:51:04.720414681 0.146759s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-06-21T18:51:04.720419259 0.146764s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-06-21T18:51:04.720421770 0.146766s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-06-21T18:51:05.675249140 1.101594s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 19.
+2022-06-21T18:51:05.682450190 1.108796s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 19. Latest log index is 55.
+2022-06-21T18:51:05.872308712 1.298654s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: Starting a new Raft election for term 7.
+2022-06-21T18:51:05.876858859 1.303204s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: This server is Raft leader for term 7. Latest log index is 17.
+2022-06-21T18:51:05.900500269 1.326846s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: Starting a new Raft election for term 4.
+2022-06-21T18:51:05.903866207 1.330211s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 19.
+2022-06-21T18:51:05.926111802 1.352457s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: This server is Raft leader for term 4. Latest log index is 9.
+2022-06-21T18:51:05.929385196 1.355731s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 19. Latest log index is 53.
+2022-06-21T18:51:06.186795705 1.613141s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: Starting a new Raft election for term 7.
+2022-06-21T18:51:06.234491216 1.660836s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: This server is Raft leader for term 7. Latest log index is 17.
+2022-06-21T18:51:06.250899158 1.677244s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: Starting a new Raft election for term 7.
+2022-06-21T18:51:06.252711624 1.679056s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: This server is Raft leader for term 7. Latest log index is 17.
+2022-06-21T18:51:06.450398395 1.876744s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: Starting a new Raft election for term 7.
+2022-06-21T18:51:06.474105216 1.900451s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: This server is Raft leader for term 7. Latest log index is 17.
+2022-06-21T18:51:06.530445479 1.956791s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 19.
+2022-06-21T18:51:06.532970555 1.959316s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 19. Latest log index is 53.
+2022-06-21T18:51:06.694481757 2.120827s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: Starting a new Raft election for term 7.
+2022-06-21T18:51:06.711778278 2.138124s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: This server is Raft leader for term 7. Latest log index is 17.
+2022-06-23T18:19:46.401872802 0.031292s notice: Running rethinkdb 2.4.2~0focal (GCC 9.4.0)...
+2022-06-23T18:19:46.405825651 0.035246s notice: Running on Linux 5.13.0-51-generic x86_64
+2022-06-23T18:19:46.405902156 0.035322s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-06-23T18:19:46.418033779 0.047453s info: Automatically using cache size of 777 MB
+2022-06-23T18:19:46.418546074 0.047965s notice: Listening for intracluster connections on port 29015
+2022-06-23T18:19:46.527736612 0.157156s notice: Listening for client driver connections on port 28015
+2022-06-23T18:19:46.527785464 0.157205s notice: Listening for administrative HTTP connections on port 8080
+2022-06-23T18:19:46.527787822 0.157207s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-06-23T18:19:46.527790389 0.157210s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-06-23T18:19:46.527822531 0.157242s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-06-23T18:19:46.527825269 0.157244s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-06-23T18:19:46.527827812 0.157247s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-06-23T18:19:47.483901727 1.113323s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 20.
+2022-06-23T18:19:47.491023628 1.120443s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 20. Latest log index is 56.
+2022-06-23T18:19:47.682107402 1.311528s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: Starting a new Raft election for term 8.
+2022-06-23T18:19:47.686371002 1.315791s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: This server is Raft leader for term 8. Latest log index is 20.
+2022-06-23T18:19:47.762319948 1.391740s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 20.
+2022-06-23T18:19:47.765651955 1.395072s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 20. Latest log index is 56.
+2022-06-23T18:19:47.999356337 1.628776s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: Starting a new Raft election for term 8.
+2022-06-23T18:19:48.013826269 1.643246s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: Starting a new Raft election for term 5.
+2022-06-23T18:19:48.016427800 1.645847s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: This server is Raft leader for term 8. Latest log index is 20.
+2022-06-23T18:19:48.018792777 1.648212s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: This server is Raft leader for term 5. Latest log index is 12.
+2022-06-23T18:19:48.174211431 1.803631s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: Starting a new Raft election for term 8.
+2022-06-23T18:19:48.175104788 1.804524s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 20.
+2022-06-23T18:19:48.177194031 1.806613s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: This server is Raft leader for term 8. Latest log index is 20.
+2022-06-23T18:19:48.181346519 1.810766s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 20. Latest log index is 58.
+2022-06-23T18:19:48.198607102 1.828027s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: Starting a new Raft election for term 8.
+2022-06-23T18:19:48.200545808 1.829965s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: This server is Raft leader for term 8. Latest log index is 20.
+2022-06-23T18:19:48.390030408 2.019450s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: Starting a new Raft election for term 8.
+2022-06-23T18:19:48.409223423 2.038643s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: This server is Raft leader for term 8. Latest log index is 20.
+2022-06-25T10:36:12.113191085 0.048222s notice: Running rethinkdb 2.4.2~0focal (GCC 9.4.0)...
+2022-06-25T10:36:12.115389631 0.050421s notice: Running on Linux 5.13.0-51-generic x86_64
+2022-06-25T10:36:12.115433497 0.050464s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-06-25T10:36:12.125799460 0.060830s info: Automatically using cache size of 663 MB
+2022-06-25T10:36:12.127338740 0.062369s error: TCP socket creation failed for port 29015: Address already in use.
+2022-06-25T10:38:30.984134567 0.015851s notice: Running rethinkdb 2.4.2~0focal (GCC 9.4.0)...
+2022-06-25T10:38:30.985498216 0.017215s notice: Running on Linux 5.13.0-51-generic x86_64
+2022-06-25T10:38:30.985526382 0.017243s notice: Loading data from directory /home/sarasolera/proyecto_TFG/casa_cuentos/rethinkdb_data
+2022-06-25T10:38:30.994366018 0.026083s info: Automatically using cache size of 671 MB
+2022-06-25T10:38:30.994801160 0.026518s notice: Listening for intracluster connections on port 29015
+2022-06-25T10:38:31.098428581 0.130145s notice: Listening for client driver connections on port 28015
+2022-06-25T10:38:31.098486896 0.130203s notice: Listening for administrative HTTP connections on port 8080
+2022-06-25T10:38:31.098491090 0.130207s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2022-06-25T10:38:31.098494732 0.130211s notice: Listening on driver addresses: 127.0.0.1, ::1
+2022-06-25T10:38:31.098521007 0.130237s notice: Listening on http addresses: 127.0.0.1, ::1
+2022-06-25T10:38:31.098524043 0.130240s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2022-06-25T10:38:31.098526962 0.130243s notice: Server ready, "sara_Lenovo_ideapad_110_15ISK_4f2" 77c82ec3-01eb-4178-adde-9ee56af555b6
+2022-06-25T10:38:32.174771376 1.206488s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: Starting a new Raft election for term 9.
+2022-06-25T10:38:32.180556492 1.212273s info: Table 0689232b-38b3-431e-8437-6a263ff55cb9: This server is Raft leader for term 9. Latest log index is 23.
+2022-06-25T10:38:32.206490399 1.238207s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: Starting a new Raft election for term 9.
+2022-06-25T10:38:32.208817536 1.240534s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: This server is Raft leader for term 9. Latest log index is 23.
+2022-06-25T10:38:32.257735582 1.289452s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: Starting a new Raft election for term 9.
+2022-06-25T10:38:32.260345383 1.292062s info: Table a21609a6-5eb3-4eff-b37f-a126afb2443f: This server is Raft leader for term 9. Latest log index is 23.
+2022-06-25T10:38:32.369127724 1.400845s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: Starting a new Raft election for term 21.
+2022-06-25T10:38:32.373041385 1.404758s info: Table 6584b913-6302-4ff8-9f97-82bc5e183d29: This server is Raft leader for term 21. Latest log index is 59.
+2022-06-25T10:38:32.415635072 1.447352s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: Starting a new Raft election for term 9.
+2022-06-25T10:38:32.417901834 1.449619s info: Table 87cd1136-262f-4164-a384-7759a9f5a3d7: This server is Raft leader for term 9. Latest log index is 23.
+2022-06-25T10:38:32.548619273 1.580336s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: Starting a new Raft election for term 21.
+2022-06-25T10:38:32.551967549 1.583684s info: Table a1d9eee0-2922-4eab-a098-9ed1fe3aa481: This server is Raft leader for term 21. Latest log index is 59.
+2022-06-25T10:38:32.601177341 1.632895s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: Starting a new Raft election for term 6.
+2022-06-25T10:38:32.636115832 1.667834s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 21.
+2022-06-25T10:38:32.641333562 1.673051s info: Table 1828283c-5a0c-4589-bfed-3a143946708d: This server is Raft leader for term 6. Latest log index is 15.
+2022-06-25T10:38:32.657323892 1.689041s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 21. Latest log index is 61.
+2022-06-25T10:38:32.710873504 1.742590s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: Starting a new Raft election for term 9.
+2022-06-25T10:38:32.712711095 1.744428s info: Table f3f4a686-0cd0-435b-9204-fe1e69d1d461: This server is Raft leader for term 9. Latest log index is 23.
+2022-06-26T23:35:19.995537115 75480.303988s warn: RethinkDB has been accessing a lot of swap memory in the past ten minutes. This may impact performace.

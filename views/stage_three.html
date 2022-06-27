@@ -1,0 +1,105 @@
+<div id="bloque_fase" style="background-image: url('assets/images/libro_op.png');">
+
+    <!--Página uno -->
+    <div class="etapa" id="lugar">
+        <!--Personajes-->
+        <h2>LUGAR</h2>
+        <h3>El lugar donde sucede esta trama es:</h3>
+    </div>
+
+    <div class="etapa" id="trama">
+        <!--Paisaje -->
+        <h2>TRAMA</h2>
+        <div id="trama-mision">
+
+        </div>
+        <button id="button_continuar" class="boton_continuar hidden" type=button onclick='getMisionStage(3)'><i class='fas fa-arrow-right'></i>Continuar</button>
+
+    </div>
+
+
+    <div class="etapa hidden" id="paisaje">
+        <!--trama -->
+        <h2>RETORNO A</h2>
+    </div>
+
+    <div class="etapa hidden" id="frases">
+        <!--Paisaje -->
+        <h2>FRASES</h2>
+        <div id="frases-mision">
+
+        </div>
+
+        <div id="crono-mision" class="crono hidden">
+            <div id="reloj" class="reloj">01:00</div>
+            <div class="buttons flex-element">
+                <div class="parar" id="button-stop" onclick="restartCrono()"></div>
+                <div class="play paused" id="button_start" onclick="startCrono()"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" id="btn_modal" class="btn btn-primary hidden" data-bs-toggle="modal"
+    data-bs-target="#staticBackdrop">
+    Cargar etapa 1
+</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">ETAPA 3. LA HISTORIA TERMINA...</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                EL FINAL DE LA HISTORIA CONTARÁ CON UNA TRAMA ÚLTIMA QUE DETERMINARÁ SI SE CONSIGUE LA TRAMA INICIAL, 
+                EN ESTE CASO ENTRE TODOS DEBEÍS GUIAR A NUESTROS PROTAGONISTAS A UN LUGAR QUE VOSOTROS MISMOS TENDREÍS QUE INVERTAR
+                AH! PERO CON UNAS CARACTERÍSTICAS.
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="boton_cerrar" class="btn btn-secondary hidden"
+                    data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="getDataStage(3)">Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type=button id='btn_mision' class='btn btn-primary hidden' data-bs-toggle='modal'
+    data-bs-target="#staticBackdropMision"></button>
+
+<div class="modal fade" id="staticBackdropMision" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="momentoMision">MOMENTO MISION</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ES MOMENTO DE REGRESAR A LOS PERSONAJES A SU MUNDO INICIAL, LLEVADLOS POR EL CAMINO QUE MÁS OS GUSTE,
+                PERO TENDREMOS UNA MISIÓN LINGÜISTICA. CADA EQUIPO TENDRÁ HACER UNA PARTE DEL CAMINO, Y SE TENDRÁ QUE ACABAR
+                CON UNA FRASE CONCRETA.
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="boton_cerrarMision" class="btn btn-secondary hidden"
+                    data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick='getDataMisionStage(3)'>Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+  console.log("Entro en trigger");
+  console.log(jQuery("#btn_modal"))
+  $("#btn_modal").click();
+</script>
+

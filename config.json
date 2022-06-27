@@ -1,0 +1,7 @@
+{
+    "rethinkdb":{
+        "host":"localhost",
+        "authKey": "",
+        "db": "casacuentosdb"
+    }
+}

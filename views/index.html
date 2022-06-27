@@ -1,55 +1,87 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Añadimos estilo -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/style.css"
-      media="screen"
-    />
-    <meta charset="UTF-8" />
-    <!--Añadimos el fichero de clientjs que contiene las funciones con las peticiones de los clientes
-    como por ejemplo la funcion joinRoom-->
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="client.js"></script>
+    <!-- Añadimos estilo bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Mi propio estilo css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 
+    <!--iconos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+    <meta charset="UTF-8" />
+
+    <!--Añadimos el script para poder utilizar la librería en el lado del cliente-->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!--Añadimos también el script del cliente para poder utilizar las funciones que realicemos-->
+    <script src="client.js"></script>
+    
     <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- prueba con jitsi -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    
+    <!-- Jitsi -->
     <script src="https://meet.jit.si/external_api.js"></script>
+
     <!--FONT FAMILY ANTON-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Alertas  -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <title>La casa de los cuentos</title>
   </head>
-  <body id="content">
-    <div style="height: 100%;">
-      <img
-        id="fondo"
-        alt="Portada de bienvenida"
-        src="assets/images/fondo_pantalla.jpg"
-        width:100%
-      />
-      <p id="titulo">LA CASA DE LOS CUENTOS</p>
-      <div id="new_room">
-        <p id="titulo_form">Únete a la sala</p>
-        <p>Nombre:</p>
-        <input type="text" id="name_player" />
-        <button class="iniciar_juego" type="submit" onclick="joinRoom()">
-          Unirse
-        </button>
 
-        <div id="error" class="hidden">
-          <p>YA EXITE UN JUGADOR CON ESE NOMBRE</p>
-        </div>
+  <body>
+    
+    <div id="content">
+      <div class="header">
+        <h1 class="col-12 titulo"  id="titulo_index" >LA CASA DE LOS CUENTOS</h1>
       </div>
+      <div class="formulario">
+        <form id="frmUploadFile" class="form-horizontal formulario_inicio" enctype='multipart/form-data' method='post' action='javascript:;' role="form" >
+         
+            <div class="datos_jugador">
+              <h2>DATOS DEL JUGADOR</h2>
+              <div class="field">
+                <label>Nombre:</label><input class="form-control" type="text" name="name_player" id="name_player" />
+              </div>
+              <div class="field">
+                <label>Imagen:</label><input type="file" name="avatar" accept="image/png , image/jpg , image/jpeg" id="image_player">
+              </div>
+              <label id="moderador" for="moderador">Soy moderador <input type="checkbox" id="moderador" name="moderador"></label>
+            </div>
+            
+            <div class="datos_sala">
+              <h2>CREA O ÚNETE A LA SALA</h2>
+              <div class="field">
+                <label >Nombre de la sala: </label> 
+                <input type="text" class="form-control col-xs-6" name="name_room" id="name_room" />
+              </div>
+              <div class="field">
+                <label >Contraseña de la sala: </label> 
+                <input type="text" class="form-control col-xs-6" name="password_room" id="password_room"  />
+              </div>
+              
+              <button class="iniciar_juego" onclick="createRoom()" >Crear Sala </button>
+              <button class="iniciar_juego" onclick="joinRoom()" >Unirse a Sala </button>
+              
+              <div class="error hidden" id="error_register">
+                
+              </div>
+
+            </div>
+        </form>
+      </div>
+      
     </div>
   </body>
 </html>

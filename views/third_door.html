@@ -1,23 +1,81 @@
-<div id="bloque_central">
-    <div id="bloque_fase" style="background-image: url('/assets/images/escenario.jpg');">   
-        <div class="bocadillo-redondo">
-            <h3 class="titulo_cap"> Capítulo 2.
-                Los personajes </h3>
-                    <p id="texto_cap"> Vustro mundo es asombroso... pero, quienes protagonizarán esta historia porque es necesario una serie de personajes
-                        pero no nos vale cualquier personaje.... deben tener su personalidad y su historia. Elegid cual de estos personajes formarán parte de la historia
-                        y yo os daré unas directrices que sigue cada un0o de estos.</p>
-                <img id="ayudante" src="assets/images/ayudante.png" width="50%" >
-        </div>
-        <div id="bloque_personajes">
-            <p>El héroe</p>
-            <p>El mentor</p>
-            <p>Los aliados</p>
-            <p>La sombra</p>
-            <p>El embaucador</p>
-            <p>El heraldo</p>
-            <p>El cambiante</p>
-            <p>El guardían</p>
-            </div>
-        </div>      
+<div id="bloque_fase" style="background-image: url('assets/images/libro_op.png');">
+  <div id="bloque_intro_3">
+    <div class="bocadillo-redondo">
+      <h3 id="titulo_cap_tres" class="titulo_cap"> Fase 3.
+        Los personajes </h3>
+      <p class="texto_cap" id="texto_cap_tres"> Aunque más adelante igual teneis que introducir algún que otro personaje, vamos a descrubrir que 3 deben participar obligatoriamente en la historia.</p>
+      
     </div>
+    <img id="ayudante" src="assets/images/ayudante.png" width="50%">
+  </div>
+  <!-- Botón para obtener personajes -->
+  <div id="bloque_boton_personajes">
+    <button class="boton_f_tres" id="b_personajes" onclick="getCharactersCard()"> Cartas Personajes</button>
+  </div>
+  <!-- Bloque con las cartas personajes-->
+  <div id="bloque_personajes" class='hidden'>
+    <div class="bloque_carta">
+      <div class="carta" id="personaje_uno">
+        <div class="cara">
+          <img id="personaje_uno" src="assets/images/cartas/carta_personaje.png" onclick="flipCard('personaje_uno',0)"
+            width="150px" height="190px">
+        </div>
+        <div class="cara detras">
+          <img id="carta_uno" src="" width="150px" height="190px">
+        </div>
+      </div>
+    </div>
+    <div class="bloque_carta" id="carta_central">
+      <div class="carta" id="personaje_dos">
+        <div class="cara">
+          <img id="personaje_dos" src="assets/images/cartas/carta_personaje.png" onclick="flipCard('personaje_dos',1)"
+            width="150px" height="190px">
+        </div>
+        <div class="cara detras">
+          <img id="carta_dos" src="" width="150px" height="190px">
+        </div>
+      </div>
+    </div>
+    <div class="bloque_carta">
+      <div class="carta" id="personaje_tres">
+        <div class="cara">
+          <img src="assets/images/cartas/carta_personaje.png" onclick="flipCard('personaje_tres',2)" width="150px"
+            height="190px">
+        </div>
+        <div class="cara detras">
+          <img id="carta_tres" src="" width="150px" height="190px">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Botón para obtener los rasgos de personalidad-->
+  <div id="bloque_boton_caracter" class="hidden">
+    <button class="boton_f_tres " id="b_caracter" onclick="getPersonalityCard()"> Cartas Rasgos Personalida</button>
+  </div>
+  <!--Bloque con caracter -->
+  <div id="bloque_caracter" class='hidden'>
+    <div class="bloque_carta">
+      <div class="carta">
+        <img id="caracter_uno" src="" onclick="selectPersonalityCard(0)" width="150px" height="190px">
+      </div>
+    </div>
+    <div class="bloque_carta" id="carta_central">
+      <div class="carta">
+        <img id="caracter_dos" src="" onclick="selectPersonalityCard(1)" width="150px" height="190px">
+      </div>
+    </div>
+    <div class="bloque_carta">
+      <div class="carta">
+        <img id="caracter_tres" src="" onclick="selectPersonalityCard(2)" width="150px" height="190px">
+      </div>
+    </div>
+  </div>
+
+
+  <div id="mensaje_final" class="hidden">
+    <p>TODOS LOS PERSONAJES ESTÁN ELEGIDOS YA PODEMOS VOLVER AL INICIO Y AHORA SI COMENZAR LA HISTORIA.</p>
+    <button onclick="getDataCharacters()">Continuar</button>
+  </div>
+
 </div>

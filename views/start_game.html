@@ -1,73 +1,125 @@
 <div id="principal">
-    <h1 id="titulo_prin">LA CASA DE LOS CUENTOS</h1>
     <div id="bloque_principal">
-            <div id="bloque_recorrido">
-                <h2>RECORRIDO</h2>
-            </div>
-            <div id="bloque_comenzar">
-                <div id="form_start_game">
-                    <p id="titulo_form">¿Estamos todos listos?</p>
-                    <p>¡Bienvenidos y bienvenidas! Antes de comenzar a jugar deben quedar claras ciertas cosas: </p>
-                    <ul>
-                        <li>La herramienta más importante que podéis usar es la imaginación, acompañada de vuestras vivencias a lo largo de los años. </li>
-                        <li> En cada fase se indicará qué debéis hacer para que nadie pierda el hilo de la historia. </li>
-                        <li> Y por supuesto, tenéis que trabajar en equipo. </li>
+        <div id="bloque_equipos">
+            <h2>EQUIPOS</h2>
+            
+        </div>
+        <div id="bloque_comenzar">
+            <div class="header_start">
+                <h1 class="col-12 titulo" id="titulo_start" >LA CASA DE LOS CUENTOS</h1>
+                <p  class="col-12" id="nombre_sala"></p>
+              </div>
+            <div class="col-9" id="form_start_game">
+                <h2 id="titulo_form">¿Estamos todos listos?</h2>
+                <p>¡Bienvenidos y bienvenidas! Antes de comenzar a jugar deben quedar claras ciertas cosas: </p>
+                <p>La herramienta más importante que podéis usar es la imaginación, acompañada de vuestras
+                   vivencias a lo largo de los años. 
+                   En cada fase se indicará qué debéis hacer para que nadie pierda el hilo de la historia.
+                   Y por supuesto, tenéis que trabajar en equipo.
+                </p>
+                <p>
 
-                    </ul>
-                    <p>
-
-                    Que nos cuenten una historia siempre nos gusta, además de ser entretenido, 
-                    pero si nos la cuenta uno de nuestros abuelos pasa a ser un momento que siempre recordaremos. 
+                    Que nos cuenten una historia siempre nos gusta, además de ser entretenido,
+                    pero la inventamos nosotros y además competimos por hacer una historia original, 
+                    entonces la diversión se multiplica.
 
                     Si ya estáis preparados, ¡que comience la historia!
-                    </p>
-                    <button type="button" onclick="startGame()">Comenzar a jugar!</button> 
+                </p>
+                <div id="button-start">
+                    <button class="form-control" type="button" onclick="startGame()">Comenzar a jugar!</button>
                 </div>
                 
-                
+                <div class="error hidden" id="error_moderador">
+                    <p>Recordad que es necesario tener un moderador para iniciar el juego</p>
+                </div>
+                <div class="error hidden" id="error_jugador">
+                    <p>Recordad que es necesario tener al menos dos jugadores para iniciar el juego</p>
+                </div>
             </div>
-            <div id="bloque_central" class="hidden">
-            </div>
-            <div id="bloque_tablero" class="hidden">
+            
+
+
+        </div>
+        <div id="bloque_central" class="hidden">
+        </div>
+        <div id="bloque_tablero" class="hidden">
+
+        </div>
+        <div id="bloque_jugadores">
+            <h2>JUGADORES</h2>
+            <div id="list_players">
 
             </div>
-            <div id="bloque_jugadores">
-                <h2>JUGADORES</h2>
-                <!-- Aquí vamos a introducir el bloque de mensajes-->
-                <!-- COMENTAMOS CHAT PARA INTRODUCIR CAMAARAS-->
-               <!--<div id="chat">
-                    <h3> CHAT </h3>
-                    <div id="mensajes">
-                        <p> CHAT: Bienvenidos al chat de la casa de los juegos, cuando envíes
-                            tu primer mensaje apareceran los de resto de jugadores.
-                        </p>
+            <div id="messages" class="hidden">
+                <div id="panel-message">
+                    <h2>Chat</h2>
+                    <div id="show-message-chat">
+
                     </div>
-            
-                    Input para mandar mensajes 
-                    <form onsubmit="return sendMessage(this)">
-                        <input type="text" id="mensaje_chat" placeholder="Escribe algo..." />
-                        <input type="submit" value="Enviar mensaje!" />
-                    </form>    
+                    <div class="flex-element">
+                        <div class="col-10">
+                            <input type="text" id="message_text" placeHolder="Escribe tu mensaje aquí:" class="form-control">
+                        </div>
+                        <div class="col-2">
+                            <button id="send-message" type="submit" onclick="sendMessage()"><i class="fa fa-paper-plane"></i></button> 
+                        </div>
+
+                      
+                    </div>
                 </div>
-                <div id="camaras" class="hidden">
-                    <button class="iniciar_juego" id="boton_emitir" type="button" onclick="initCamera()">CARGAR CÁMARAS</button>
-                </div>
-                --> 
-                <div id="camaras">
-          
-                </div>
-                <script>
-                  const domain = 'meet.jit.si';
-                  const options = {
-                      roomName: 'la-casa-de-los-cuentos',
-                      width: 220,
-                      height: 500,
-                      parentNode: document.querySelector('#camaras')
-                  };
-                  const api = new JitsiMeetExternalAPI(domain, options);
-              </script>
                 
+               
             </div>
+
+            <div id="camaras">
+
+            </div>
+            
+            <div  id="control-camaras" class="hidden flex-element"> 
+                <button class="form-control btn-control-camaras" title="Silenciar la sala" type="button" id="silent_room" onclick="silentRoom()"><i class="fas fa-volume-mute"></i></button>
+                <button class="form-control btn-control-camaras" title="Crear salas de equipos" id="room_team" type="button" onclick="createRoomToTeam()" ><i class="fas fa-plus"></i></button>
+                <button class="form-control btn-control-camaras hidden" title="Volver a la sala común" type="button" id="return_room" onclick="returnRoom()" ><i class="fas fa-hand-point-left"></i></button>
+            </div>
+            <div  id="control-camaras-jug" class="hidden"> 
+                <button class="form-control btn-control-camaras" title="Pedir la palabra" type="button" id="askTurn" onclick="askTurn()" ><i class="fas fa-hand-paper"></i></button>
+            </div>
+
+            <div id="moderator_message" class="hidden">
+                <p class="title_message"><i class='fas fa-comment'></i> Moderador</p>
+                <div id="last_message">
+                </div>
+            </div>
+            <div id="turn_message" class="hidden">
+                <p class="title_message"><i class='fas fa-comment'></i> QUIERE HABLAR</p>
+                <div id="player_ask">
+                </div>
+            </div>
+            
+        </div>
+
     </div>
-  </div>
+</div>
+
+
+<!--Botón modal-->
+<button type="button" id="btn_modal_jugadores" class="btn btn-primary hidden" data-bs-toggle="modal"
+    data-bs-target="#jugardorModal">
+    Jugador Actual
+</button>
+<!-- Modal jugador actual -->
+<div class="modal fade" id="jugardorModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="jugadorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="jugadorModalLabel">¿Quién tiene que hablar?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="jugador_cont_modal"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>

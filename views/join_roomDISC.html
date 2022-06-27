@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Añadimos estilo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/style.css"
+      media="screen"
+    />
+
+    <!--iconos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <meta charset="UTF-8" />
+
+    <!--Añadimos el script para poder utilizar la librería en el lado del cliente-->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!--Añadimos también el script del cliente para poder utilizar las funciones que realicemos-->
+    <script src="client.js"></script>
+    
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <!-- prueba con jitsi -->
+    <script src="https://meet.jit.si/external_api.js"></script>
+    <!--FONT FAMILY ANTON-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@400&display=swap" rel="stylesheet">
+
+
+    <title>La casa de los cuentos</title>
+    
+  </head>
+  <body id="content">
+    <div style="height: 100%;">
+      <img
+        id="fondo"
+        alt="Portada de bienvenida"
+        src="assets/images/fondo_pantalla.jpg"
+        width:100%
+      />
+      <p id="titulo">LA CASA DE LOS CUENTOS</p>
+      <div id="new_room">
+        <form class="form-horizontal" enctype='multipart/form-data' method='post' action='javascript:;' role="form"
+        id="frmUploadFile">
+        <p id="titulo_form">Únete a la sala</p>
+        <p>Nombre:</p>
+        <input type="text" name="name_player" id="name_player" />
+        <input type="file" name="avatar" accept="image/png , image/jpg , image/jpeg" id="image_player" class="form-control"/>
+        <p id="moderador" for="moderador">Soy moderador <input type="checkbox" id="moderador" name="moderador"></p>
+
+        <input id="unirse" class="iniciar_juego" type="submit" onclick="joinRoom()" value="Unirse al juego">
+
+        <div class="error" id="errorRegister"></div>
+
+        <div id="exito"></div>
+       
+      </form>
+      </div>
+    </div>
+  </body>
+</html>

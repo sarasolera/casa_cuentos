@@ -1,0 +1,65 @@
+r.dbCreate("casacuentosdb");
+r.db("casacuentosdb").tableCreate("Sesion", {primaryKey: 'id_sesion'});
+r.db("casacuentosdb").tableCreate("Equipo", {primaryKey: 'id_equipo'});
+r.db("casacuentosdb").tableCreate("Jugadores", {primaryKey: 'id_jugador'});
+r.db("casacuentosdb").tableCreate("Paisajes", {primaryKey: 'id'});
+r.db("casacuentosdb").tableCreate("Generos", {primaryKey: 'id'});
+r.db("casacuentosdb").tableCreate("Tramas", {primaryKey: 'id'});
+r.db("casacuentosdb").tableCreate("Personajes", {primaryKey: 'id'});
+r.db("casacuentosdb").tableCreate("Personalidades", {primaryKey: 'id'});
+
+-- Insert en Paisajes
+r.db("casacuentosdb").table('Paisajes').insert({"nombre":"Faro" , "nombre_fich":"faro.jpeg"});
+r.db("casacuentosdb").table('Paisajes').insert({"nombre":"Montañas" , "nombre_fich":"monta.jpeg"});
+r.db("casacuentosdb").table('Paisajes').insert({"nombre":"Desierto" , "nombre_fich":"destierto.jpg"});
+
+-- Insert en Géneros
+r.db("casacuentosdb").table('Generos').insert({"nombre":"Romanticismo"});
+r.db("casacuentosdb").table('Generos').insert({"nombre":"Aventura"});
+r.db("casacuentosdb").table('Generos').insert({"nombre":"Realismo"});
+r.db("casacuentosdb").table('Generos').insert({"nombre":"Terror"});
+r.db("casacuentosdb").table('Generos').insert({"nombre":"Ciencia Ficción"});
+r.db("casacuentosdb").table('Generos').insert({"nombre":"Misterio"});
+r.db("casacuentosdb").table('Generos').insert({"nombre":"Fantasía"});
+r.db("casacuentosdb").table('Generos').insert({"nombre":"Humor"});
+r.db("casacuentosdb").table('Generos').insert({"nombre":"Tragedia"});
+
+-- Insert en Tramas
+
+r.db("casacuentosdb").table('Tramas').insert({"trama":"Huida" , "desc":"Un personaje o varios se encontran en un momento de tensión del que tendrán que escapar. Debéis indicar de qué intenta escapar, cómo y si esa huida tiene éxito."});
+r.db("casacuentosdb").table('Tramas').insert({"trama":"Rescate" , "desc":"Un personaje ha sido secuestrado, decidid quién ha sido, cómo ocurrió y trazad un plan para rescartarle"});
+r.db("casacuentosdb").table('Tramas').insert({"trama":"Enfrentamiento" , "desc":"Un mismo deseo u objetivo lleva a dos personajes a enfrentarse, pueden ser amigos o enemigos. Decidid qué dos personajes se enfrentan y por qué, debereis dar un desenlace a este enfrentamiento ahora o más tarde."});
+r.db("casacuentosdb").table('Tramas').insert({"trama":"Enfrentamiento" , "desc":"Un mismo deseo u objetivo lleva a dos personajes a enfrentarse, pueden ser amigos o enemigos. Decidid qué dos personajes se enfrentan y por qué, debereis dar un desenlace a este enfrentamiento ahora o más tarde."});
+
+r.db("casacuentosdb").table('Tramas').insert({"trama":"Persecución" , "desc":"Al menos dos personajes se lanzan a la persecución de un objeto valioso, incorporad un objeto y explicad que dos personajes van en su busqueda."});
+
+r.db("casacuentosdb").table('Tramas').insert({"trama":"Descubrimiento" , "desc":"Se haya un elemento inesperado durante el desarrollo de la historia, debéis explicar que enigma tiene y qué hareis con él"});
+
+
+r.db("casacuentosdb").table('Tramas').insert({"trama":"Tentación" , "desc":"Un personaje abandona el objetivo principal por una tentación, esto desencadenará ciertas consecuencias que se tendrán que explicar, se debe describir la tentación."});
+
+
+-- Insert en Personajes
+r.db("casacuentosdb").table('Personajes').insert({"personaje":"cambiante.png" });
+r.db("casacuentosdb").table('Personajes').insert({"personaje":"embaucador.png" });
+r.db("casacuentosdb").table('Personajes').insert({"personaje":"guardian.png" });
+r.db("casacuentosdb").table('Personajes').insert({"personaje":"heraldo.png" });
+r.db("casacuentosdb").table('Personajes').insert({"personaje":"heroe.png" });
+r.db("casacuentosdb").table('Personajes').insert({"personaje":"mentor.png" });
+r.db("casacuentosdb").table('Personajes').insert({"personaje":"sombra.png" });
+
+-- Insert en Personalidades
+r.db("casacuentosdb").table('Personalidades').update({'personalidad':null});
+r.db("casacuentosdb").table('Personajes').insert({"personalidad":"bravucon.png" });
+r.db("casacuentosdb").table('Personajes').insert({"personalidad":"fanatico.png" });
+r.db("casacuentosdb").table('Personajes').insert({"personalidad":"gafe.png" });
+r.db("casacuentosdb").table('Personajes').insert({"personalidad":"lider.png" });
+r.db("casacuentosdb").table('Personajes').insert({"personalidad":"niño.png" });
+r.db("casacuentosdb").table('Personajes').insert({"personalidad":"superviviente.png" });
+
+
+-- Delete de tablas
+
+r.db("casacuentosdb").table('Sesion').delete();
+r.db("casacuentosdb").table('Equipo').delete();
+r.db("casacuentosdb").table('Jugadores').delete();

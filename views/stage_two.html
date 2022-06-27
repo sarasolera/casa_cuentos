@@ -1,0 +1,107 @@
+<div id="bloque_fase" style="background-image: url('assets/images/fondo_pantalla.jpg');">
+
+    <!--Página dos -->
+    <div class="etapa" id="personaje">
+        <!--Personajes-->
+        <h2>PERSONAJE</h2>
+
+    </div>
+    <div class="etapa" id="trama">
+        <!--trama -->
+        <h2>TRAMA</h2>
+        <div id="trama-mision">
+
+        </div>
+        <button id="button_continuar" class="boton_continuar hidden"  type=button onclick='getMisionStage(2)'><i class='fas fa-arrow-right'></i>Continuar</button>
+
+    </div>
+
+    <div class="etapa hidden" id="personajes">
+        <!--Interpretar -->
+        <h2>LlLEGÓ EL MOMENTO DE INTERPRETAR</h2>
+        <div id="interpretar">
+
+        </div>
+     
+        <div id="crono-mision" class="crono hidden">
+            <div id="reloj" class="reloj">01:00</div>
+            <div class="buttons flex-element">
+                <div class="parar" id="button-stop" onclick="restartCrono()"></div>
+                <div class="play paused" id="button_start" onclick="startCrono()"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="etapa hidden" id="evento">
+        <!--Paisaje -->
+        <h2>EL PERSONAJE ESTABA INMERSO EN UN/UNA</h2>
+
+     
+    </div>
+
+
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" id="btn_modal" class="btn btn-primary hidden" data-bs-toggle="modal"
+    data-bs-target="#staticBackdrop">
+    Cargar etapa 1
+</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">ETAPA 2. LA HISTORIA CONTINUA...</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                LA HISTORIA YA HA COMENZADO AHORA HACE FALTA PONER EN MARCHA A NUESTROS PERSONAJES, 
+                PARA ELLO ENTRE TODOS VAMOS A TENER QUE PRESENTAR LA SIGUIENTE TRAMA 
+                Y POR SUPUESTO VEAMOS A LOS PROTAGONISTAS PARA PODER INTRODUCIRLOS. 
+                ¡IMPORTANTE! ES NECESARIO QUE NO FINALICEIS LA TRAMA, SOLO QUE CONTINUEIS ENTRE TODOS LA HISTORIA INICIAL. 
+                RECORDAD EL GÉNERO DE LA HISTORIA.
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="boton_cerrar" class="btn btn-secondary hidden"
+                    data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="getDataStage(2)">Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type=button id='btn_mision' class='btn btn-primary hidden' data-bs-toggle='modal'
+    data-bs-target="#staticBackdropMision"></button>
+
+<div class="modal fade" id="staticBackdropMision" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="momentoMision">MOMENTO MISION</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ES EL MOMENTO DE PRESENTAR A NUESTRO PROTAGONISTA, RECORDAD QUE TENEIS QUE SITUARLO EN LA
+                CARTA PAÍSAJE SELECCIONADA EN LA PRIMERA ETAPA RECURSO.
+                ¡AHORA SI! ELEGID UN PERSONAJE Y DESCRIBIDLO, ES OBLIGATORIO USAR SU CARACTERISTICA
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="boton_cerrarMision" class="btn btn-secondary hidden"
+                    data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick='getDataMisionStage(2)'>Entendido</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    console.log("Entro en trigger");
+    console.log(jQuery("#btn_modal"))
+    $("#btn_modal").click();
+</script>
