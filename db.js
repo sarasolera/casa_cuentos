@@ -1,13 +1,24 @@
 //Base de datos
+const administration = require('bigbluebutton-js/src/administration');
 const rdb = require('rethinkdb');
 var config = require("./config.json");
+const admin = require('firebase-admin');
+
+
+admin.initializeApp({
+  credential: admin.credential.applicationDefault(),
+  databaseURL:'https://casacuentos-2d878-default-rtdb.europe-west1.firebasedatabase.app/'
+});
+
+const db = admin.database();
+
 //Creamos la conexion
+
 var connection = null;
 
 
-
 const connect = async function connect() {
-  rdb.connect({
+  /*rdb.connect({
     host: process.env.RETHINKDB_HOST || "localhost",
     port: process.env.RETHINKDB_PORT || 28015,
     username: process.env.RETHINKDB_USERNAME || "admin",
@@ -20,7 +31,7 @@ const connect = async function connect() {
     }).error(function (error) {
       console.log("Error al conectar con la BD");
       console.log(error.message);
-    });
+    });*/
 }
 
 
