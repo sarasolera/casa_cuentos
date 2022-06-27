@@ -7,21 +7,21 @@ var connection = null;
 
 
 const connect = async function connect() {
-  rdb.connect(
-    {
-      host: process.env.RETHINKDB_HOST || "localhost",
-      port: process.env.RETHINKDB_PORT || 28015,
-      username: process.env.RETHINKDB_USERNAME || "admin",
-      password: process.env.RETHINKDB_PASSWORD || "",
-      db: process.env.RETHINKDB_NAME || "test",
-    },
-    function (err, conn) {
-      if (err) throw err;
-      else console.log("Conectado a bd con éxito");
-    }
-  );
+  rdb.connect({
+    host: process.env.RETHINKDB_HOST || "localhost",
+    port: process.env.RETHINKDB_PORT || 28015,
+    username: process.env.RETHINKDB_USERNAME || "admin",
+    password: process.env.RETHINKDB_PASSWORD || "",
+    db: process.env.RETHINKDB_NAME || "test",
+    })
+    .then(function (conn) {
+      connection = conn;
+      console.log("Conexion realizada con éxito");
+    }).error(function (error) {
+      console.log("Error al conectar con la BD");
+      console.log(error.message);
+    });
 }
-
 
 
 
