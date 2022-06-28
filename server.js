@@ -6,8 +6,8 @@ var app = express();
 var server = require("http").Server(app);
 
 //Ponemos al servidor a escuchar por un puerto, y tendremos el mensaje para cuando el servidor esté activo.
-server.listen(3000, function () {
-  console.log("Servidor corriendo en el puerto 3000");
+server.listen(process.env.PORT || 5000, function () {
+  console.log("Servidor corriendo en el puerto correspondiente");
 });
 
 //Incluimos las carpetas con nuestros ficheros.
