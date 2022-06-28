@@ -1,6 +1,5 @@
 
 //Base de datos
-const administration = require('bigbluebutton-js/src/administration');
 const rdb = require('rethinkdb');
 var config = require("./config.json");
 
