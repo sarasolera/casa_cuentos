@@ -22,8 +22,8 @@ var io = require("socket.io")(server);
 // Incluimos el fichero con las operaciones de la base de datos
 var db = require("./db");
 // Conectamos la base de datos.
+//db.connect();
 db.connect();
-
 
 const { isBoolean } = require("util");
 const NUM_MAX_PLAYER = 6;

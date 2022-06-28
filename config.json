@@ -1,7 +1,12 @@
 {
     "rethinkdb":{
-        "host":"localhost",
-        "authKey": "",
+        "host":"54.195.222.146",
+        "user": "admin",
+        "password":"5Kx30NjWzKeA9oK",
         "db": "casacuentosdb"
+    },
+    "firebase":{
+        "url":"https://casacuentos-9d159-default-rtdb.europe-west1.firebasedatabase.app/"
     }
 }
+
