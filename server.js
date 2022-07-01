@@ -461,8 +461,6 @@ io.on("connection", function (socket) {
   });
 
   socket.on("savePoints" , async function(num_room , array_puntos,index,next){
-    console.log()
-    //r.addPoints(array_puntos);
     r = get_room(num_room,rooms);
     await db.savePoints(num_room , array_puntos,r.id_teams);
     var points = await db.getPoints(r.id_teams);
