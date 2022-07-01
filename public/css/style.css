@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+  display: none;
+  }
+  
 body {
     background-color: rgb(45, 48, 51);
     font-family: Gluten;
@@ -378,15 +382,14 @@ body {
   }
   
   #cartas img {
-    margin-right: 0px;
-    height: 231px;
+    margin-right:25px;
+    height: 202 px;
     border: 1px solid transparent;
     border-radius: 10%;
   }
   
   .first_card {
     float: left;
-    margin-top: 15%;
   }
   
   .second_card {
@@ -395,16 +398,17 @@ body {
   }
   
   #carta_1 {
-    margin-top: 10%;
+    margin-top:4% !important;
     margin-left: 8%;
   }
   
   #carta_2 {
     margin-right: 5% !important;
+    margin-top:0px !important;
   }
   
   #carta_3 {
-    margin-top: 30%;
+    margin-top: 0px !important;
     margin-left: 10%;
   }
   
