@@ -7,9 +7,9 @@ var config = require("./config.json");
 
 var connection = null;
 
-
-const connect = async function connect() {
-  rdb.connect({
+const connect = function connect() {
+  console.log("Iniciando conexión con base de datos");
+  /*rdb.connect({
     host: process.env.RETHINKDB_HOST || "54.195.222.146",
     port: process.env.RETHINKDB_PORT || 28015,
     username: process.env.RETHINKDB_USERNAME || "admin",
@@ -22,15 +22,26 @@ const connect = async function connect() {
     }).error(function (error) {
       console.log("Error al conectar con la BD");
       console.log(error.message);
-    });
+    });*/
+    rdb.connect(config.rethinkLocal)
+      .then(function (conn) {
+        connection = conn;
+        console.log("Conexion realizada con éxito");
+      }).error(function (error) {
+        console.log("Error al conectar con la BD");
+        console.log(error.message);
+      });
 }
 
 
 
 
 const saveSession = async function saveSession(num_players, name, password) {
+  console.log("Número de sesión");
   //Número de la sesión será el número de entradas en la tabla y este será el id de la fila.
-  var num_sesion = await rdb.table('Sesion').count().run(connection).then(total => { return total });
+  var num_sesion = await rdb.table('Sesion').count().run(connection);
+
+  console.log(num_sesion);
   //Jugadores + moderador
   var nc = num_players + 1;
   const sesion = {
@@ -42,9 +53,9 @@ const saveSession = async function saveSession(num_players, name, password) {
     password_sesion: password
   }
 
-  rdb.table('Sesion').insert(sesion).run(connection).then(function () {
-    console.log("Sesion iniciada con éxito");
-  });
+  await rdb.table('Sesion').insert(sesion).run(connection);
+
+  console.log("Sesión insertada con éxito");
 
   return num_sesion;
 }
@@ -52,16 +63,14 @@ const saveSession = async function saveSession(num_players, name, password) {
 
 const getStage = async function getStage(num_room) {
   console.log("Numero de sesion " + num_room)
-  var stage = await rdb.table('Sesion').get(num_room).run(connection).then(total => { return total.etapa_actual });
-  console.log("Etapa actual => " + stage);
-  return stage;
+  var stage = await rdb.table('Sesion').get(num_room).run(connection);
+  console.log("Etapa actual => " + stage.etapa_actual);
+  return stage.etapa_actual;
 }
 
 const updateStage = async function updateStage(num_room, index) {
-  console.log("Actualizando etapa " + index)
-  await rdb.table('Sesion').get(num_room).update({ etapa_actual: index }).run(connection).then(function () {
-    console.log("Estamos en la etapa " + index);
-  })
+  console.log("Actualizando etapa...");
+  await rdb.table('Sesion').get(num_room).update({ etapa_actual: index }).run(connection);
 }
 
 const saveModerator = async function saveModerator(num_sesion, name_moderator) {
@@ -104,7 +113,7 @@ const saveTeams = async function saveTeams(num_sesion, array_teams) {
     var id_jugadores = [-1, -1, -1];
 
     //El id será el número de equipos que haya.
-    num_equipo = await rdb.table('Equipo').count().run(connection).then(total => { return total });
+    num_equipo = await rdb.table('Equipo').count().run(connection);
     id_teams[i] = num_equipo;
 
     var nc = array_teams[i].length;
@@ -125,10 +134,10 @@ const saveTeams = async function saveTeams(num_sesion, array_teams) {
       id_jug3: id_jugadores[2]
     }
 
-    await rdb.table('Equipo').insert(equipo).run(connection).then(function () {
-      console.log("Equipo insertado con éxito");
-    });
+    await rdb.table('Equipo').insert(equipo).run(connection);
+    console.log("Equipo insertado con éxito");
   }
+  //Devolvemos un array con el id de los equipos
   return id_teams;
 }
 
@@ -162,9 +171,6 @@ const getGenders = async function getGenders() {
       for (let i = 0; i < result.length; i++) {
         genders.push(result[i].nombre);
       }
-      console.log("GENDERS");
-      console.log(genders);
-      console.log("Fin funcion");
     });
 
   });
@@ -173,23 +179,6 @@ const getGenders = async function getGenders() {
 
 const getPlots = async function getPlots() {
   var plots = [];
-  await rdb.table('Tramas').run(connection).then(function (cursor, err) {
-
-    cursor.toArray(function (err, result) {
-      if (err) throw err;
-      console.log(result.length);
-      for (let i = 0; i < result.length; i++) {
-        plots.push(result[i].trama);
-      }
-      console.log(plots);
-      console.log("Fin funcion");
-    });
-
-  });
-  return plots;
-}
-
-const getDescriptions = async function getDescriptions() {
   var descriptions = [];
   await rdb.table('Tramas').run(connection).then(function (cursor, err) {
 
@@ -197,15 +186,15 @@ const getDescriptions = async function getDescriptions() {
       if (err) throw err;
       console.log(result.length);
       for (let i = 0; i < result.length; i++) {
+        plots.push(result[i].trama);
         descriptions.push(result[i].desc);
       }
-      console.log(descriptions);
-      console.log("Fin funcion");
     });
 
   });
-  return descriptions;
+  return {plots:plots,descriptions:descriptions};
 }
+
 
 const getCharacters = async function getCharacters() {
   var characters = [];
@@ -261,13 +250,19 @@ const savePoints = async function savePoints(num_room, array_points, id_teams) {
 
 const getPoints = async function getPoints(id_teams) {
   var finally_points = [];
+  console.log("ID TEAMS -> ");
+  console.log(id_teams);
   for (var i = 0; i < id_teams.length; i++) {
     var puntos = await rdb.table('Equipo').get(id_teams[i]).run(connection).then(function (cursor, err) {
       if (err) { console.log("error"); console.log(err) };
+      
+        console.log("Estoy captando los puntos del equipo " + i);
+        console.log(cursor.puntos);
+      
       return cursor.puntos;
     });
     console.log(puntos);
-    finally_points.push(parseInt(puntos));
+    finally_points.push(puntos);
   }
   console.log("Finally_points");
   console.log(finally_points);
@@ -357,7 +352,6 @@ module.exports = {
   joinRoom,
   getGenders,
   getPlots,
-  getDescriptions,
   getCharacters,
   getPersonalities,
   getMod

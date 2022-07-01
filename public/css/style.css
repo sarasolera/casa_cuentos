@@ -409,7 +409,7 @@ body {
 }
 
 #resource_landscape {
-  height: 235px;
+  height: 310px;
 }
 
 
@@ -1092,3 +1092,32 @@ select {
 #control-camaras-jug button {
   display: inline-block;
 }
+
+
+/*Boton personalidades*/
+#b_caracter{
+  width: 115px !important;
+  height: 115px !important;
+}
+
+
+#resource_landscape img {
+  height:310px !important;
+}
+
+.cartas_resource {
+  margin:7px !important;
+  width: 30% !important;
+}
+
+
+.div-resource-genre{
+  text-align: center;
+}
+
+.div-resource-genre p{
+  width: 40%;
+  display: inline-block;
+  background-color:orange;
+} 
+

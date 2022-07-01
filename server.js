@@ -6,7 +6,8 @@ var app = express();
 var server = require("http").Server(app);
 
 //Ponemos al servidor a escuchar por un puerto, y tendremos el mensaje para cuando el servidor esté activo.
-server.listen(process.env.PORT || 5000, function () {
+server.listen(process.env.PORT || 
+  3030, function () {
   console.log("Servidor corriendo en el puerto correspondiente");
 });
 
@@ -54,7 +55,6 @@ const multer = require('multer');
 const mimeTypes = require('mime-types');
 
 const storage = multer.diskStorage({
- 
   destination: 'public/assets/images_player/',
   filename:function(req,file,cb){
       nombre_fichero  = Date.now() + file.originalname;
@@ -69,6 +69,7 @@ const upload = multer({
 //Guardar imagenes 
 app.post("/save_player" , upload.single('avatar') , (req,res)=>{
   let nombre_fichero = '';
+
   if(req.file != undefined){
     nombre_fichero = req.file.filename;
   }
@@ -102,26 +103,23 @@ io.on("connection", function (socket) {
     //Consultamos si existe una sala con ese nombre
     if(await db.existsRoom(data.name_room)){
       socket.emit("show_error","Ya existe una sala con ese nombre");
-
     }
     else{
       var r;
       //Creamos la sala
       r = new Room();
       
-
-      if(data.isModerator){
-        r.addModerador(data.name_player);
+      //No puede haber dos jugadores con el mismo nombre.
+      if(r.isNameUsed(data.name_player)){
+        socket.emit("show_error","Error ese nombre de jugador ya esta usado");
       }else{
-        //Añadimos el jugador pero antes comprobamos si existe otro con el mismo nombre
-        if(r.isNameUsed(data.name_player)){
-          socket.emit("show_error","Error ese nombre de jugador ya esta usado");
-        }
-        else{
+        if(data.isModerator){
+          r.addModerador(data.name_player);
+        }else{
           r.addPlayer(data.name_player,data.file);
         }
       }
-
+    
       var num_room = await db.saveSession(1,data.name_room,data.password_room);
       r.num_room = num_room;
 
@@ -131,12 +129,9 @@ io.on("connection", function (socket) {
       socket.username = data.name_player;
       socket.isInRoom = true;
 
-
       rooms.push(r);
       socket.emit('redirect','/start_game.html',num_room,data);
-    };
-
-  
+    };  
   });
 
 
@@ -151,17 +146,17 @@ io.on("connection", function (socket) {
 
 
       if(r != null){
-        if(data.isModerator){
-          if(r.addModerador(data.name_player)){
-            console.log("Añadido el moderador");
+        if(r.isNameUsed(data.name_player)){
+          socket.emit("show_error","Error ese nombre ya lo ha utilizado otro jugador");
+        }
+        else{
+          if(data.isModerator){
+            if(r.addModerador(data.name_player)){
+              console.log("Añadido el moderador");
+            }else{
+              socket.emit("show_error","Error ya existe un moderador en esta sala");
+            }
           }else{
-            socket.emit("show_error","Errorya existe un moderador en esta sala");
-          }
-        }else{
-          if(r.isNameUsed(data.name_player)){
-            socket.emit("show_error","Error ese nombre ya lo ha utilizado otro jugador");
-          }
-          else{
             r.addPlayer(data.name_player,data.file);
           }
         }
@@ -243,6 +238,7 @@ io.on("connection", function (socket) {
 
     r = get_room(num_room,rooms);
 
+    console.log("Get etapa actual");
     var etapa_actual = await db.getStage(num_room);
 
     if(parseInt(etapa_actual) == (index-1)){
@@ -326,9 +322,9 @@ io.on("connection", function (socket) {
   socket.on("getPlots",async function(num_room){
     r = get_room(num_room,rooms);
     console.log("Get Plots");
-    
-    var plots = await db.getPlots();
-    var desc = await db.getDescriptions();
+    var result = await db.getPlots();
+    var plots = result.plots;
+    var desc = result.descriptions;
     r.setPlots(plots,desc)
 
    
@@ -469,7 +465,9 @@ io.on("connection", function (socket) {
     //r.addPoints(array_puntos);
     r = get_room(num_room,rooms);
     await db.savePoints(num_room , array_puntos,r.id_teams);
-    var points = await db.getPoints(id_teams);
+    var points = await db.getPoints(r.id_teams);
+    console.log("Enviamos puntos ");
+    console.log(points);
     io.to(num_room).emit("requestCloseDoor",array_index_door[index],array_index_door[next],points);
   });
 

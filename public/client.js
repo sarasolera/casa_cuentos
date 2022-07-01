@@ -10,7 +10,6 @@ var socket = io.connect();
 class Player {
   constructor(name) {
     this.name = name;
-    this.isPlaying = false;
     this.imagePlayer = "";
     this.moderador = false;
     this.num_room = -1;
@@ -18,7 +17,6 @@ class Player {
     this.num_team = -1;
   }
 }
-
 
 //Cada cliente tendrá acceso a este script de manera única lo unico conjunto es el servidor
 //Creamos la instancia jugador
@@ -360,17 +358,18 @@ function closeFirstDoor() {
 
 socket.on("requestCloseDoor" ,requestCloseDoor)
 function requestCloseDoor(index, next, array_puntos=null) {
+  console.log("en la func")
+  console.log(array_puntos)
   returnBoard();
   console.log("En la requestCloseDoor");
   console.log("Index => " , index);
   console.log("Next => ",next);
-  if(array_puntos != null){
+  
     for(var i = 0 ; i < array_puntos.length ; i++){
       console.log("#puntos_equipo_"+i+ " puntos "+array_puntos[i])
       $("#puntos_equipo_"+i).text("Puntos - " + array_puntos[i]);
-      $("#puntos_equipo_"+i).addClass("puntos")
     }
-  }
+  
   closeDoor(index, next);
 }
 
@@ -423,7 +422,7 @@ function showResourceButton(dataResource){
   console.log("Contenido añadido sin problema");
   $("#contenido_resource_modal").find("#resource_landscape").html(cadena_landscape);
 
-  var cadena_genre = "<p id=nombre_genero>" + gender + "</p>";
+  var cadena_genre = "<div class='div-resource-genre'><p id=nombre_genero>" + gender + "</p></div>";
 
   cadena_genre += "<div id=bloque_tramas>"
   for (var i = 0; i < 3; i++) {
@@ -431,20 +430,19 @@ function showResourceButton(dataResource){
   }
   cadena_genre += "</div><p class='hidden' id='descripcion'></p>";
   $("#contenido_resource_modal").find("#resource_genre_plots").html(cadena_genre);
-
-  var cadena_characters = "<p>Personajes</p>";
-
+  
+  var cadena_characters='';
   var characters = dataResource.characters;
   var personalities = dataResource.personalities;
   var tam = characters.length;
   for(var  j = 0 ; j<2;j++){
     var i = 0
-    cadena_characters += "<p>";
+    cadena_characters += "<p class='flex-element'>";
     while (i < tam) {
       if(j == 0 )
-        cadena_characters += "<img class='zoom cartas_e_uno' src=assets/images/cartas/" + characters[i].toLowerCase() + " > ";
+        cadena_characters += "<img class='zoom cartas_e_uno cartas_resource' src=assets/images/cartas/" + characters[i].toLowerCase() + " > ";
       else
-        cadena_characters += "<img class='zoom cartas_e_uno' src=assets/images/cartas/" + personalities[i].toLowerCase() + " > ";
+        cadena_characters += "<img class='zoom cartas_e_uno cartas_resource' src=assets/images/cartas/" + personalities[i].toLowerCase() + " > ";
       
       i++;
     }

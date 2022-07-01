@@ -346,18 +346,22 @@ class Room {
   }
 
   getEvent(){
+    console.log("Captando evento");
     var eventSelected = false;
-    while(eventSelected){
-      var num_ran = Math.floor(Math.random() * this.events.length);
+    while(!eventSelected){
+
+      var num_ram = Math.floor(Math.random() * this.events.length);
+      console.log("CNUm rand");
+      console.log(num_ram);
       if(this.events[num_ram] != this.lastEvent){
         this.lastEvent = this.events[num_ram];
         eventSelected = true;
       }
     }
     
-    return this.events[num_ran];
+    return this.lastEvent;
   }
-
+f
   addPoints(array_points){
     for(var i = 0 ; i < this.num_teams;i++){
       this.score_teams[i].score = parseInt(this.score_teams[i].score) + parseInt(array_points[i]);
