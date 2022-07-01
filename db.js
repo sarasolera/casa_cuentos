@@ -7,7 +7,11 @@ var config = require("./config.json");
 
 var connection = null;
 
-  /*rdb.connect({
+
+
+const connect = function connect() {
+  console.log("Iniciando conexión con base de datos");
+  rdb.connect({
     host: process.env.RETHINKDB_HOST || "54.195.222.146",
     port: process.env.RETHINKDB_PORT || 28015,
     username: process.env.RETHINKDB_USERNAME || "admin",
@@ -20,18 +24,7 @@ var connection = null;
     }).error(function (error) {
       console.log("Error al conectar con la BD");
       console.log(error.message);
-    });*/
-
-const connect = function connect() {
-  console.log("Iniciando conexión con base de datos");
-    rdb.connect(config.rethinkdb)
-      .then(function (conn) {
-        connection = conn;
-        console.log("Conexion realizada con éxito");
-      }).error(function (error) {
-        console.log("Error al conectar con la BD");
-        console.log(error.message);
-      });
+    });
 }
 
 
