@@ -1,7 +1,7 @@
 ::-webkit-scrollbar {
   display: none;
   }
-  
+
 body {
     background-color: rgb(45, 48, 51);
     font-family: Gluten;
@@ -383,7 +383,7 @@ body {
   
   #cartas img {
     margin-right:25px;
-    height: 202 px;
+    height: 202px;
     border: 1px solid transparent;
     border-radius: 10%;
   }
@@ -562,7 +562,7 @@ body {
   
   /*panel de mensajes para el moderador*/
   #messages {
-    height: 60%;
+    height: 65%;
     font-size: 15px;
   }
   
@@ -618,8 +618,10 @@ body {
   #moderator_message {
   
     border-radius: 5px;
-    padding: 3px;
-    margin: 5%;
+
+    margin-left: 5%;
+
+    margin-right: 5%;
     padding: 2%;
     background-color: white;
   
@@ -752,7 +754,7 @@ body {
   }
   
   #carta_central {
-    left: 165px;
+    left: 150px;
   }
   
   .carta_p {
@@ -855,7 +857,7 @@ body {
   
   /*IMAGENES ZOOM */
   img.zoom {
-    width: 37%;
+    width: 34%;
   }
   
   img.zoom:hover {
@@ -886,7 +888,7 @@ body {
     top: 20%;
     border: 2px solid black;
     border-radius: 10px;
-    left: 22%;
+    left: 18%;
     width: 520px;
     text-align: center;
     background-color: rgba(237, 255, 159, 0.815);

@@ -829,3 +829,8 @@
 2022-06-30T18:55:24.377428047 1.895264s info: Table a3a4aa24-05e1-4389-b0e2-28e2ca6ca6b6: This server is Raft leader for term 11. Latest log index is 29.
 2022-06-30T18:55:24.465856047 1.983692s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: Starting a new Raft election for term 23.
 2022-06-30T18:55:24.468779464 1.986615s info: Table 99f57d7d-9408-46ce-bf7a-d223d9fbabfd: This server is Raft leader for term 23. Latest log index is 67.
+2022-07-01T16:51:53.334536311 20190.722913s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2022-07-01T16:51:53.335369754 20190.723747s notice: Shutting down client connections...
+2022-07-01T16:51:53.336022537 20190.724400s notice: All client connections closed.
+2022-07-01T16:51:53.336027302 20190.724404s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2022-07-01T16:51:53.429265107 20190.817643s notice: Storage engine shut down.
