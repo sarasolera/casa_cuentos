@@ -361,7 +361,7 @@ class Room {
     
     return this.lastEvent;
   }
-f
+
   addPoints(array_points){
     for(var i = 0 ; i < this.num_teams;i++){
       this.score_teams[i].score = parseInt(this.score_teams[i].score) + parseInt(array_points[i]);
