@@ -1127,7 +1127,7 @@ function generateVideoCall(){
   const options = {
       roomName: 'la-casa-de-los-cuentos-sala'+player.num_room,
       width: 220,
-      height: 500,
+      height: 450,
       parentNode: document.querySelector('#camaras'),
       configOverwrite: { startWithAudioMuted: false,  prejoinPageEnabled: false},
       userInfo:{
@@ -1247,6 +1247,8 @@ socket.on("returnCall",returnCall);
 function returnCall(){
   $("#camaras").empty();
   $("#messages").addClass('hidden');
+  $("#moderator_message").addClass('hidden');
+  $("#last_message").html = '';
 
   $("#silent_room").removeClass('hidden');
   generateVideoCall()

@@ -447,7 +447,7 @@ body {
   #bloque_tablero {
     background-image: url("/assets/images/estanteria_r.png");
     background-repeat: no-repeat;
-    background-size: 100% 102%;
+    background-size: 100% 98%;
   
     display: grid;
     grid-template-rows: 36% 28% 32%;
