@@ -7,8 +7,6 @@ var config = require("./config.json");
 
 var connection = null;
 
-const connect = function connect() {
-  console.log("Iniciando conexión con base de datos");
   /*rdb.connect({
     host: process.env.RETHINKDB_HOST || "54.195.222.146",
     port: process.env.RETHINKDB_PORT || 28015,
@@ -23,7 +21,10 @@ const connect = function connect() {
       console.log("Error al conectar con la BD");
       console.log(error.message);
     });*/
-    rdb.connect(config.rethinkLocal)
+
+const connect = function connect() {
+  console.log("Iniciando conexión con base de datos");
+    rdb.connect(config.rethinkdb)
       .then(function (conn) {
         connection = conn;
         console.log("Conexion realizada con éxito");
