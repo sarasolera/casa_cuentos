@@ -1120,7 +1120,7 @@ function showSelectedPlayer(namePlayer,players){
 
 
 
-function generateVideoCall(){
+function generateVideoCall(playersMuted = false){
 
   
   const domain = "meet.jit.si";
@@ -1132,7 +1132,7 @@ function generateVideoCall(){
       width: 220,
       height: 450,
       parentNode: document.querySelector('#camaras'),
-      configOverwrite: { startWithAudioMuted: false,  prejoinPageEnabled: false},
+      configOverwrite: { startWithAudioMuted: playersMuted,  prejoinPageEnabled: false},
       userInfo:{
         displayName: player.name
       },
@@ -1254,7 +1254,7 @@ function returnCall(){
   $("#last_message").html = '';
 
   $("#silent_room").removeClass('hidden');
-  generateVideoCall()
+  generateVideoCall(true);
 }
 
 
