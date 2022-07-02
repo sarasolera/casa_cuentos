@@ -525,7 +525,7 @@ function showPlots(plots, descriptions) {
   $("#bloque_trama").append(cadena);
   $("#bloque_trama").removeClass("hidden");
   $('#b_trama').addClass("hidden");
-  $("#genero").append('<button class="boton_continuar" id="continuar" type=button onclick=showSelectedGender()> Continuar...</button>');
+  $("#genero").append('<button class="boton_continuar" id="continuar" type=button onclick=showSelectedGender()> Continuar</button>');
 
 }
 
@@ -798,7 +798,7 @@ function showDataMisionStageOne(index_mision, array_icons) {
     cadena_icons += "</div>";
   }
 
-  cadena_icons += "<button id=finEtapa class=boton_continuar type=button onclick=vote(3,4)> Cerrar Etapa...</button>";
+  cadena_icons += "<button id=finEtapa class=boton_continuar type=button onclick=vote(3,4)> Cerrar Etapa</button>";
 
   console.log(cadena_icons);
   $("#objeto").append(cadena_icons);
@@ -936,7 +936,7 @@ function showDataMisionStageThree(sentences , landscape ) {
   
 
   var cadena_paisaje = "<img id=carta_paisaje src=assets/images/landscape/" + landscape + " >";
-  cadena_paisaje += '<button id="finEtapa" class="hidden boton_continuar" type="button" onclick=vote(5,6)> Cerrar Etapa...</button>';
+  cadena_paisaje += '<button id="finEtapa" class="hidden boton_continuar" type="button" onclick=vote(5,6)> Cerrar Etapa</button>';
   $("#paisaje").append(cadena_paisaje)
   $("#finEtapa").removeClass("hidden");
 
