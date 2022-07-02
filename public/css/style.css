@@ -449,7 +449,7 @@ body {
   background-size: 100% 102%;
 
   display: grid;
-  grid-template-rows: 36% 28% 32%;
+  grid-template-rows: 35% 29%;
 }
 
 #img_landscape {
