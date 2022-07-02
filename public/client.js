@@ -601,9 +601,11 @@ function showCharactersCard(array_personajes) {
 
 }
 
+
+let canFlip = true;
 //Giramos una carta y queda seleccionada
 function flipCard(id_card, num_card) {
-  if(player.moderador){
+  if(player.moderador && canFlip){
     console.log("Girar carta -> " + num_card);
     socket.emit("flipCard",  player.num_room,id_card, num_card);
   }
@@ -612,14 +614,15 @@ function flipCard(id_card, num_card) {
 socket.on("showFlipCard", showFlipCard);
 
 function showFlipCard(id_card, allCardSelected) {
+  canFlip = false;
   $('#' + id_card).css("transform", "rotateY(180deg)");
-  setTimeout(() => { $('#' + id_card).css("transform", ""); }, 1000);
-
+  setTimeout(() => { $('#' + id_card).css("transform", ""); }, 750);
+  
   if (!allCardSelected) {
-    setTimeout(() => { socket.emit("getCharactersCard", player.num_room); }, 2000);
+    setTimeout(() => { socket.emit("getCharactersCard", player.num_room);canFlip=true; }, 800);
   }
   else {
-    setTimeout(() => { socket.emit("getAllCharacterSelected", player.num_room); }, 2000);
+    setTimeout(() => { socket.emit("getAllCharacterSelected", player.num_room); }, 800);
   }
 }
 
