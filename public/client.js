@@ -619,10 +619,10 @@ function showFlipCard(id_card, allCardSelected) {
   setTimeout(() => { $('#' + id_card).css("transform", ""); }, 750);
   
   if (!allCardSelected) {
-    setTimeout(() => { socket.emit("getCharactersCard", player.num_room);canFlip=true; }, 800);
+    setTimeout(() => { socket.emit("getCharactersCard", player.num_room);canFlip=true; }, 900);
   }
   else {
-    setTimeout(() => { socket.emit("getAllCharacterSelected", player.num_room); }, 800);
+    setTimeout(() => { socket.emit("getAllCharacterSelected", player.num_room); }, 900);
   }
 }
 
