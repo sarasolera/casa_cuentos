@@ -8,7 +8,7 @@ var server = require("http").Server(app);
 //Ponemos al servidor a escuchar por un puerto, y tendremos el mensaje para cuando el servidor esté activo.
 server.listen(process.env.PORT || 
   3030, function () {
-  console.log("Servidor corriendo en el puerto correspondiente");
+  console.log("Servidor corriendo en el puerto 3000");
 });
 
 //Incluimos las carpetas con nuestros ficheros.
@@ -87,7 +87,7 @@ var array_card;
 
 //socket escuchando conexiones
 io.on("connection", function (socket) {
-  console.log("Un cliente se ha conectado");
+  //console.log("Un cliente se ha conectado");
   //Mostramos al jugador la pantalla inicial
 
   function get_room(num_room,rooms){
