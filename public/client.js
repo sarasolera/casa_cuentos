@@ -1122,6 +1122,9 @@ function showSelectedPlayer(namePlayer,players){
 
 function generateVideoCall(playersMuted = false){
 
+  if(player.moderador){
+    playersMuted = false;
+  }
   
   const domain = "meet.jit.si";
  
@@ -1247,12 +1250,12 @@ function returnRoom(){
 
 socket.on("returnCall",returnCall);
 
-function returnCall(){
+function returnCall(players){
   $("#camaras").empty();
   $("#messages").addClass('hidden');
   $("#moderator_message").addClass('hidden');
   $("#last_message").html = '';
-
+  deleteAllImagesSpeaker(players)
   $("#silent_room").removeClass('hidden');
   generateVideoCall(true);
 }

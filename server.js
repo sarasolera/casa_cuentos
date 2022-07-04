@@ -501,8 +501,8 @@ io.on("connection", function (socket) {
   });
 
   socket.on('returnVideoCall',function(num_room){
-    
-    io.to(num_room).emit("returnCall");
+    r = get_room(num_room,rooms);
+    io.to(num_room).emit("returnCall", r.players);
   });
 
   socket.on("sendMessage",function(num_room , message){
