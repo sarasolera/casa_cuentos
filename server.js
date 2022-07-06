@@ -136,6 +136,7 @@ io.on("connection", function (socket) {
 
 
   socket.on("join_room",async function(data){
+
     //Comprobamos primero que exista la sala a la que se quieren unir
     if(await db.existsRoom(data.name_room)){
       //Para unirnos a la sala la contraseña deberá ser correcta.
@@ -143,9 +144,8 @@ io.on("connection", function (socket) {
       var r = null;
     
       r = get_room(num_room,rooms);
-
-
-      if(r != null){
+      //Comprobamos que exista la sala y que no haya empezado el juego
+      if(r != null && !r.isAllPlayer){
         if(r.isNameUsed(data.name_player)){
           socket.emit("show_error","Error ese nombre ya lo ha utilizado otro jugador");
         }
@@ -172,9 +172,12 @@ io.on("connection", function (socket) {
         setTimeout(() => { io.in(num_room).emit('showPlayer',r.players) }, 1000);
         //io.in(num_room).emit('showPlayer',r.players);
       }
+      else{
+        socket.emit("show_error","Error al intentar unirse a esta sala.");
+      }
      
     }else{
-      socket.emit("show_error","Error con el nombre de la sala o con la contraseña");
+      socket.emit("show_error","Error con el nombre de la sala o con la contraseña.");
     }
   });
 
