@@ -28,7 +28,7 @@ db.connect();
 
 const { isBoolean } = require("util");
 const NUM_MAX_PLAYER = 6;
-const NUM_MIN_PLAYER = 0;
+const NUM_MIN_PLAYER = 2;
 
 var isAllPlayer = false;
 
