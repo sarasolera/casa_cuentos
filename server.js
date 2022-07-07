@@ -155,6 +155,7 @@ io.on("connection", function (socket) {
               console.log("Añadido el moderador");
             }else{
               socket.emit("show_error","Error ya existe un moderador en esta sala");
+              return;
             }
           }else{
             r.addPlayer(data.name_player,data.file);
