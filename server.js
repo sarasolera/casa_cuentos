@@ -8,7 +8,7 @@ var server = require("http").Server(app);
 //Ponemos al servidor a escuchar por un puerto, y tendremos el mensaje para cuando el servidor esté activo.
 server.listen(process.env.PORT || 
   3030, function () {
-  console.log("Servidor corriendo en el puerto 3000");
+  console.log("Servidor corriendo en el puerto 3030");
 });
 
 //Incluimos las carpetas con nuestros ficheros.

@@ -10,7 +10,7 @@ var connection = null;
 
 
 const connect = function connect() {
-  //console.log("Iniciando conexión con base de datos");
+  console.log("Iniciando conexión con base de datos");
   rdb.connect({
     host: process.env.RETHINKDB_HOST || "54.195.222.146",
     port: process.env.RETHINKDB_PORT || 28015,
@@ -20,11 +20,21 @@ const connect = function connect() {
     })
     .then(function (conn) {
       connection = conn;
-      //console.log("Conexion realizada con éxito");
+      console.log("Conexion con base de datos realizada con éxito");
     }).error(function (error) {
       console.log("Error al conectar con la BD");
       console.log(error.message);
     });
+
+  /*Para conectar con local*/
+  /*
+  rdb.connect(config.rethinkLocal).then(function(conn){
+    connection = conn
+  }).error(function(error){
+    console.log("Error al conectar con la BD");
+    console.log(error.message);
+  })*/
+   
 }
 
 
