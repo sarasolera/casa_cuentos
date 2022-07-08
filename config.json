@@ -1,11 +1,4 @@
 {
-    "rethinkdb":{
-        "host":"54.195.222.146",
-        "port":28015,
-        "user": "admin",
-        "password":"5Kx30NjWzKeA9oK",
-        "db": "casacuentosdb"
-    },
     "rethinkLocal":{
         "host":"localhost",
         "db": "casacuentosdb"
